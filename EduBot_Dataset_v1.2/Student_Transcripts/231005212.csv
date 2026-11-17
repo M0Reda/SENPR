@@ -1,0 +1,50 @@
+student_id,student_name,semester_taken,course_code,course_title,credit_hours,grade,points,status,semester_credit_hours,semester_points,semester_gpa,cumulative_credit_hours,cumulative_points,cumulative_gpa,credits_completed,standing_after_semester
+231005212,Ammar Gamal,First Semester / 2023-2024,CC111,Intro to Computer,3,A-,11.0,Passed,18,58.9,3.3,18,58.9,3.3,18,Very Good
+231005212,Ammar Gamal,First Semester / 2023-2024,BA113,Physics I,3,B+,10.0,Passed,18,58.9,3.3,18,58.9,3.3,18,Very Good
+231005212,Ammar Gamal,First Semester / 2023-2024,BA123,Mathematics I,3,B-,8.0,Passed,18,58.9,3.3,18,58.9,3.3,18,Very Good
+231005212,Ammar Gamal,First Semester / 2023-2024,LH131,ESP I,2,A-,7.3,Passed,18,58.9,3.3,18,58.9,3.3,18,Very Good
+231005212,Ammar Gamal,First Semester / 2023-2024,BA141,Engineering Mechanics I,3,B-,8.0,Passed,18,58.9,3.3,18,58.9,3.3,18,Very Good
+231005212,Ammar Gamal,First Semester / 2023-2024,ME151,Engineering Drawing & Projection,2,A-,7.3,Passed,18,58.9,3.3,18,58.9,3.3,18,Very Good
+231005212,Ammar Gamal,First Semester / 2023-2024,IM111,Industrial Relations,2,A-,7.3,Passed,18,58.9,3.3,18,58.9,3.3,18,Very Good
+231005212,Ammar Gamal,Second Semester / 2023-2024,CC112,Structured Programming,3,A-,11.0,Passed,18,58.0,3.2,36,116.9,3.2,36,Good
+231005212,Ammar Gamal,Second Semester / 2023-2024,BA114,Physics II,3,C,6.0,Passed,18,58.0,3.2,36,116.9,3.2,36,Good
+231005212,Ammar Gamal,Second Semester / 2023-2024,BA118,Chemistry,2,A+,8.0,Passed,18,58.0,3.2,36,116.9,3.2,36,Good
+231005212,Ammar Gamal,Second Semester / 2023-2024,BA124,Mathematics II,3,B,9.0,Passed,18,58.0,3.2,36,116.9,3.2,36,Good
+231005212,Ammar Gamal,Second Semester / 2023-2024,LH132,ESP II,2,A,7.7,Passed,18,58.0,3.2,36,116.9,3.2,36,Good
+231005212,Ammar Gamal,Second Semester / 2023-2024,BA142,Engineering Mechanics II,3,B,9.0,Passed,18,58.0,3.2,36,116.9,3.2,36,Good
+231005212,Ammar Gamal,Second Semester / 2023-2024,IM112,Manufacturing Technology,2,A-,7.3,Passed,18,58.0,3.2,36,116.9,3.2,36,Good
+231005212,Ammar Gamal,First Semester / 2024-2025,CC218,Discrete Mathematics,3,B,9.0,Passed,18,58.0,3.2,54,174.9,3.2,54,Good
+231005212,Ammar Gamal,First Semester / 2024-2025,BA223,Mathematics III,3,B+,10.0,Passed,18,58.0,3.2,54,174.9,3.2,54,Good
+231005212,Ammar Gamal,First Semester / 2024-2025,EE231,Electrical Circuits I,3,A,11.5,Passed,18,58.0,3.2,54,174.9,3.2,54,Good
+231005212,Ammar Gamal,First Semester / 2024-2025,LH231,Technical Report Writing,3,A,11.5,Passed,18,58.0,3.2,54,174.9,3.2,54,Good
+231005212,Ammar Gamal,First Semester / 2024-2025,NE465,Aesthetic Education & Art Appreciation,3,B+,10.0,Passed,18,58.0,3.2,54,174.9,3.2,54,Good
+231005212,Ammar Gamal,First Semester / 2024-2025,CC212,Applied Programming,3,C,6.0,Passed,18,58.0,3.2,54,174.9,3.2,54,Good
+231005212,Ammar Gamal,Second Semester / 2024-2025,CC215,Data Structure,3,A-,11.0,Passed,18,51.0,2.8,72,225.9,3.1,72,Good
+231005212,Ammar Gamal,Second Semester / 2024-2025,CC216,Digital Logic Design,3,B,9.0,Passed,18,51.0,2.8,72,225.9,3.1,72,Good
+231005212,Ammar Gamal,Second Semester / 2024-2025,BA224,Mathematics IV,3,D+,4.0,Passed,18,51.0,2.8,72,225.9,3.1,72,Good
+231005212,Ammar Gamal,Second Semester / 2024-2025,EE232,Electrical Circuits II,3,B+,10.0,Passed,18,51.0,2.8,72,225.9,3.1,72,Good
+231005212,Ammar Gamal,Second Semester / 2024-2025,EC238,Electronics I,3,B-,8.0,Passed,18,51.0,2.8,72,225.9,3.1,72,Good
+231005212,Ammar Gamal,Second Semester / 2024-2025,EC218,Measurements & Instrument,3,B,9.0,Passed,18,51.0,2.8,72,225.9,3.1,72,Good
+231005212,Ammar Gamal,Summer Semester / 2024-2025,CC317,Digital Systems Design,3,B-,8.0,Passed,6,18.0,3.0,78,243.9,3.1,78,Good
+231005212,Ammar Gamal,Summer Semester / 2024-2025,CC319,Advanced Programming,3,B+,10.0,Passed,6,18.0,3.0,78,243.9,3.1,78,Good
+231005212,Ammar Gamal,First Semester / 2025-2026,BA323,Mathematics V,3,B-,8.0,Passed,21,48.0,2.3,99,291.9,2.9,99,Good
+231005212,Ammar Gamal,First Semester / 2025-2026,EE328,Electrical Power & Machines,3,B-,8.0,Passed,21,48.0,2.3,99,291.9,2.9,99,Good
+231005212,Ammar Gamal,First Semester / 2025-2026,EC339,Electronics II,3,D,3.0,Passed,21,48.0,2.3,99,291.9,2.9,99,Good
+231005212,Ammar Gamal,First Semester / 2025-2026,EC320,Communication Theory,3,D+,4.0,Passed,21,48.0,2.3,99,291.9,2.9,99,Good
+231005212,Ammar Gamal,First Semester / 2025-2026,CC311,Computer Architecture,3,B,9.0,Passed,21,48.0,2.3,99,291.9,2.9,99,Good
+231005212,Ammar Gamal,First Semester / 2025-2026,CC316,Object-Oriented Programming,3,C+,7.0,Passed,21,48.0,2.3,99,291.9,2.9,99,Good
+231005212,Ammar Gamal,First Semester / 2025-2026,BA326,Mathematics VI,3,B,9.0,Passed,21,48.0,2.3,99,291.9,2.9,99,Good
+231005212,Ammar Gamal,Second Semester / 2025-2026,CC341,Digital Electronics,3,F,0.0,Retaken,18,44.0,2.4,117,335.9,2.9,114,Good
+231005212,Ammar Gamal,Second Semester / 2025-2026,NE364,Engineering Economy,3,B,9.0,Passed,18,44.0,2.4,117,335.9,2.9,114,Good
+231005212,Ammar Gamal,Second Semester / 2025-2026,CC331,Data & Computer Communications,3,A-,11.0,Passed,18,44.0,2.4,117,335.9,2.9,114,Good
+231005212,Ammar Gamal,Second Semester / 2025-2026,CC410,Systems Programming,3,B+,10.0,Passed,18,44.0,2.4,117,335.9,2.9,114,Good
+231005212,Ammar Gamal,Second Semester / 2025-2026,CC414,Database Systems,3,B-,8.0,Passed,18,44.0,2.4,117,335.9,2.9,114,Good
+231005212,Ammar Gamal,Second Semester / 2025-2026,EE418,Automatic Control Systems,3,C,6.0,Passed,18,44.0,2.4,117,335.9,2.9,114,Good
+231005212,Ammar Gamal,Summer Semester / 2025-2026,CC341,Digital Electronics,3,B+,10.0,Passed,6,10.0,1.7,120,345.9,2.9,117,Good
+231005212,Ammar Gamal,Summer Semester / 2025-2026,CC518,Data Security,3,F,0.0,Failed,6,10.0,1.7,120,345.9,2.9,117,Good
+231005212,Ammar Gamal,First Semester / 2026-2027,CC518,Data Security,3,,,In Progress,,,,,,,,
+231005212,Ammar Gamal,First Semester / 2026-2027,EC320,Communication Theory,3,,,In Progress,,,,,,,,
+231005212,Ammar Gamal,First Semester / 2026-2027,CC421,Microprocessors Systems,3,,,In Progress,,,,,,,,
+231005212,Ammar Gamal,First Semester / 2026-2027,CC419,Numerical Methods,3,,,In Progress,,,,,,,,
+231005212,Ammar Gamal,First Semester / 2026-2027,CC416,Computer Graphics,3,,,In Progress,,,,,,,,
+231005212,Ammar Gamal,First Semester / 2026-2027,CC418,Operating Systems,3,,,In Progress,,,,,,,,

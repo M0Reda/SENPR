@@ -1,0 +1,1 @@
+Falling back to llama3.2:3b due to: model 'qwen2.5:7b-instruct' not found (status code: 404)

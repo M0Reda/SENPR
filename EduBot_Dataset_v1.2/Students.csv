@@ -1,0 +1,1001 @@
+student_id,major,current_semester_level,total_credits_completed,gpa,standing_status,enrollment_phase,advisor_id
+201003465,Computer Engineering,10,174,2.1,Pass,Senior Year,EMP060170
+201003491,Computer Engineering,10,177,2.1,Pass,Senior Year,EMP190101
+201003494,Computer Engineering,10,177,2.0,Pass,Senior Year,EMP190101
+202003433,Computer Engineering,10,162,2.4,Pass,Senior Year,EMP060151
+202003449,Computer Engineering,7,108,1.8,Academic Probation (2nd Warning),Junior,EMP140146
+202003474,Computer Engineering,9,144,1.9,Academic Probation (1st Warning),Senior Year,EMP060151
+211003750,Computer Engineering,9,150,2.7,Good,Senior Year,EMP080129
+211003751,Computer Engineering,9,153,2.0,Pass,Senior Year,EMP170158
+211003779,Computer Engineering,10,168,2.4,Pass,Senior Year,EMP060170
+211003811,Computer Engineering,10,162,2.6,Pass,Senior Year,EMP060151
+211003825,Computer Engineering,9,150,2.5,Pass,Senior Year,EMP060170
+211003856,Computer Engineering,9,144,2.4,Pass,Senior Year,EMP170158
+211003859,Computer Engineering,10,174,2.4,Pass,Senior Year,EMP080129
+211003864,Computer Engineering,10,168,2.1,Pass,Senior Year,EMP060170
+211003875,Computer Engineering,9,147,2.4,Pass,Senior Year,EMP070131
+211003884,Computer Engineering,9,156,2.5,Pass,Senior Year,EMP140140
+211003920,Computer Engineering,9,159,2.8,Good,Senior Year,EMP060133
+211003944,Computer Engineering,10,177,2.1,Pass,Senior Year,EMP060133
+211003953,Computer Engineering,10,165,2.3,Pass,Senior Year,EMP060133
+211003961,Computer Engineering,7,120,2.0,Pass,Junior,EMP080129
+211003985,Computer Engineering,10,162,2.7,Good,Senior Year,EMP140146
+211003989,Computer Engineering,10,177,3.0,Good,Senior Year,EMP080129
+211003998,Computer Engineering,7,114,2.0,Pass,Junior,EMP060151
+211004027,Computer Engineering,9,156,2.6,Pass,Senior Year,EMP080135
+211004035,Computer Engineering,10,171,2.3,Pass,Senior Year,EMP080129
+211004072,Computer Engineering,10,171,2.3,Pass,Senior Year,EMP190101
+211004092,Computer Engineering,10,174,2.6,Pass,Senior Year,EMP170158
+211004124,Computer Engineering,8,141,2.3,Pass,Junior,EMP080135
+211004133,Computer Engineering,9,159,2.2,Pass,Senior Year,EMP060151
+211004166,Computer Engineering,6,93,1.9,Academic Probation (1st Warning),Junior,EMP080135
+211004196,Computer Engineering,10,177,2.6,Pass,Senior Year,EMP060133
+212001309,Computer Engineering,9,159,2.6,Pass,Senior Year,EMP140146
+212001315,Computer Engineering,10,177,3.2,Good,Senior Year,EMP060133
+212001325,Computer Engineering,10,174,3.2,Good,Senior Year,EMP060151
+212001353,Computer Engineering,10,171,3.3,Very Good,Senior Year,EMP140146
+212001354,Computer Engineering,10,174,3.0,Good,Senior Year,EMP190101
+212001371,Computer Engineering,9,144,2.6,Pass,Senior Year,EMP070131
+212001408,Computer Engineering,10,165,3.2,Good,Senior Year,EMP170158
+212001430,Computer Engineering,9,159,2.5,Pass,Senior Year,EMP060170
+212001434,Computer Engineering,10,174,3.3,Very Good,Senior Year,EMP060133
+212001457,Computer Engineering,9,159,2.6,Pass,Senior Year,EMP190101
+212001464,Computer Engineering,10,174,2.8,Good,Senior Year,EMP060170
+212001490,Computer Engineering,10,171,2.8,Good,Senior Year,EMP080129
+212001491,Computer Engineering,9,159,2.0,Pass,Senior Year,EMP060151
+212001510,Computer Engineering,10,174,3.0,Good,Senior Year,EMP060133
+212001531,Computer Engineering,10,162,2.8,Good,Senior Year,EMP190101
+212001564,Computer Engineering,9,159,3.4,Very Good,Senior Year,EMP060133
+212001573,Computer Engineering,8,138,2.5,Pass,Junior,EMP140146
+212001577,Computer Engineering,10,177,3.6,Very Good,Senior Year,EMP060133
+212001604,Computer Engineering,9,153,2.9,Good,Senior Year,EMP080129
+212001634,Computer Engineering,10,174,3.1,Good,Senior Year,EMP140146
+212001635,Computer Engineering,7,111,1.9,Academic Probation (1st Warning),Junior,EMP060170
+212001666,Computer Engineering,8,135,2.0,Pass,Junior,EMP060151
+212001699,Computer Engineering,10,171,2.6,Pass,Senior Year,EMP170158
+212001727,Computer Engineering,10,174,3.4,Very Good,Senior Year,EMP070131
+212001749,Computer Engineering,10,174,3.5,Very Good,Senior Year,EMP060151
+212001759,Computer Engineering,10,171,3.2,Good,Senior Year,EMP080135
+212001761,Computer Engineering,9,156,3.5,Very Good,Senior Year,EMP170158
+212001772,Computer Engineering,10,177,3.1,Good,Senior Year,EMP170158
+212001778,Computer Engineering,10,165,3.2,Good,Senior Year,EMP170158
+212001807,Computer Engineering,10,171,2.7,Good,Senior Year,EMP060133
+212001808,Computer Engineering,8,138,2.5,Pass,Junior,EMP060151
+212001821,Computer Engineering,10,174,3.6,Very Good,Senior Year,EMP080135
+212001853,Computer Engineering,10,162,2.8,Good,Senior Year,EMP080135
+212001868,Computer Engineering,9,156,1.9,Academic Probation (1st Warning),Senior Year,EMP080129
+212001877,Computer Engineering,9,150,3.3,Very Good,Senior Year,EMP140146
+212001911,Computer Engineering,10,177,3.7,Excellent,Senior Year,EMP060170
+212001933,Computer Engineering,9,153,2.7,Good,Senior Year,EMP140146
+212001942,Computer Engineering,9,150,3.1,Good,Senior Year,EMP060170
+212001978,Computer Engineering,10,168,3.4,Very Good,Senior Year,EMP060133
+212002011,Computer Engineering,10,165,3.4,Very Good,Senior Year,EMP190101
+212002033,Computer Engineering,6,99,2.0,Pass,Junior,EMP060170
+212002037,Computer Engineering,10,171,3.4,Very Good,Senior Year,EMP080129
+212002059,Computer Engineering,10,162,3.0,Good,Senior Year,EMP140140
+212002080,Computer Engineering,10,162,3.2,Good,Senior Year,EMP060133
+212002085,Computer Engineering,9,150,2.8,Good,Senior Year,EMP060170
+212002118,Computer Engineering,10,165,3.8,Excellent,Senior Year,EMP080135
+212002129,Computer Engineering,8,135,2.7,Good,Junior,EMP070131
+212002166,Computer Engineering,10,174,3.4,Very Good,Senior Year,EMP080129
+212002193,Computer Engineering,10,171,3.6,Very Good,Senior Year,EMP070131
+212002217,Computer Engineering,8,138,2.2,Pass,Junior,EMP080135
+212002244,Computer Engineering,10,165,3.2,Good,Senior Year,EMP080135
+212002256,Computer Engineering,10,165,2.4,Pass,Senior Year,EMP140146
+212002283,Computer Engineering,10,165,2.2,Pass,Senior Year,EMP140146
+212002285,Computer Engineering,8,126,2.2,Pass,Junior,EMP170158
+212002289,Computer Engineering,8,132,2.6,Pass,Junior,EMP060151
+221003665,Computer Engineering,9,156,3.0,Good,Senior Year,EMP060133
+221003687,Computer Engineering,7,111,2.4,Pass,Junior,EMP080135
+221003719,Computer Engineering,8,138,2.4,Pass,Junior,EMP140146
+221003720,Computer Engineering,8,126,2.2,Pass,Junior,EMP060170
+221003756,Computer Engineering,6,99,2.1,Pass,Junior,EMP080135
+221003790,Computer Engineering,8,135,2.4,Pass,Junior,EMP080135
+221003791,Computer Engineering,9,150,3.8,Excellent,Senior Year,EMP060151
+221003807,Computer Engineering,8,141,2.5,Pass,Junior,EMP140146
+221003818,Computer Engineering,9,153,2.5,Pass,Senior Year,EMP070131
+221003844,Computer Engineering,8,141,3.1,Good,Junior,EMP140146
+221003852,Computer Engineering,9,159,3.1,Good,Senior Year,EMP080135
+221003857,Computer Engineering,9,153,2.2,Pass,Senior Year,EMP140146
+221003879,Computer Engineering,9,144,2.6,Pass,Senior Year,EMP060133
+221003898,Computer Engineering,8,141,3.0,Good,Junior,EMP060151
+221003921,Computer Engineering,9,147,2.7,Good,Senior Year,EMP140146
+221003944,Computer Engineering,9,153,3.7,Excellent,Senior Year,EMP140140
+221003967,Computer Engineering,8,135,2.6,Pass,Junior,EMP140140
+221004000,Computer Engineering,9,153,3.1,Good,Senior Year,EMP170158
+221004028,Computer Engineering,9,147,2.1,Pass,Senior Year,EMP140146
+221004056,Computer Engineering,8,135,2.6,Pass,Junior,EMP060170
+221004082,Computer Engineering,8,129,2.8,Good,Junior,EMP140146
+221004100,Computer Engineering,7,117,2.4,Pass,Junior,EMP190101
+221004128,Computer Engineering,10,165,3.1,Good,Senior Year,EMP140140
+221004133,Computer Engineering,9,147,3.2,Good,Senior Year,EMP080135
+221004168,Computer Engineering,6,90,1.9,Academic Probation (1st Warning),Junior,EMP060170
+221004175,Computer Engineering,9,153,3.2,Good,Senior Year,EMP080135
+221004193,Computer Engineering,7,117,2.7,Good,Junior,EMP080129
+221004200,Computer Engineering,7,120,2.0,Pass,Junior,EMP080129
+221004219,Computer Engineering,8,132,2.5,Pass,Junior,EMP190101
+221004252,Computer Engineering,7,108,2.4,Pass,Junior,EMP080129
+221004266,Computer Engineering,9,144,3.1,Good,Senior Year,EMP080129
+221004302,Computer Engineering,8,132,2.4,Pass,Junior,EMP080135
+221004322,Computer Engineering,8,135,2.4,Pass,Junior,EMP190101
+221004329,Computer Engineering,8,135,2.6,Pass,Junior,EMP080129
+221004344,Computer Engineering,8,138,2.4,Pass,Junior,EMP170158
+221004364,Computer Engineering,8,141,2.9,Good,Junior,EMP060151
+221004393,Computer Engineering,8,129,2.3,Pass,Junior,EMP080129
+221004419,Computer Engineering,9,156,3.5,Very Good,Senior Year,EMP190101
+221004429,Computer Engineering,10,168,3.7,Excellent,Senior Year,EMP060170
+221004465,Computer Engineering,9,147,2.8,Good,Senior Year,EMP060151
+221004474,Computer Engineering,9,144,2.6,Pass,Senior Year,EMP190101
+221004498,Computer Engineering,8,126,2.1,Pass,Junior,EMP060133
+221004522,Computer Engineering,8,141,3.1,Good,Junior,EMP070131
+221004532,Computer Engineering,9,147,3.2,Good,Senior Year,EMP080135
+221004541,Computer Engineering,9,147,3.6,Very Good,Senior Year,EMP070131
+221004551,Computer Engineering,6,102,2.4,Pass,Junior,EMP080135
+221004579,Computer Engineering,9,150,2.6,Pass,Senior Year,EMP060133
+221004584,Computer Engineering,8,129,2.3,Pass,Junior,EMP060133
+221004611,Computer Engineering,9,147,3.4,Very Good,Senior Year,EMP190101
+221004625,Computer Engineering,8,138,2.5,Pass,Junior,EMP140146
+221004640,Computer Engineering,7,117,2.5,Pass,Junior,EMP080129
+221004659,Computer Engineering,9,150,3.2,Good,Senior Year,EMP190101
+221004668,Computer Engineering,8,138,2.1,Pass,Junior,EMP140146
+221004700,Computer Engineering,8,135,2.5,Pass,Junior,EMP190101
+221004714,Computer Engineering,10,162,3.4,Very Good,Senior Year,EMP070131
+221004750,Computer Engineering,9,156,3.1,Good,Senior Year,EMP140140
+221004787,Computer Engineering,9,150,2.9,Good,Senior Year,EMP060151
+221004807,Computer Engineering,9,150,3.1,Good,Senior Year,EMP060151
+221004830,Computer Engineering,9,156,3.2,Good,Senior Year,EMP060151
+221004862,Computer Engineering,8,132,2.8,Good,Junior,EMP060151
+221004897,Computer Engineering,9,156,3.0,Good,Senior Year,EMP060170
+221004908,Computer Engineering,9,147,3.1,Good,Senior Year,EMP170158
+221004912,Computer Engineering,9,147,3.6,Very Good,Senior Year,EMP070131
+221004943,Computer Engineering,9,159,3.2,Good,Senior Year,EMP140146
+221004974,Computer Engineering,10,165,3.8,Excellent,Senior Year,EMP060151
+221004990,Computer Engineering,8,141,2.9,Good,Junior,EMP060151
+221005020,Computer Engineering,9,150,3.1,Good,Senior Year,EMP080135
+221005040,Computer Engineering,5,84,1.8,Academic Probation (1st Warning),Junior,EMP060170
+221005069,Computer Engineering,9,153,3.3,Very Good,Senior Year,EMP060133
+221005096,Computer Engineering,8,135,2.4,Pass,Junior,EMP060151
+221005107,Computer Engineering,8,138,2.9,Good,Junior,EMP140146
+221005136,Computer Engineering,9,150,3.7,Excellent,Senior Year,EMP080129
+221005170,Computer Engineering,8,132,2.3,Pass,Junior,EMP140146
+221005203,Computer Engineering,9,147,3.7,Excellent,Senior Year,EMP060151
+221005204,Computer Engineering,9,159,3.3,Very Good,Senior Year,EMP060151
+221005240,Computer Engineering,9,153,3.1,Good,Senior Year,EMP060133
+221005265,Computer Engineering,9,156,3.1,Good,Senior Year,EMP060133
+221005299,Computer Engineering,9,144,3.2,Good,Senior Year,EMP070131
+221005309,Computer Engineering,8,138,2.5,Pass,Junior,EMP080135
+221005316,Computer Engineering,9,147,3.0,Good,Senior Year,EMP080135
+221005339,Computer Engineering,9,144,2.8,Good,Senior Year,EMP060151
+221005355,Computer Engineering,9,153,3.4,Very Good,Senior Year,EMP080129
+221005372,Computer Engineering,9,147,2.5,Pass,Senior Year,EMP070131
+221005393,Computer Engineering,8,138,2.5,Pass,Junior,EMP170158
+221005395,Computer Engineering,8,135,2.8,Good,Junior,EMP060151
+221005422,Computer Engineering,10,162,2.6,Pass,Senior Year,EMP060151
+221005447,Computer Engineering,8,138,2.6,Pass,Junior,EMP140146
+221005448,Computer Engineering,9,147,3.2,Good,Senior Year,EMP190101
+221005458,Computer Engineering,6,90,2.0,Pass,Junior,EMP140146
+221005491,Computer Engineering,7,111,2.2,Pass,Junior,EMP140140
+221005497,Computer Engineering,6,90,2.0,Pass,Junior,EMP060170
+221005498,Computer Engineering,8,129,2.4,Pass,Junior,EMP080129
+221005535,Computer Engineering,7,114,2.3,Pass,Junior,EMP140140
+221005561,Computer Engineering,9,153,3.6,Very Good,Senior Year,EMP170158
+221005581,Computer Engineering,10,162,3.5,Very Good,Senior Year,EMP190101
+221005591,Computer Engineering,9,153,3.1,Good,Senior Year,EMP140146
+221005622,Computer Engineering,9,156,3.7,Excellent,Senior Year,EMP140146
+221005650,Computer Engineering,8,132,2.6,Pass,Junior,EMP060170
+221005657,Computer Engineering,9,147,2.7,Good,Senior Year,EMP080135
+221005664,Computer Engineering,9,150,3.2,Good,Senior Year,EMP080135
+221005690,Computer Engineering,9,147,3.1,Good,Senior Year,EMP070131
+221005721,Computer Engineering,5,87,2.1,Pass,Junior,EMP060151
+221005750,Computer Engineering,8,138,3.1,Good,Junior,EMP060170
+221005775,Computer Engineering,8,129,2.1,Pass,Junior,EMP060133
+221005802,Computer Engineering,9,144,2.4,Pass,Senior Year,EMP070131
+221005831,Computer Engineering,8,138,2.5,Pass,Junior,EMP140146
+222002123,Computer Engineering,8,141,3.6,Very Good,Junior,EMP140146
+222002124,Computer Engineering,8,126,2.8,Good,Junior,EMP140140
+222002139,Computer Engineering,7,114,2.3,Pass,Junior,EMP060133
+222002166,Computer Engineering,7,123,2.8,Good,Junior,EMP170158
+222002183,Computer Engineering,7,108,2.5,Pass,Junior,EMP170158
+222002212,Computer Engineering,7,117,2.5,Pass,Junior,EMP140146
+222002243,Computer Engineering,7,117,3.2,Good,Junior,EMP140140
+222002251,Computer Engineering,6,90,2.1,Pass,Junior,EMP190101
+222002264,Computer Engineering,5,84,1.8,Academic Probation (1st Warning),Junior,EMP070131
+222002275,Computer Engineering,7,117,2.5,Pass,Junior,EMP190101
+222002297,Computer Engineering,7,120,2.3,Pass,Junior,EMP170158
+222002312,Computer Engineering,7,120,3.6,Very Good,Junior,EMP060151
+222002318,Computer Engineering,7,123,2.6,Pass,Junior,EMP140140
+222002326,Computer Engineering,7,123,2.8,Good,Junior,EMP190101
+222002362,Computer Engineering,7,123,3.0,Good,Junior,EMP060133
+222002370,Computer Engineering,7,117,2.7,Good,Junior,EMP060170
+222002404,Computer Engineering,5,78,2.4,Pass,Junior,EMP170158
+222002433,Computer Engineering,8,126,3.8,Excellent,Junior,EMP060151
+222002454,Computer Engineering,8,129,2.8,Good,Junior,EMP190101
+222002461,Computer Engineering,8,135,2.5,Pass,Junior,EMP060170
+222002463,Computer Engineering,7,111,2.4,Pass,Junior,EMP060151
+222002489,Computer Engineering,8,132,2.6,Pass,Junior,EMP070131
+222002522,Computer Engineering,7,123,3.1,Good,Junior,EMP060151
+222002539,Computer Engineering,9,144,2.6,Pass,Senior Year,EMP060170
+222002557,Computer Engineering,6,96,1.9,Academic Probation (2nd Warning),Junior,EMP060151
+222002559,Computer Engineering,8,129,3.2,Good,Junior,EMP080135
+222002564,Computer Engineering,7,120,3.0,Good,Junior,EMP060151
+222002572,Computer Engineering,8,126,2.9,Good,Junior,EMP060133
+222002593,Computer Engineering,6,99,1.9,Academic Probation (1st Warning),Junior,EMP060151
+222002598,Computer Engineering,7,120,3.0,Good,Junior,EMP060151
+222002604,Computer Engineering,8,129,2.8,Good,Junior,EMP080135
+222002605,Computer Engineering,7,111,2.3,Pass,Junior,EMP060170
+222002627,Computer Engineering,7,114,2.2,Pass,Junior,EMP060170
+222002638,Computer Engineering,7,117,2.2,Pass,Junior,EMP060170
+222002647,Computer Engineering,7,123,2.6,Pass,Junior,EMP060133
+222002658,Computer Engineering,8,138,3.2,Good,Junior,EMP060170
+222002671,Computer Engineering,7,111,3.3,Very Good,Junior,EMP190101
+231003224,Computer Engineering,7,111,3.6,Very Good,Junior,EMP060170
+231003259,Computer Engineering,7,111,2.4,Pass,Junior,EMP140146
+231003278,Computer Engineering,6,99,3.1,Good,Junior,EMP190101
+231003304,Computer Engineering,5,81,2.2,Pass,Junior,EMP060133
+231003333,Computer Engineering,6,102,3.1,Good,Junior,EMP060170
+231003352,Computer Engineering,7,111,3.4,Very Good,Junior,EMP140146
+231003379,Computer Engineering,7,111,2.9,Good,Junior,EMP060151
+231003412,Computer Engineering,6,93,2.3,Pass,Junior,EMP080135
+231003433,Computer Engineering,7,111,2.2,Pass,Junior,EMP140146
+231003461,Computer Engineering,6,96,2.0,Pass,Junior,EMP080135
+231003464,Computer Engineering,6,93,3.1,Good,Junior,EMP140140
+231003481,Computer Engineering,6,93,2.9,Good,Junior,EMP060133
+231003506,Computer Engineering,6,96,2.4,Pass,Junior,EMP060151
+231003522,Computer Engineering,6,105,3.0,Good,Junior,EMP060133
+231003555,Computer Engineering,7,108,2.7,Good,Junior,EMP190101
+231003559,Computer Engineering,5,81,2.0,Pass,Junior,EMP170158
+231003563,Computer Engineering,7,114,3.0,Good,Junior,EMP060133
+231003578,Computer Engineering,6,99,2.4,Pass,Junior,EMP080129
+231003581,Computer Engineering,5,75,2.0,Pass,Junior,EMP080129
+231003589,Computer Engineering,7,111,3.1,Good,Junior,EMP080129
+231003592,Computer Engineering,6,99,2.6,Pass,Junior,EMP060133
+231003613,Computer Engineering,5,84,2.4,Pass,Junior,EMP070131
+231003627,Computer Engineering,7,120,3.7,Excellent,Junior,EMP140146
+231003650,Computer Engineering,7,114,2.8,Good,Junior,EMP140146
+231003670,Computer Engineering,7,108,3.6,Very Good,Junior,EMP060151
+231003674,Computer Engineering,7,120,2.8,Good,Junior,EMP060170
+231003697,Computer Engineering,7,114,3.0,Good,Junior,EMP060170
+231003710,Computer Engineering,7,108,2.9,Good,Junior,EMP190101
+231003716,Computer Engineering,6,90,2.2,Pass,Junior,EMP080135
+231003719,Computer Engineering,6,93,2.7,Good,Junior,EMP140140
+231003736,Computer Engineering,6,99,2.3,Pass,Junior,EMP170158
+231003753,Computer Engineering,7,114,3.6,Very Good,Junior,EMP080135
+231003773,Computer Engineering,6,105,2.6,Pass,Junior,EMP140146
+231003792,Computer Engineering,7,111,2.9,Good,Junior,EMP140146
+231003828,Computer Engineering,7,108,2.9,Good,Junior,EMP140146
+231003853,Computer Engineering,7,108,3.4,Very Good,Junior,EMP080129
+231003884,Computer Engineering,7,111,2.6,Pass,Junior,EMP170158
+231003904,Computer Engineering,7,117,3.4,Very Good,Junior,EMP080135
+231003918,Computer Engineering,7,111,3.7,Excellent,Junior,EMP080129
+231003929,Computer Engineering,7,114,2.7,Good,Junior,EMP060151
+231003945,Computer Engineering,6,105,2.6,Pass,Junior,EMP060133
+231003968,Computer Engineering,7,111,2.8,Good,Junior,EMP080129
+231003999,Computer Engineering,7,108,2.3,Pass,Junior,EMP060133
+231004020,Computer Engineering,6,105,2.5,Pass,Junior,EMP060133
+231004039,Computer Engineering,6,99,2.7,Good,Junior,EMP070131
+231004043,Computer Engineering,7,114,3.3,Very Good,Junior,EMP190101
+231004055,Computer Engineering,5,84,2.5,Pass,Junior,EMP080129
+231004068,Computer Engineering,7,120,3.1,Good,Junior,EMP060151
+231004092,Computer Engineering,7,114,2.5,Pass,Junior,EMP140146
+231004103,Computer Engineering,7,114,2.4,Pass,Junior,EMP080129
+231004139,Computer Engineering,7,108,3.3,Very Good,Junior,EMP060151
+231004176,Computer Engineering,7,114,2.6,Pass,Junior,EMP140140
+231004193,Computer Engineering,6,99,2.3,Pass,Junior,EMP080129
+231004218,Computer Engineering,7,117,3.2,Good,Junior,EMP060151
+231004249,Computer Engineering,7,108,3.3,Very Good,Junior,EMP190101
+231004253,Computer Engineering,7,114,3.7,Excellent,Junior,EMP080135
+231004277,Computer Engineering,7,111,3.5,Very Good,Junior,EMP060151
+231004286,Computer Engineering,7,114,2.7,Good,Junior,EMP060151
+231004287,Computer Engineering,7,111,3.0,Good,Junior,EMP080135
+231004288,Computer Engineering,7,117,3.6,Very Good,Junior,EMP140146
+231004321,Computer Engineering,7,108,3.2,Good,Junior,EMP140140
+231004326,Computer Engineering,6,99,2.4,Pass,Junior,EMP060151
+231004339,Computer Engineering,4,57,1.9,Academic Probation (2nd Warning),Sophomore,EMP140146
+231004350,Computer Engineering,7,117,2.8,Good,Junior,EMP080135
+231004369,Computer Engineering,6,105,3.4,Very Good,Junior,EMP060170
+231004382,Computer Engineering,7,108,3.3,Very Good,Junior,EMP140140
+231004411,Computer Engineering,5,75,2.2,Pass,Junior,EMP080135
+231004419,Computer Engineering,6,90,2.0,Pass,Junior,EMP140146
+231004443,Computer Engineering,6,102,3.0,Good,Junior,EMP140146
+231004472,Computer Engineering,6,105,2.9,Good,Junior,EMP190101
+231004475,Computer Engineering,5,87,2.1,Pass,Junior,EMP060151
+231004500,Computer Engineering,5,87,2.2,Pass,Junior,EMP060170
+231004505,Computer Engineering,7,114,3.2,Good,Junior,EMP080129
+231004521,Computer Engineering,7,111,3.5,Very Good,Junior,EMP080129
+231004535,Computer Engineering,6,90,2.1,Pass,Junior,EMP060170
+231004567,Computer Engineering,6,93,2.5,Pass,Junior,EMP070131
+231004594,Computer Engineering,7,108,2.6,Pass,Junior,EMP170158
+231004609,Computer Engineering,7,108,2.5,Pass,Junior,EMP060151
+231004617,Computer Engineering,7,120,2.8,Good,Junior,EMP140146
+231004652,Computer Engineering,7,114,3.7,Excellent,Junior,EMP170158
+231004681,Computer Engineering,7,108,2.3,Pass,Junior,EMP190101
+231004693,Computer Engineering,6,96,2.4,Pass,Junior,EMP060151
+231004723,Computer Engineering,6,99,2.5,Pass,Junior,EMP080129
+231004754,Computer Engineering,5,84,2.3,Pass,Junior,EMP190101
+231004760,Computer Engineering,7,114,2.9,Good,Junior,EMP080135
+231004787,Computer Engineering,7,108,2.9,Good,Junior,EMP070131
+231004806,Computer Engineering,7,111,2.8,Good,Junior,EMP170158
+231004842,Computer Engineering,7,111,3.3,Very Good,Junior,EMP070131
+231004872,Computer Engineering,7,108,2.7,Good,Junior,EMP060170
+231004873,Computer Engineering,6,96,2.3,Pass,Junior,EMP170158
+231004904,Computer Engineering,6,102,2.6,Pass,Junior,EMP070131
+231004906,Computer Engineering,7,114,2.9,Good,Junior,EMP190101
+231004937,Computer Engineering,6,90,2.0,Pass,Junior,EMP080135
+231004969,Computer Engineering,6,90,2.4,Pass,Junior,EMP060151
+231004986,Computer Engineering,7,120,2.9,Good,Junior,EMP060133
+231004997,Computer Engineering,6,105,2.4,Pass,Junior,EMP140146
+231005004,Computer Engineering,5,87,2.0,Pass,Junior,EMP060170
+231005010,Computer Engineering,7,120,3.1,Good,Junior,EMP060151
+231005024,Computer Engineering,7,117,2.6,Pass,Junior,EMP080129
+231005041,Computer Engineering,6,96,2.5,Pass,Junior,EMP140140
+231005078,Computer Engineering,6,99,2.6,Pass,Junior,EMP140140
+231005085,Computer Engineering,7,123,3.1,Good,Junior,EMP080129
+231005098,Computer Engineering,6,90,2.1,Pass,Junior,EMP190101
+231005123,Computer Engineering,7,111,3.6,Very Good,Junior,EMP170158
+231005146,Computer Engineering,6,105,3.0,Good,Junior,EMP170158
+231005175,Computer Engineering,7,108,3.2,Good,Junior,EMP080129
+231005212,Computer Engineering,7,117,2.9,Good,Junior,EMP170158
+231005215,Computer Engineering,6,99,2.5,Pass,Junior,EMP080135
+231005220,Computer Engineering,7,114,3.4,Very Good,Junior,EMP060133
+231005231,Computer Engineering,7,123,3.4,Very Good,Junior,EMP060170
+231005264,Computer Engineering,7,117,3.5,Very Good,Junior,EMP060133
+231005298,Computer Engineering,7,111,3.2,Good,Junior,EMP170158
+231005325,Computer Engineering,5,78,2.1,Pass,Junior,EMP060170
+231005342,Computer Engineering,7,114,3.8,Excellent,Junior,EMP060151
+231005354,Computer Engineering,6,90,2.5,Pass,Junior,EMP140146
+232003972,Computer Engineering,6,99,2.7,Good,Junior,EMP060151
+232003973,Computer Engineering,4,60,2.1,Pass,Sophomore,EMP070131
+232004001,Computer Engineering,6,99,2.9,Good,Junior,EMP080129
+232004017,Computer Engineering,6,93,3.3,Very Good,Junior,EMP190101
+232004045,Computer Engineering,6,90,3.2,Good,Junior,EMP080135
+232004052,Computer Engineering,6,90,3.3,Very Good,Junior,EMP170158
+232004061,Computer Engineering,5,87,3.0,Good,Junior,EMP140146
+232004081,Computer Engineering,6,93,3.8,Excellent,Junior,EMP140140
+232004092,Computer Engineering,5,72,2.2,Pass,Junior,EMP070131
+232004097,Computer Engineering,6,102,3.5,Very Good,Junior,EMP070131
+232004114,Computer Engineering,5,78,2.5,Pass,Junior,EMP140140
+232004126,Computer Engineering,6,99,3.3,Very Good,Junior,EMP080135
+232004148,Computer Engineering,6,96,2.9,Good,Junior,EMP140146
+232004156,Computer Engineering,6,99,3.1,Good,Junior,EMP060133
+232004164,Computer Engineering,6,90,3.4,Very Good,Junior,EMP080129
+232004182,Computer Engineering,6,93,2.2,Pass,Junior,EMP140140
+232004205,Computer Engineering,6,99,2.9,Good,Junior,EMP190101
+232004236,Computer Engineering,6,93,2.8,Good,Junior,EMP190101
+232004238,Computer Engineering,6,90,2.4,Pass,Junior,EMP070131
+232004250,Computer Engineering,5,84,2.8,Good,Junior,EMP140140
+232004263,Computer Engineering,6,90,3.4,Very Good,Junior,EMP060151
+232004279,Computer Engineering,6,96,3.0,Good,Junior,EMP060151
+232004300,Computer Engineering,6,93,3.3,Very Good,Junior,EMP070131
+232004325,Computer Engineering,6,90,3.6,Very Good,Junior,EMP060133
+232004359,Computer Engineering,6,93,2.6,Pass,Junior,EMP060170
+232004395,Computer Engineering,6,99,2.3,Pass,Junior,EMP060170
+232004426,Computer Engineering,6,96,3.1,Good,Junior,EMP080129
+232004463,Computer Engineering,5,81,2.4,Pass,Junior,EMP080129
+232004485,Computer Engineering,6,93,2.3,Pass,Junior,EMP060170
+232004516,Computer Engineering,5,84,2.0,Pass,Junior,EMP080129
+232004537,Computer Engineering,6,93,3.7,Excellent,Junior,EMP140140
+232004571,Computer Engineering,6,102,3.7,Excellent,Junior,EMP060170
+232004590,Computer Engineering,5,72,1.9,Academic Probation (1st Warning),Junior,EMP190101
+232004616,Computer Engineering,5,72,2.1,Pass,Junior,EMP140140
+232004625,Computer Engineering,5,81,2.2,Pass,Junior,EMP190101
+232004639,Computer Engineering,5,84,3.1,Good,Junior,EMP140140
+232004655,Computer Engineering,4,66,2.3,Pass,Sophomore,EMP070131
+232004686,Computer Engineering,5,87,2.7,Good,Junior,EMP140140
+232004719,Computer Engineering,4,60,2.1,Pass,Sophomore,EMP080135
+232004725,Computer Engineering,6,96,2.6,Pass,Junior,EMP060133
+232004732,Computer Engineering,6,90,2.7,Good,Junior,EMP170158
+232004768,Computer Engineering,5,72,2.2,Pass,Junior,EMP140140
+232004785,Computer Engineering,6,90,3.4,Very Good,Junior,EMP140140
+232004794,Computer Engineering,6,93,3.3,Very Good,Junior,EMP140140
+232004802,Computer Engineering,5,78,2.4,Pass,Junior,EMP080129
+232004819,Computer Engineering,5,78,2.7,Good,Junior,EMP060151
+232004824,Computer Engineering,5,81,2.1,Pass,Junior,EMP060170
+232004828,Computer Engineering,6,90,3.4,Very Good,Junior,EMP060133
+232004850,Computer Engineering,6,93,3.4,Very Good,Junior,EMP170158
+232004858,Computer Engineering,4,63,2.3,Pass,Sophomore,EMP170158
+241003119,Computer Engineering,4,63,2.4,Pass,Sophomore,EMP140146
+241003154,Computer Engineering,5,75,3.4,Very Good,Junior,EMP140140
+241003179,Computer Engineering,4,69,3.7,Excellent,Sophomore,EMP080135
+241003201,Computer Engineering,4,57,2.1,Pass,Sophomore,EMP080129
+241003210,Computer Engineering,5,75,3.2,Good,Junior,EMP070131
+241003217,Computer Engineering,5,78,3.7,Excellent,Junior,EMP060170
+241003251,Computer Engineering,4,66,3.4,Very Good,Sophomore,EMP060151
+241003265,Computer Engineering,5,75,3.2,Good,Junior,EMP170158
+241003289,Computer Engineering,4,66,2.4,Pass,Sophomore,EMP140140
+241003291,Computer Engineering,4,66,3.4,Very Good,Sophomore,EMP140140
+241003322,Computer Engineering,4,69,2.7,Good,Sophomore,EMP190101
+241003324,Computer Engineering,4,60,2.2,Pass,Sophomore,EMP060133
+241003354,Computer Engineering,4,60,3.2,Good,Sophomore,EMP140140
+241003376,Computer Engineering,5,78,2.6,Pass,Junior,EMP060133
+241003413,Computer Engineering,5,81,3.3,Very Good,Junior,EMP080129
+241003429,Computer Engineering,5,72,3.4,Very Good,Junior,EMP060133
+241003464,Computer Engineering,5,72,2.4,Pass,Junior,EMP080129
+241003466,Computer Engineering,3,51,2.1,Pass,Sophomore,EMP170158
+241003491,Computer Engineering,4,54,2.4,Pass,Sophomore,EMP140140
+241003519,Computer Engineering,3,42,1.9,Academic Probation (2nd Warning),Sophomore,EMP060133
+241003535,Computer Engineering,4,66,3.1,Good,Sophomore,EMP080129
+241003551,Computer Engineering,4,60,3.2,Good,Sophomore,EMP190101
+241003560,Computer Engineering,3,48,2.2,Pass,Sophomore,EMP080129
+241003586,Computer Engineering,4,54,2.0,Pass,Sophomore,EMP140140
+241003613,Computer Engineering,4,69,2.6,Pass,Sophomore,EMP060133
+241003647,Computer Engineering,5,72,3.5,Very Good,Junior,EMP140140
+241003681,Computer Engineering,4,54,2.2,Pass,Sophomore,EMP170158
+241003686,Computer Engineering,5,75,2.7,Good,Junior,EMP140140
+241003709,Computer Engineering,5,72,2.9,Good,Junior,EMP140140
+241003719,Computer Engineering,5,81,2.9,Good,Junior,EMP140140
+241003736,Computer Engineering,5,72,3.5,Very Good,Junior,EMP060133
+241003770,Computer Engineering,4,60,3.0,Good,Sophomore,EMP080135
+241003781,Computer Engineering,5,81,3.6,Very Good,Junior,EMP060133
+241003818,Computer Engineering,4,69,2.7,Good,Sophomore,EMP170158
+241003853,Computer Engineering,4,57,2.0,Pass,Sophomore,EMP140146
+241003879,Computer Engineering,5,75,2.6,Pass,Junior,EMP140140
+241003904,Computer Engineering,3,45,2.0,Pass,Sophomore,EMP060133
+241003937,Computer Engineering,3,48,1.7,Academic Probation (2nd Warning),Sophomore,EMP190101
+241003948,Computer Engineering,5,72,2.8,Good,Junior,EMP080129
+241003953,Computer Engineering,3,51,2.3,Pass,Sophomore,EMP070131
+241003968,Computer Engineering,4,63,2.2,Pass,Sophomore,EMP140146
+241003990,Computer Engineering,4,63,1.8,Academic Probation (1st Warning),Sophomore,EMP080135
+241004000,Computer Engineering,5,75,2.5,Pass,Junior,EMP060133
+241004006,Computer Engineering,5,78,3.4,Very Good,Junior,EMP170158
+241004042,Computer Engineering,4,66,2.4,Pass,Sophomore,EMP140146
+241004045,Computer Engineering,5,72,2.8,Good,Junior,EMP140146
+241004054,Computer Engineering,5,78,3.1,Good,Junior,EMP190101
+241004064,Computer Engineering,5,78,3.0,Good,Junior,EMP170158
+241004075,Computer Engineering,4,60,2.5,Pass,Sophomore,EMP140146
+241004111,Computer Engineering,5,72,3.4,Very Good,Junior,EMP190101
+241004137,Computer Engineering,5,75,2.9,Good,Junior,EMP060133
+241004144,Computer Engineering,3,51,2.1,Pass,Sophomore,EMP060151
+241004170,Computer Engineering,5,78,3.4,Very Good,Junior,EMP060133
+241004177,Computer Engineering,5,72,2.8,Good,Junior,EMP170158
+241004182,Computer Engineering,5,75,2.5,Pass,Junior,EMP060133
+241004216,Computer Engineering,4,63,2.4,Pass,Sophomore,EMP060151
+241004243,Computer Engineering,5,72,3.1,Good,Junior,EMP060170
+241004280,Computer Engineering,5,78,3.0,Good,Junior,EMP060151
+241004299,Computer Engineering,4,63,1.7,Academic Probation (1st Warning),Sophomore,EMP060170
+241004316,Computer Engineering,5,72,2.6,Pass,Junior,EMP190101
+241004353,Computer Engineering,5,84,2.8,Good,Junior,EMP060151
+241004363,Computer Engineering,4,57,2.7,Good,Sophomore,EMP070131
+241004395,Computer Engineering,5,75,2.5,Pass,Junior,EMP190101
+241004402,Computer Engineering,5,81,3.1,Good,Junior,EMP060151
+241004439,Computer Engineering,3,48,2.1,Pass,Sophomore,EMP070131
+241004441,Computer Engineering,4,66,3.3,Very Good,Sophomore,EMP060151
+241004448,Computer Engineering,4,69,2.7,Good,Sophomore,EMP170158
+241004449,Computer Engineering,5,78,2.8,Good,Junior,EMP060151
+241004456,Computer Engineering,5,75,3.2,Good,Junior,EMP170158
+241004474,Computer Engineering,4,69,2.8,Good,Sophomore,EMP070131
+241004500,Computer Engineering,4,66,2.2,Pass,Sophomore,EMP060170
+241004530,Computer Engineering,5,81,3.4,Very Good,Junior,EMP080129
+241004541,Computer Engineering,4,69,2.6,Pass,Sophomore,EMP060151
+241004556,Computer Engineering,5,78,2.8,Good,Junior,EMP060151
+241004561,Computer Engineering,5,81,3.3,Very Good,Junior,EMP140146
+241004568,Computer Engineering,5,87,3.6,Very Good,Junior,EMP080129
+241004583,Computer Engineering,4,57,2.9,Good,Sophomore,EMP080135
+241004588,Computer Engineering,5,72,2.8,Good,Junior,EMP170158
+241004595,Computer Engineering,5,78,2.8,Good,Junior,EMP060133
+241004609,Computer Engineering,5,81,3.5,Very Good,Junior,EMP140140
+241004631,Computer Engineering,5,75,3.7,Excellent,Junior,EMP190101
+241004668,Computer Engineering,5,72,3.7,Excellent,Junior,EMP060151
+241004674,Computer Engineering,4,69,3.3,Very Good,Sophomore,EMP140140
+241004688,Computer Engineering,3,37,1.7,Academic Probation (2nd Warning),Sophomore,EMP080129
+241004700,Computer Engineering,5,72,2.9,Good,Junior,EMP080135
+241004707,Computer Engineering,4,63,1.9,Academic Probation (2nd Warning),Sophomore,EMP190101
+241004725,Computer Engineering,5,75,2.9,Good,Junior,EMP060170
+241004735,Computer Engineering,3,42,1.9,Academic Probation (1st Warning),Sophomore,EMP080135
+241004744,Computer Engineering,5,72,2.9,Good,Junior,EMP060133
+241004781,Computer Engineering,5,78,2.8,Good,Junior,EMP170158
+241004798,Computer Engineering,3,48,2.3,Pass,Sophomore,EMP140140
+241004814,Computer Engineering,4,54,1.9,Academic Probation (1st Warning),Sophomore,EMP190101
+241004831,Computer Engineering,5,72,3.3,Very Good,Junior,EMP170158
+241004866,Computer Engineering,3,51,2.6,Pass,Sophomore,EMP080129
+241004903,Computer Engineering,5,75,2.3,Pass,Junior,EMP140146
+241004940,Computer Engineering,5,75,3.0,Good,Junior,EMP080129
+241004970,Computer Engineering,5,75,2.8,Good,Junior,EMP140146
+241005000,Computer Engineering,4,63,2.2,Pass,Sophomore,EMP080135
+241005034,Computer Engineering,5,81,3.4,Very Good,Junior,EMP080129
+241005040,Computer Engineering,5,75,2.9,Good,Junior,EMP060151
+241005048,Computer Engineering,4,57,2.5,Pass,Sophomore,EMP140140
+241005059,Computer Engineering,4,69,3.6,Very Good,Sophomore,EMP140146
+241005085,Computer Engineering,5,81,3.6,Very Good,Junior,EMP060133
+241005092,Computer Engineering,4,69,2.2,Pass,Sophomore,EMP190101
+241005103,Computer Engineering,5,72,2.9,Good,Junior,EMP060170
+241005111,Computer Engineering,5,84,2.7,Good,Junior,EMP080135
+241005138,Computer Engineering,5,78,3.5,Very Good,Junior,EMP060170
+241005171,Computer Engineering,4,63,3.1,Good,Sophomore,EMP140140
+241005186,Computer Engineering,5,78,3.0,Good,Junior,EMP060170
+241005193,Computer Engineering,3,48,2.1,Pass,Sophomore,EMP080135
+241005199,Computer Engineering,5,81,3.8,Excellent,Junior,EMP060170
+241005223,Computer Engineering,4,57,2.2,Pass,Sophomore,EMP060151
+241005260,Computer Engineering,4,69,3.3,Very Good,Sophomore,EMP070131
+241005287,Computer Engineering,4,60,2.5,Pass,Sophomore,EMP060151
+241005319,Computer Engineering,4,69,2.9,Good,Sophomore,EMP060170
+241005342,Computer Engineering,5,81,2.8,Good,Junior,EMP060170
+241005351,Computer Engineering,4,66,2.3,Pass,Sophomore,EMP170158
+241005353,Computer Engineering,4,63,2.7,Good,Sophomore,EMP060133
+241005361,Computer Engineering,5,78,3.1,Good,Junior,EMP190101
+241005387,Computer Engineering,5,75,3.3,Very Good,Junior,EMP140140
+241005422,Computer Engineering,4,60,2.7,Good,Sophomore,EMP140140
+241005431,Computer Engineering,5,75,3.2,Good,Junior,EMP070131
+241005456,Computer Engineering,3,42,2.1,Pass,Sophomore,EMP140146
+241005474,Computer Engineering,4,69,3.0,Good,Sophomore,EMP140140
+241005481,Computer Engineering,4,69,3.1,Good,Sophomore,EMP190101
+241005505,Computer Engineering,3,51,2.2,Pass,Sophomore,EMP060133
+241005524,Computer Engineering,5,72,3.4,Very Good,Junior,EMP060170
+241005531,Computer Engineering,4,57,2.4,Pass,Sophomore,EMP080129
+241005559,Computer Engineering,5,75,3.0,Good,Junior,EMP060170
+241005570,Computer Engineering,4,63,2.5,Pass,Sophomore,EMP080135
+241005577,Computer Engineering,4,57,2.5,Pass,Sophomore,EMP070131
+241005581,Computer Engineering,4,54,2.4,Pass,Sophomore,EMP170158
+242002469,Computer Engineering,4,54,2.9,Good,Sophomore,EMP080129
+242002492,Computer Engineering,3,45,2.3,Pass,Sophomore,EMP140140
+242002502,Computer Engineering,4,57,3.0,Good,Sophomore,EMP140140
+242002513,Computer Engineering,4,60,2.7,Good,Sophomore,EMP060133
+242002550,Computer Engineering,4,57,2.5,Pass,Sophomore,EMP190101
+242002586,Computer Engineering,4,54,3.0,Good,Sophomore,EMP060133
+242002588,Computer Engineering,3,51,2.6,Pass,Sophomore,EMP060151
+242002613,Computer Engineering,3,48,2.8,Good,Sophomore,EMP060170
+242002626,Computer Engineering,3,39,2.5,Pass,Sophomore,EMP080135
+242002652,Computer Engineering,3,39,2.3,Pass,Sophomore,EMP170158
+242002682,Computer Engineering,3,51,2.7,Good,Sophomore,EMP080129
+242002698,Computer Engineering,2,28,1.5,Academic Probation (2nd Warning),Freshman,EMP060151
+242002701,Computer Engineering,4,54,3.6,Very Good,Sophomore,EMP060133
+242002709,Computer Engineering,4,57,3.5,Very Good,Sophomore,EMP070131
+242002724,Computer Engineering,3,42,2.7,Good,Sophomore,EMP190101
+242002750,Computer Engineering,3,37,2.5,Pass,Sophomore,EMP060133
+242002782,Computer Engineering,4,63,3.6,Very Good,Sophomore,EMP070131
+242002806,Computer Engineering,3,51,2.8,Good,Sophomore,EMP190101
+242002814,Computer Engineering,4,54,3.2,Good,Sophomore,EMP080135
+242002839,Computer Engineering,3,51,2.5,Pass,Sophomore,EMP060133
+242002870,Computer Engineering,4,57,2.8,Good,Sophomore,EMP140140
+242002889,Computer Engineering,4,63,2.7,Good,Sophomore,EMP170158
+242002924,Computer Engineering,4,63,2.5,Pass,Sophomore,EMP190101
+242002938,Computer Engineering,4,63,3.4,Very Good,Sophomore,EMP140146
+242002971,Computer Engineering,4,54,2.9,Good,Sophomore,EMP070131
+242002983,Computer Engineering,4,54,3.0,Good,Sophomore,EMP060133
+242002984,Computer Engineering,3,37,1.7,Academic Probation (2nd Warning),Sophomore,EMP170158
+242003016,Computer Engineering,3,51,2.7,Good,Sophomore,EMP170158
+242003029,Computer Engineering,2,34,2.0,Pass,Freshman,EMP140146
+242003033,Computer Engineering,3,51,2.5,Pass,Sophomore,EMP060151
+242003065,Computer Engineering,4,57,2.9,Good,Sophomore,EMP070131
+242003085,Computer Engineering,4,60,3.3,Very Good,Sophomore,EMP080135
+242003095,Computer Engineering,4,54,2.5,Pass,Sophomore,EMP080135
+242003120,Computer Engineering,3,48,3.1,Good,Sophomore,EMP140140
+242003134,Computer Engineering,4,54,3.1,Good,Sophomore,EMP060170
+242003167,Computer Engineering,4,57,2.4,Pass,Sophomore,EMP060170
+242003199,Computer Engineering,3,45,2.1,Pass,Sophomore,EMP070131
+242003221,Computer Engineering,3,51,2.6,Pass,Sophomore,EMP170158
+242003223,Computer Engineering,3,39,1.8,Academic Probation (2nd Warning),Sophomore,EMP080135
+242003229,Computer Engineering,3,48,2.1,Pass,Sophomore,EMP140146
+242003258,Computer Engineering,4,54,3.2,Good,Sophomore,EMP060133
+242003271,Computer Engineering,4,54,3.0,Good,Sophomore,EMP140140
+242003308,Computer Engineering,3,39,2.4,Pass,Sophomore,EMP140140
+242003331,Computer Engineering,3,48,3.0,Good,Sophomore,EMP070131
+242003335,Computer Engineering,4,54,2.5,Pass,Sophomore,EMP070131
+251004152,Computer Engineering,3,36,2.1,Pass,Sophomore,EMP140140
+251004178,Computer Engineering,2,33,2.5,Pass,Freshman,EMP170158
+251004194,Computer Engineering,2,33,3.9,Excellent,Freshman,EMP190101
+251004206,Computer Engineering,3,36,2.9,Good,Sophomore,EMP140140
+251004226,Computer Engineering,2,25,1.8,Academic Probation (2nd Warning),Freshman,EMP060151
+251004259,Computer Engineering,3,39,3.3,Very Good,Sophomore,EMP140146
+251004261,Computer Engineering,3,42,2.9,Good,Sophomore,EMP190101
+251004294,Computer Engineering,3,39,3.2,Good,Sophomore,EMP060151
+251004324,Computer Engineering,2,31,2.3,Pass,Freshman,EMP080135
+251004346,Computer Engineering,3,36,2.3,Pass,Sophomore,EMP060151
+251004377,Computer Engineering,3,39,3.0,Good,Sophomore,EMP170158
+251004395,Computer Engineering,3,36,2.9,Good,Sophomore,EMP140140
+251004419,Computer Engineering,2,34,2.9,Good,Freshman,EMP140146
+251004431,Computer Engineering,3,36,3.5,Very Good,Sophomore,EMP190101
+251004457,Computer Engineering,2,18,2.0,Pass,Freshman,EMP060170
+251004469,Computer Engineering,2,33,2.7,Good,Freshman,EMP140146
+251004485,Computer Engineering,2,33,2.8,Good,Freshman,EMP190101
+251004505,Computer Engineering,2,26,1.7,Academic Probation (1st Warning),Freshman,EMP060151
+251004508,Computer Engineering,2,33,2.9,Good,Freshman,EMP060170
+251004543,Computer Engineering,1,8,0.7,Academic Probation (2nd Warning),Freshman,EMP060133
+251004568,Computer Engineering,3,42,2.9,Good,Sophomore,EMP060170
+251004589,Computer Engineering,2,21,1.4,Academic Probation (2nd Warning),Freshman,EMP060151
+251004602,Computer Engineering,3,36,2.2,Pass,Sophomore,EMP070131
+251004618,Computer Engineering,3,42,2.6,Pass,Sophomore,EMP080129
+251004634,Computer Engineering,2,24,2.3,Pass,Freshman,EMP080129
+251004668,Computer Engineering,3,42,2.6,Pass,Sophomore,EMP140146
+251004687,Computer Engineering,2,33,1.8,Academic Probation (1st Warning),Freshman,EMP080129
+251004691,Computer Engineering,3,36,3.7,Excellent,Sophomore,EMP080135
+251004717,Computer Engineering,3,42,3.1,Good,Sophomore,EMP140146
+251004735,Computer Engineering,2,23,1.5,Academic Probation (2nd Warning),Freshman,EMP060170
+251004758,Computer Engineering,3,39,3.5,Very Good,Sophomore,EMP140146
+251004765,Computer Engineering,2,34,3.2,Good,Freshman,EMP060133
+251004791,Computer Engineering,2,33,2.8,Good,Freshman,EMP060170
+251004814,Computer Engineering,3,39,3.1,Good,Sophomore,EMP060170
+251004835,Computer Engineering,2,23,2.5,Pass,Freshman,EMP190101
+251004837,Computer Engineering,3,42,3.6,Very Good,Sophomore,EMP140146
+251004872,Computer Engineering,2,23,1.7,Academic Probation (2nd Warning),Freshman,EMP190101
+251004875,Computer Engineering,2,26,1.9,Academic Probation (2nd Warning),Freshman,EMP060133
+251004883,Computer Engineering,3,42,3.2,Good,Sophomore,EMP140146
+251004909,Computer Engineering,2,29,1.8,Academic Probation (2nd Warning),Freshman,EMP060170
+251004927,Computer Engineering,3,42,3.5,Very Good,Sophomore,EMP060133
+251004942,Computer Engineering,2,18,1.4,Academic Probation (2nd Warning),Freshman,EMP070131
+251004962,Computer Engineering,3,36,3.5,Very Good,Sophomore,EMP060133
+251004971,Computer Engineering,2,33,2.2,Pass,Freshman,EMP060133
+251004999,Computer Engineering,3,36,2.5,Pass,Sophomore,EMP060133
+251005022,Computer Engineering,2,30,2.3,Pass,Freshman,EMP060170
+251005039,Computer Engineering,2,33,2.7,Good,Freshman,EMP140146
+251005063,Computer Engineering,2,31,1.7,Academic Probation (2nd Warning),Freshman,EMP060133
+251005099,Computer Engineering,3,36,2.3,Pass,Sophomore,EMP170158
+251005100,Computer Engineering,3,39,3.4,Very Good,Sophomore,EMP070131
+251005114,Computer Engineering,2,23,1.9,Academic Probation (2nd Warning),Freshman,EMP170158
+251005148,Computer Engineering,3,36,2.8,Good,Sophomore,EMP060170
+251005179,Computer Engineering,1,15,1.2,Academic Probation (2nd Warning),Freshman,EMP170158
+251005216,Computer Engineering,2,33,2.3,Pass,Freshman,EMP170158
+251005232,Computer Engineering,2,29,2.2,Pass,Freshman,EMP140140
+251005250,Computer Engineering,3,37,2.7,Good,Sophomore,EMP170158
+251005281,Computer Engineering,3,42,2.9,Good,Sophomore,EMP060133
+251005303,Computer Engineering,2,30,2.5,Pass,Freshman,EMP060133
+251005324,Computer Engineering,2,18,1.1,Academic Probation (2nd Warning),Freshman,EMP170158
+251005341,Computer Engineering,3,45,3.3,Very Good,Sophomore,EMP060151
+251005378,Computer Engineering,2,22,1.5,Academic Probation (2nd Warning),Freshman,EMP170158
+251005399,Computer Engineering,2,26,2.3,Pass,Freshman,EMP060170
+251005419,Computer Engineering,2,33,2.3,Pass,Freshman,EMP060133
+251005427,Computer Engineering,2,29,1.9,Academic Probation (2nd Warning),Freshman,EMP060170
+251005443,Computer Engineering,3,36,3.2,Good,Sophomore,EMP170158
+251005476,Computer Engineering,2,29,1.8,Academic Probation (2nd Warning),Freshman,EMP070131
+251005501,Computer Engineering,3,42,3.8,Excellent,Sophomore,EMP080129
+251005529,Computer Engineering,3,39,3.0,Good,Sophomore,EMP060133
+251005542,Computer Engineering,2,23,1.8,Academic Probation (2nd Warning),Freshman,EMP070131
+251005561,Computer Engineering,2,30,2.2,Pass,Freshman,EMP190101
+251005564,Computer Engineering,2,21,2.0,Pass,Freshman,EMP060151
+251005581,Computer Engineering,3,39,3.0,Good,Sophomore,EMP070131
+251005596,Computer Engineering,3,36,2.5,Pass,Sophomore,EMP140146
+251005631,Computer Engineering,3,36,3.5,Very Good,Sophomore,EMP170158
+251005644,Computer Engineering,3,42,2.4,Pass,Sophomore,EMP060133
+251005675,Computer Engineering,3,36,3.5,Very Good,Sophomore,EMP060133
+251005686,Computer Engineering,3,36,2.8,Good,Sophomore,EMP140140
+251005713,Computer Engineering,3,39,2.8,Good,Sophomore,EMP060170
+251005714,Computer Engineering,2,20,1.6,Academic Probation (2nd Warning),Freshman,EMP060133
+251005740,Computer Engineering,2,34,2.8,Good,Freshman,EMP060170
+251005775,Computer Engineering,3,36,3.1,Good,Sophomore,EMP140140
+251005780,Computer Engineering,3,36,2.7,Good,Sophomore,EMP080135
+251005792,Computer Engineering,1,15,1.2,Academic Probation (2nd Warning),Freshman,EMP060133
+251005796,Computer Engineering,3,36,2.6,Pass,Sophomore,EMP080135
+251005799,Computer Engineering,3,42,2.9,Good,Sophomore,EMP080129
+251005810,Computer Engineering,2,33,2.5,Pass,Freshman,EMP060170
+251005837,Computer Engineering,3,36,2.0,Pass,Sophomore,EMP060170
+251005873,Computer Engineering,3,36,3.2,Good,Sophomore,EMP080129
+251005883,Computer Engineering,2,33,3.1,Good,Freshman,EMP060133
+251005898,Computer Engineering,2,33,2.1,Pass,Freshman,EMP070131
+251005919,Computer Engineering,1,13,0.7,Academic Probation (2nd Warning),Freshman,EMP060133
+251005931,Computer Engineering,3,42,3.4,Very Good,Sophomore,EMP140140
+251005961,Computer Engineering,2,33,3.3,Very Good,Freshman,EMP060133
+251005994,Computer Engineering,3,36,2.2,Pass,Sophomore,EMP060170
+251006006,Computer Engineering,3,42,3.5,Very Good,Sophomore,EMP060133
+251006039,Computer Engineering,2,34,2.6,Pass,Freshman,EMP140146
+251006049,Computer Engineering,3,36,2.5,Pass,Sophomore,EMP060170
+251006083,Computer Engineering,3,36,2.4,Pass,Sophomore,EMP170158
+251006119,Computer Engineering,3,39,3.3,Very Good,Sophomore,EMP070131
+251006121,Computer Engineering,3,36,2.9,Good,Sophomore,EMP190101
+251006152,Computer Engineering,3,39,3.3,Very Good,Sophomore,EMP080135
+251006154,Computer Engineering,2,21,2.2,Pass,Freshman,EMP080129
+251006184,Computer Engineering,3,36,3.4,Very Good,Sophomore,EMP060170
+251006185,Computer Engineering,3,36,3.5,Very Good,Sophomore,EMP140146
+251006197,Computer Engineering,3,36,2.2,Pass,Sophomore,EMP080135
+251006212,Computer Engineering,3,36,2.8,Good,Sophomore,EMP060133
+251006227,Computer Engineering,3,36,3.2,Good,Sophomore,EMP060151
+251006263,Computer Engineering,2,20,1.1,Academic Probation (2nd Warning),Freshman,EMP060170
+251006265,Computer Engineering,2,18,2.2,Pass,Freshman,EMP170158
+251006300,Computer Engineering,3,36,2.5,Pass,Sophomore,EMP060151
+251006303,Computer Engineering,2,18,1.9,Academic Probation (2nd Warning),Freshman,EMP170158
+251006331,Computer Engineering,1,15,1.0,Academic Probation (2nd Warning),Freshman,EMP080129
+251006361,Computer Engineering,2,34,2.3,Pass,Freshman,EMP060170
+251006385,Computer Engineering,2,33,2.5,Pass,Freshman,EMP140140
+251006398,Computer Engineering,3,39,2.8,Good,Sophomore,EMP170158
+251006414,Computer Engineering,2,21,1.3,Academic Probation (2nd Warning),Freshman,EMP070131
+251006421,Computer Engineering,3,42,3.7,Excellent,Sophomore,EMP060151
+251006454,Computer Engineering,2,33,2.7,Good,Freshman,EMP070131
+251006484,Computer Engineering,1,16,1.8,Academic Probation (2nd Warning),Freshman,EMP070131
+251006496,Computer Engineering,2,26,2.4,Pass,Freshman,EMP060151
+251006532,Computer Engineering,2,20,2.4,Pass,Freshman,EMP070131
+251006544,Computer Engineering,3,39,3.4,Very Good,Sophomore,EMP060133
+251006565,Computer Engineering,2,23,1.5,Academic Probation (2nd Warning),Freshman,EMP060133
+251006596,Computer Engineering,3,36,3.2,Good,Sophomore,EMP080135
+251006620,Computer Engineering,3,39,3.5,Very Good,Sophomore,EMP060133
+251006644,Computer Engineering,2,23,1.5,Academic Probation (2nd Warning),Freshman,EMP060133
+251006680,Computer Engineering,3,45,3.5,Very Good,Sophomore,EMP140140
+251006684,Computer Engineering,3,36,3.3,Very Good,Sophomore,EMP140140
+251006688,Computer Engineering,2,18,1.6,Academic Probation (2nd Warning),Freshman,EMP190101
+251006706,Computer Engineering,1,15,1.5,Academic Probation (2nd Warning),Freshman,EMP190101
+251006735,Computer Engineering,2,27,1.9,Academic Probation (1st Warning),Freshman,EMP140140
+251006739,Computer Engineering,3,39,3.1,Good,Sophomore,EMP060133
+251006770,Computer Engineering,3,36,2.7,Good,Sophomore,EMP060151
+251006801,Computer Engineering,2,18,1.5,Academic Probation (2nd Warning),Freshman,EMP060151
+251006809,Computer Engineering,2,34,2.9,Good,Freshman,EMP190101
+251006834,Computer Engineering,2,23,2.0,Pass,Freshman,EMP070131
+251006870,Computer Engineering,2,33,2.0,Pass,Freshman,EMP080129
+251006880,Computer Engineering,3,42,2.1,Pass,Sophomore,EMP190101
+251006915,Computer Engineering,3,36,3.4,Very Good,Sophomore,EMP060170
+251006945,Computer Engineering,3,36,2.7,Good,Sophomore,EMP060133
+251006978,Computer Engineering,3,36,2.8,Good,Sophomore,EMP060170
+251007013,Computer Engineering,3,36,2.8,Good,Sophomore,EMP060133
+251007046,Computer Engineering,2,18,1.8,Academic Probation (2nd Warning),Freshman,EMP070131
+251007053,Computer Engineering,2,23,1.5,Academic Probation (2nd Warning),Freshman,EMP140146
+251007060,Computer Engineering,1,9,0.7,Academic Probation (2nd Warning),Freshman,EMP190101
+251007061,Computer Engineering,3,42,3.1,Good,Sophomore,EMP060133
+251007062,Computer Engineering,3,36,3.4,Very Good,Sophomore,EMP060170
+251007073,Computer Engineering,3,42,2.9,Good,Sophomore,EMP060151
+251007095,Computer Engineering,3,36,3.4,Very Good,Sophomore,EMP080135
+251007097,Computer Engineering,2,23,1.8,Academic Probation (1st Warning),Freshman,EMP190101
+251007119,Computer Engineering,2,29,1.7,Academic Probation (2nd Warning),Freshman,EMP080129
+251007150,Computer Engineering,3,36,3.2,Good,Sophomore,EMP190101
+251007154,Computer Engineering,3,39,3.4,Very Good,Sophomore,EMP080135
+251007179,Computer Engineering,2,20,1.6,Academic Probation (2nd Warning),Freshman,EMP060133
+251007208,Computer Engineering,2,30,2.8,Good,Freshman,EMP060151
+251007225,Computer Engineering,2,28,2.0,Pass,Freshman,EMP140140
+251007226,Computer Engineering,2,33,3.0,Good,Freshman,EMP080135
+251007232,Computer Engineering,2,31,1.6,Academic Probation (2nd Warning),Freshman,EMP140146
+251007268,Computer Engineering,3,36,3.4,Very Good,Sophomore,EMP070131
+251007305,Computer Engineering,3,42,3.6,Very Good,Sophomore,EMP140146
+251007307,Computer Engineering,3,36,2.7,Good,Sophomore,EMP080135
+251007322,Computer Engineering,3,36,3.0,Good,Sophomore,EMP080129
+251007347,Computer Engineering,3,39,3.3,Very Good,Sophomore,EMP060170
+251007359,Computer Engineering,2,30,2.2,Pass,Freshman,EMP140146
+251007366,Computer Engineering,3,39,2.7,Good,Sophomore,EMP060133
+251007396,Computer Engineering,3,36,3.4,Very Good,Sophomore,EMP190101
+251007401,Computer Engineering,3,36,3.1,Good,Sophomore,EMP060151
+251007428,Computer Engineering,2,33,2.5,Pass,Freshman,EMP140140
+251007458,Computer Engineering,3,42,2.6,Pass,Sophomore,EMP070131
+251007492,Computer Engineering,3,42,3.0,Good,Sophomore,EMP140146
+251007509,Computer Engineering,3,36,2.8,Good,Sophomore,EMP060133
+251007519,Computer Engineering,2,24,2.0,Pass,Freshman,EMP170158
+251007523,Computer Engineering,2,33,2.2,Pass,Freshman,EMP060170
+251007538,Computer Engineering,3,36,2.5,Pass,Sophomore,EMP060170
+251007558,Computer Engineering,2,33,2.1,Pass,Freshman,EMP140146
+251007578,Computer Engineering,1,13,0.8,Academic Probation (2nd Warning),Freshman,EMP060151
+251007600,Computer Engineering,3,42,2.5,Pass,Sophomore,EMP140140
+251007605,Computer Engineering,2,33,3.1,Good,Freshman,EMP080129
+251007637,Computer Engineering,2,18,3.3,Very Good,Freshman,EMP140140
+251007648,Computer Engineering,3,39,3.2,Good,Sophomore,EMP060170
+251007678,Computer Engineering,1,11,0.7,Academic Probation (2nd Warning),Freshman,EMP060170
+251007686,Computer Engineering,3,36,3.3,Very Good,Sophomore,EMP170158
+251007689,Computer Engineering,3,39,3.0,Good,Sophomore,EMP060170
+251007706,Computer Engineering,3,36,2.3,Pass,Sophomore,EMP070131
+251007735,Computer Engineering,2,33,3.4,Very Good,Freshman,EMP190101
+251007738,Computer Engineering,3,36,3.1,Good,Sophomore,EMP170158
+251007742,Computer Engineering,3,36,2.6,Pass,Sophomore,EMP070131
+251007762,Computer Engineering,2,33,2.7,Good,Freshman,EMP190101
+251007763,Computer Engineering,3,39,2.0,Pass,Sophomore,EMP060151
+251007786,Computer Engineering,2,34,3.4,Very Good,Freshman,EMP080129
+252003476,Computer Engineering,2,21,2.5,Pass,Freshman,EMP060170
+252003501,Computer Engineering,1,12,1.7,Academic Probation (1st Warning),Freshman,EMP060133
+252003531,Computer Engineering,2,24,2.6,Pass,Freshman,EMP170158
+252003534,Computer Engineering,2,18,2.1,Pass,Freshman,EMP140140
+252003539,Computer Engineering,2,18,2.1,Pass,Freshman,EMP190101
+252003574,Computer Engineering,1,15,1.5,Academic Probation (1st Warning),Freshman,EMP060170
+252003577,Computer Engineering,2,24,3.1,Good,Freshman,EMP070131
+252003605,Computer Engineering,2,24,3.1,Good,Freshman,EMP060133
+252003606,Computer Engineering,1,10,1.4,Academic Probation (1st Warning),Freshman,EMP060170
+252003624,Computer Engineering,1,13,1.1,Academic Probation (1st Warning),Freshman,EMP140146
+252003651,Computer Engineering,2,18,3.9,Excellent,Freshman,EMP080129
+252003679,Computer Engineering,2,18,3.3,Very Good,Freshman,EMP140140
+252003689,Computer Engineering,1,12,1.4,Academic Probation (1st Warning),Freshman,EMP070131
+252003703,Computer Engineering,2,24,3.1,Good,Freshman,EMP080129
+252003733,Computer Engineering,2,24,2.9,Good,Freshman,EMP190101
+252003735,Computer Engineering,2,18,2.8,Good,Freshman,EMP070131
+252003739,Computer Engineering,2,18,1.8,Academic Probation (1st Warning),Freshman,EMP170158
+252003764,Computer Engineering,2,18,1.7,Academic Probation (1st Warning),Freshman,EMP060170
+252003781,Computer Engineering,1,14,1.2,Academic Probation (1st Warning),Freshman,EMP190101
+252003817,Computer Engineering,2,18,2.7,Good,Freshman,EMP060133
+252003841,Computer Engineering,2,24,3.8,Excellent,Freshman,EMP140146
+252003858,Computer Engineering,2,21,1.7,Academic Probation (1st Warning),Freshman,EMP070131
+252003864,Computer Engineering,1,5,0.3,Academic Probation (1st Warning),Freshman,EMP080129
+252003890,Computer Engineering,1,15,2.1,Pass,Freshman,EMP060133
+252003922,Computer Engineering,1,15,2.7,Good,Freshman,EMP140140
+252003951,Computer Engineering,2,21,2.3,Pass,Freshman,EMP060170
+252003964,Computer Engineering,2,18,3.3,Very Good,Freshman,EMP060151
+252003998,Computer Engineering,2,24,2.4,Pass,Freshman,EMP190101
+252004007,Computer Engineering,1,15,2.2,Pass,Freshman,EMP140140
+252004027,Computer Engineering,2,18,3.2,Good,Freshman,EMP080129
+252004038,Computer Engineering,1,15,1.2,Academic Probation (1st Warning),Freshman,EMP140146
+252004070,Computer Engineering,2,18,1.4,Academic Probation (1st Warning),Freshman,EMP140140
+252004098,Computer Engineering,2,18,3.2,Good,Freshman,EMP060170
+252004110,Computer Engineering,1,15,1.7,Academic Probation (1st Warning),Freshman,EMP070131
+252004113,Computer Engineering,2,18,3.2,Good,Freshman,EMP060151
+252004115,Computer Engineering,1,15,1.4,Academic Probation (1st Warning),Freshman,EMP140140
+252004129,Computer Engineering,1,10,0.8,Academic Probation (1st Warning),Freshman,EMP140140
+252004154,Computer Engineering,2,21,2.5,Pass,Freshman,EMP140146
+252004176,Computer Engineering,1,9,1.1,Academic Probation (1st Warning),Freshman,EMP080135
+252004179,Computer Engineering,1,15,1.7,Academic Probation (1st Warning),Freshman,EMP140140
+252004195,Computer Engineering,1,12,1.1,Academic Probation (1st Warning),Freshman,EMP070131
+252004206,Computer Engineering,2,18,3.1,Good,Freshman,EMP140140
+252004209,Computer Engineering,1,7,0.7,Academic Probation (1st Warning),Freshman,EMP190101
+252004234,Computer Engineering,2,24,3.6,Very Good,Freshman,EMP070131
+252004271,Computer Engineering,1,15,2.0,Pass,Freshman,EMP190101
+252004294,Computer Engineering,2,18,2.9,Good,Freshman,EMP140146
+252004324,Computer Engineering,1,16,3.0,Good,Freshman,EMP060151
+252004352,Computer Engineering,2,21,2.8,Good,Freshman,EMP190101
+252004357,Computer Engineering,2,18,2.9,Good,Freshman,EMP190101
+252004362,Computer Engineering,2,24,2.5,Pass,Freshman,EMP060151
+252004365,Computer Engineering,1,10,1.2,Academic Probation (1st Warning),Freshman,EMP060151
+252004369,Computer Engineering,2,21,3.2,Good,Freshman,EMP140146
+252004393,Computer Engineering,2,24,2.6,Pass,Freshman,EMP080129
+252004416,Computer Engineering,2,18,2.1,Pass,Freshman,EMP060151
+252004425,Computer Engineering,2,24,2.3,Pass,Freshman,EMP190101
+252004435,Computer Engineering,1,16,2.7,Good,Freshman,EMP070131
+252004463,Computer Engineering,1,7,0.7,Academic Probation (1st Warning),Freshman,EMP170158
+252004476,Computer Engineering,2,18,2.6,Pass,Freshman,EMP060133
+252004495,Computer Engineering,2,18,1.6,Academic Probation (1st Warning),Freshman,EMP080135
+252004523,Computer Engineering,2,24,2.4,Pass,Freshman,EMP070131
+252004544,Computer Engineering,2,18,3.1,Good,Freshman,EMP140140
+252004572,Computer Engineering,1,15,2.5,Pass,Freshman,EMP060133
+252004579,Computer Engineering,1,10,1.1,Academic Probation (1st Warning),Freshman,EMP080135
+252004586,Computer Engineering,1,16,3.1,Good,Freshman,EMP190101
+252004587,Computer Engineering,1,15,2.1,Pass,Freshman,EMP060151
+252004617,Computer Engineering,1,15,1.8,Academic Probation (1st Warning),Freshman,EMP060170
+252004654,Computer Engineering,2,18,2.6,Pass,Freshman,EMP060151
+252004680,Computer Engineering,1,10,1.0,Academic Probation (1st Warning),Freshman,EMP170158
+252004694,Computer Engineering,2,24,2.6,Pass,Freshman,EMP140146
+252004697,Computer Engineering,1,9,1.2,Academic Probation (1st Warning),Freshman,EMP060170
+252004706,Computer Engineering,1,12,0.9,Academic Probation (1st Warning),Freshman,EMP170158
+252004729,Computer Engineering,1,16,1.9,Academic Probation (1st Warning),Freshman,EMP080129
+252004734,Computer Engineering,1,16,2.3,Pass,Freshman,EMP080129
+252004765,Computer Engineering,2,18,3.2,Good,Freshman,EMP140140
+252004781,Computer Engineering,1,2,0.3,Academic Probation (1st Warning),Freshman,EMP170158
+261001746,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261001749,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261001752,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261001759,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261001766,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261001781,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261001806,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261001812,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP190101
+261001815,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261001850,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261001859,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261001860,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261001881,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261001901,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261001933,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261001949,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140140
+261001967,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261001976,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140140
+261002002,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261002017,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261002054,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261002061,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140140
+261002075,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261002111,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261002129,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261002156,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261002169,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261002182,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261002216,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060170
+261002247,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261002279,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261002308,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261002332,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261002352,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261002353,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060170
+261002354,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261002367,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261002403,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261002410,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261002428,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261002430,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261002443,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261002451,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261002488,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261002506,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060170
+261002509,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060170
+261002545,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261002555,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261002556,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261002559,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140140
+261002596,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261002632,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261002639,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261002641,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261002671,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060170
+261002705,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261002726,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261002761,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140140
+261002771,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261002798,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261002816,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261002835,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261002869,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261002885,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261002889,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261002903,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP190101
+261002913,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261002917,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP190101
+261002937,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060170
+261002951,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261002971,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP190101
+261002978,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261003014,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261003039,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261003065,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261003089,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261003099,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261003111,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP190101
+261003129,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP190101
+261003140,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261003157,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261003170,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261003176,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261003209,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261003211,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261003214,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261003244,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261003252,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP190101
+261003255,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261003267,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140140
+261003296,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261003309,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261003333,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP190101
+261003350,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261003372,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261003405,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261003408,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261003435,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261003449,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261003459,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060170
+261003466,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261003488,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261003522,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261003543,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261003544,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261003575,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261003609,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261003625,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261003650,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261003676,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140140
+261003701,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261003730,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261003765,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261003767,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261003784,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060170
+261003809,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261003816,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261003846,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060170
+261003878,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261003901,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP190101
+261003935,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261003941,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261003957,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261003980,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP190101
+261003989,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261004014,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261004027,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261004039,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261004064,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261004075,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140140
+261004111,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060170
+261004143,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261004163,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261004191,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP190101
+261004212,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261004231,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261004256,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261004257,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060170
+261004283,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261004308,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261004311,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261004327,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261004337,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261004352,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261004378,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261004400,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261004403,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261004407,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060170
+261004442,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261004467,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140140
+261004502,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261004514,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080129
+261004549,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140146
+261004559,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261004563,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP190101
+261004581,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP140140
+261004605,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261004627,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP190101
+261004630,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060151
+261004664,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP070131
+261004666,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP170158
+261004674,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP060133
+261004692,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP080135
+261004727,Computer Engineering,1,0,,Not Yet Classified,Freshman,EMP190101

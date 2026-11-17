@@ -1,0 +1,62 @@
+student_id,student_name,semester_taken,course_code,course_title,credit_hours,grade,points,status,semester_credit_hours,semester_points,semester_gpa,cumulative_credit_hours,cumulative_points,cumulative_gpa,credits_completed,standing_after_semester
+221005316,Adel Awad,First Semester / 2022-2023,CC111,Intro to Computer,3,C-,5.0,Passed,18,51.7,2.9,18,51.7,2.9,18,Good
+221005316,Adel Awad,First Semester / 2022-2023,BA113,Physics I,3,C+,7.0,Passed,18,51.7,2.9,18,51.7,2.9,18,Good
+221005316,Adel Awad,First Semester / 2022-2023,BA123,Mathematics I,3,B+,10.0,Passed,18,51.7,2.9,18,51.7,2.9,18,Good
+221005316,Adel Awad,First Semester / 2022-2023,LH131,ESP I,2,B+,6.7,Passed,18,51.7,2.9,18,51.7,2.9,18,Good
+221005316,Adel Awad,First Semester / 2022-2023,BA141,Engineering Mechanics I,3,B,9.0,Passed,18,51.7,2.9,18,51.7,2.9,18,Good
+221005316,Adel Awad,First Semester / 2022-2023,ME151,Engineering Drawing & Projection,2,A-,7.3,Passed,18,51.7,2.9,18,51.7,2.9,18,Good
+221005316,Adel Awad,First Semester / 2022-2023,IM111,Industrial Relations,2,B+,6.7,Passed,18,51.7,2.9,18,51.7,2.9,18,Good
+221005316,Adel Awad,Second Semester / 2022-2023,CC112,Structured Programming,3,B+,10.0,Passed,18,50.0,2.8,36,101.7,2.8,36,Good
+221005316,Adel Awad,Second Semester / 2022-2023,BA114,Physics II,3,B-,8.0,Passed,18,50.0,2.8,36,101.7,2.8,36,Good
+221005316,Adel Awad,Second Semester / 2022-2023,BA118,Chemistry,2,B,6.0,Passed,18,50.0,2.8,36,101.7,2.8,36,Good
+221005316,Adel Awad,Second Semester / 2022-2023,BA124,Mathematics II,3,C-,5.0,Passed,18,50.0,2.8,36,101.7,2.8,36,Good
+221005316,Adel Awad,Second Semester / 2022-2023,LH132,ESP II,2,B,6.0,Passed,18,50.0,2.8,36,101.7,2.8,36,Good
+221005316,Adel Awad,Second Semester / 2022-2023,BA142,Engineering Mechanics II,3,B,9.0,Passed,18,50.0,2.8,36,101.7,2.8,36,Good
+221005316,Adel Awad,Second Semester / 2022-2023,IM112,Manufacturing Technology,2,B,6.0,Passed,18,50.0,2.8,36,101.7,2.8,36,Good
+221005316,Adel Awad,Summer Semester / 2022-2023,CC218,Discrete Mathematics,3,C-,5.0,Passed,6,14.0,2.3,42,115.7,2.8,42,Good
+221005316,Adel Awad,Summer Semester / 2022-2023,BA223,Mathematics III,3,B,9.0,Passed,6,14.0,2.3,42,115.7,2.8,42,Good
+221005316,Adel Awad,First Semester / 2023-2024,EE231,Electrical Circuits I,3,A-,11.0,Passed,18,64.5,3.6,60,180.2,3.0,60,Good
+221005316,Adel Awad,First Semester / 2023-2024,LH231,Technical Report Writing,3,A-,11.0,Passed,18,64.5,3.6,60,180.2,3.0,60,Good
+221005316,Adel Awad,First Semester / 2023-2024,NE465,Aesthetic Education & Art Appreciation,3,A-,11.0,Passed,18,64.5,3.6,60,180.2,3.0,60,Good
+221005316,Adel Awad,First Semester / 2023-2024,CC212,Applied Programming,3,B+,10.0,Passed,18,64.5,3.6,60,180.2,3.0,60,Good
+221005316,Adel Awad,First Semester / 2023-2024,CC216,Digital Logic Design,3,A,11.5,Passed,18,64.5,3.6,60,180.2,3.0,60,Good
+221005316,Adel Awad,First Semester / 2023-2024,BA224,Mathematics IV,3,B+,10.0,Passed,18,64.5,3.6,60,180.2,3.0,60,Good
+221005316,Adel Awad,Second Semester / 2023-2024,CC215,Data Structure,3,A-,11.0,Passed,18,52.0,2.9,78,232.2,3.0,78,Good
+221005316,Adel Awad,Second Semester / 2023-2024,EE232,Electrical Circuits II,3,C,6.0,Passed,18,52.0,2.9,78,232.2,3.0,78,Good
+221005316,Adel Awad,Second Semester / 2023-2024,EC238,Electronics I,3,B-,8.0,Passed,18,52.0,2.9,78,232.2,3.0,78,Good
+221005316,Adel Awad,Second Semester / 2023-2024,EC218,Measurements & Instrument,3,B,9.0,Passed,18,52.0,2.9,78,232.2,3.0,78,Good
+221005316,Adel Awad,Second Semester / 2023-2024,CC317,Digital Systems Design,3,B,9.0,Passed,18,52.0,2.9,78,232.2,3.0,78,Good
+221005316,Adel Awad,Second Semester / 2023-2024,BA323,Mathematics V,3,B,9.0,Passed,18,52.0,2.9,78,232.2,3.0,78,Good
+221005316,Adel Awad,Summer Semester / 2023-2024,CC319,Advanced Programming,3,B+,10.0,Passed,6,17.0,2.8,84,249.2,3.0,84,Good
+221005316,Adel Awad,Summer Semester / 2023-2024,EE328,Electrical Power & Machines,3,C+,7.0,Passed,6,17.0,2.8,84,249.2,3.0,84,Good
+221005316,Adel Awad,First Semester / 2024-2025,EC339,Electronics II,3,B+,10.0,Passed,18,41.0,2.3,102,290.2,2.8,99,Good
+221005316,Adel Awad,First Semester / 2024-2025,EC320,Communication Theory,3,B-,8.0,Passed,18,41.0,2.3,102,290.2,2.8,99,Good
+221005316,Adel Awad,First Semester / 2024-2025,CC311,Computer Architecture,3,C+,7.0,Passed,18,41.0,2.3,102,290.2,2.8,99,Good
+221005316,Adel Awad,First Semester / 2024-2025,CC316,Object-Oriented Programming,3,F,0.0,Retaken,18,41.0,2.3,102,290.2,2.8,99,Good
+221005316,Adel Awad,First Semester / 2024-2025,BA326,Mathematics VI,3,C-,5.0,Retaken,18,41.0,2.3,102,290.2,2.8,99,Good
+221005316,Adel Awad,First Semester / 2024-2025,CC341,Digital Electronics,3,A-,11.0,Passed,18,41.0,2.3,102,290.2,2.8,99,Good
+221005316,Adel Awad,Second Semester / 2024-2025,CC316,Object-Oriented Programming,3,B+,10.0,Passed,18,49.5,2.8,117,339.7,2.9,114,Good
+221005316,Adel Awad,Second Semester / 2024-2025,NE364,Engineering Economy,3,B,9.0,Passed,18,49.5,2.8,117,339.7,2.9,114,Good
+221005316,Adel Awad,Second Semester / 2024-2025,CC331,Data & Computer Communications,3,F,0.0,Retaken,18,49.5,2.8,117,339.7,2.9,114,Good
+221005316,Adel Awad,Second Semester / 2024-2025,CC410,Systems Programming,3,A,11.5,Passed,18,49.5,2.8,117,339.7,2.9,114,Good
+221005316,Adel Awad,Second Semester / 2024-2025,CC414,Database Systems,3,B+,10.0,Passed,18,49.5,2.8,117,339.7,2.9,114,Good
+221005316,Adel Awad,Second Semester / 2024-2025,EE418,Automatic Control Systems,3,B,9.0,Passed,18,49.5,2.8,117,339.7,2.9,114,Good
+221005316,Adel Awad,First Semester / 2025-2026,CC331,Data & Computer Communications,3,B+,10.0,Passed,18,61.5,3.4,132,401.2,3.0,132,Good
+221005316,Adel Awad,First Semester / 2025-2026,CC528,Computer Systems Performance Analysis,3,A+,12.0,Passed,18,61.5,3.4,132,401.2,3.0,132,Good
+221005316,Adel Awad,First Semester / 2025-2026,CC421,Microprocessors Systems,3,A,11.5,Passed,18,61.5,3.4,132,401.2,3.0,132,Good
+221005316,Adel Awad,First Semester / 2025-2026,CC419,Numerical Methods,3,B+,10.0,Passed,18,61.5,3.4,132,401.2,3.0,132,Good
+221005316,Adel Awad,First Semester / 2025-2026,CC416,Computer Graphics,3,A-,11.0,Passed,18,61.5,3.4,132,401.2,3.0,132,Good
+221005316,Adel Awad,First Semester / 2025-2026,CC418,Operating Systems,3,C+,7.0,Passed,18,61.5,3.4,132,401.2,3.0,132,Good
+221005316,Adel Awad,Second Semester / 2025-2026,BA326,Mathematics VI,3,B-,8.0,Passed,18,52.0,2.9,147,448.2,3.0,147,Good
+221005316,Adel Awad,Second Semester / 2025-2026,CC431,Computer Networks,3,B+,10.0,Passed,18,52.0,2.9,147,448.2,3.0,147,Good
+221005316,Adel Awad,Second Semester / 2025-2026,CC415,Data Acquisition Systems,3,B-,8.0,Passed,18,52.0,2.9,147,448.2,3.0,147,Good
+221005316,Adel Awad,Second Semester / 2025-2026,CC514,Introduction to Big Data Management,3,C+,7.0,Passed,18,52.0,2.9,147,448.2,3.0,147,Good
+221005316,Adel Awad,Second Semester / 2025-2026,IM423,Operations Research,3,B,9.0,Passed,18,52.0,2.9,147,448.2,3.0,147,Good
+221005316,Adel Awad,Second Semester / 2025-2026,CC501,Senior Project I,3,B+,10.0,Passed,18,52.0,2.9,147,448.2,3.0,147,Good
+221005316,Adel Awad,First Semester / 2026-2027,CC511,Introduction to Artificial Intelligence,3,,,In Progress,,,,,,,,
+221005316,Adel Awad,First Semester / 2026-2027,NE466,Environmental Science & Tech.,3,,,In Progress,,,,,,,,
+221005316,Adel Awad,First Semester / 2026-2027,CC531,Advanced Networks,3,,,In Progress,,,,,,,,
+221005316,Adel Awad,First Semester / 2026-2027,CC515,Intro. to Software Engineering,3,,,In Progress,,,,,,,,
+221005316,Adel Awad,First Semester / 2026-2027,CC532,Cloud Computing,3,,,In Progress,,,,,,,,
+221005316,Adel Awad,First Semester / 2026-2027,CC513,Computing Systems,3,,,In Progress,,,,,,,,
+221005316,Adel Awad,First Semester / 2026-2027,IM535,International Operations Management,3,,,In Progress,,,,,,,,

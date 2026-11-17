@@ -1,0 +1,18 @@
+student_id,student_name,semester_taken,course_code,course_title,credit_hours,grade,points,status,semester_credit_hours,semester_points,semester_gpa,cumulative_credit_hours,cumulative_points,cumulative_gpa,credits_completed,standing_after_semester
+252004369,Nader Selim,Second Semester / 2025-2026,CC111,Intro to Computer,3,B+,10.0,Passed,18,52.5,2.9,18,52.5,2.9,16,Good
+252004369,Nader Selim,Second Semester / 2025-2026,BA113,Physics I,3,C-,5.0,Passed,18,52.5,2.9,18,52.5,2.9,16,Good
+252004369,Nader Selim,Second Semester / 2025-2026,BA123,Mathematics I,3,A,11.5,Passed,18,52.5,2.9,18,52.5,2.9,16,Good
+252004369,Nader Selim,Second Semester / 2025-2026,LH131,ESP I,2,A+,8.0,Passed,18,52.5,2.9,18,52.5,2.9,16,Good
+252004369,Nader Selim,Second Semester / 2025-2026,BA141,Engineering Mechanics I,3,B+,10.0,Passed,18,52.5,2.9,18,52.5,2.9,16,Good
+252004369,Nader Selim,Second Semester / 2025-2026,ME151,Engineering Drawing & Projection,2,A+,8.0,Passed,18,52.5,2.9,18,52.5,2.9,16,Good
+252004369,Nader Selim,Second Semester / 2025-2026,IM111,Industrial Relations,2,F,0.0,Retaken,18,52.5,2.9,18,52.5,2.9,16,Good
+252004369,Nader Selim,Summer Semester / 2025-2026,IM111,Industrial Relations,2,B+,6.7,Passed,5,15.7,3.1,21,68.2,3.2,21,Good
+252004369,Nader Selim,Summer Semester / 2025-2026,CC112,Structured Programming,3,B,9.0,Passed,5,15.7,3.1,21,68.2,3.2,21,Good
+252004369,Nader Selim,First Semester / 2026-2027,BA114,Physics II,3,,,In Progress,,,,,,,,
+252004369,Nader Selim,First Semester / 2026-2027,BA118,Chemistry,2,,,In Progress,,,,,,,,
+252004369,Nader Selim,First Semester / 2026-2027,BA124,Mathematics II,3,,,In Progress,,,,,,,,
+252004369,Nader Selim,First Semester / 2026-2027,LH132,ESP II,2,,,In Progress,,,,,,,,
+252004369,Nader Selim,First Semester / 2026-2027,BA142,Engineering Mechanics II,3,,,In Progress,,,,,,,,
+252004369,Nader Selim,First Semester / 2026-2027,IM112,Manufacturing Technology,2,,,In Progress,,,,,,,,
+252004369,Nader Selim,First Semester / 2026-2027,CC218,Discrete Mathematics,3,,,In Progress,,,,,,,,
+252004369,Nader Selim,First Semester / 2026-2027,NE465,Aesthetic Education & Art Appreciation,3,,,In Progress,,,,,,,,

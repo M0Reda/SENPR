@@ -1,0 +1,61 @@
+student_id,student_name,semester_taken,course_code,course_title,credit_hours,grade,points,status,semester_credit_hours,semester_points,semester_gpa,cumulative_credit_hours,cumulative_points,cumulative_gpa,credits_completed,standing_after_semester
+212001635,Aisha Wahba,Second Semester / 2021-2022,CC111,Intro to Computer,3,B-,8.0,Passed,18,31.7,1.8,18,31.7,1.8,15,Academic Probation (1st Warning)
+212001635,Aisha Wahba,Second Semester / 2021-2022,BA113,Physics I,3,D,3.0,Passed,18,31.7,1.8,18,31.7,1.8,15,Academic Probation (1st Warning)
+212001635,Aisha Wahba,Second Semester / 2021-2022,BA123,Mathematics I,3,D+,4.0,Retaken,18,31.7,1.8,18,31.7,1.8,15,Academic Probation (1st Warning)
+212001635,Aisha Wahba,Second Semester / 2021-2022,LH131,ESP I,2,B+,6.7,Passed,18,31.7,1.8,18,31.7,1.8,15,Academic Probation (1st Warning)
+212001635,Aisha Wahba,Second Semester / 2021-2022,BA141,Engineering Mechanics I,3,F,0.0,Retaken,18,31.7,1.8,18,31.7,1.8,15,Academic Probation (1st Warning)
+212001635,Aisha Wahba,Second Semester / 2021-2022,ME151,Engineering Drawing & Projection,2,B-,5.3,Passed,18,31.7,1.8,18,31.7,1.8,15,Academic Probation (1st Warning)
+212001635,Aisha Wahba,Second Semester / 2021-2022,IM111,Industrial Relations,2,C+,4.7,Passed,18,31.7,1.8,18,31.7,1.8,15,Academic Probation (1st Warning)
+212001635,Aisha Wahba,First Semester / 2022-2023,BA141,Engineering Mechanics I,3,D+,4.0,Passed,12,21.0,1.8,24,48.7,2.0,21,Pass
+212001635,Aisha Wahba,First Semester / 2022-2023,BA123,Mathematics I,3,B,9.0,Passed,12,21.0,1.8,24,48.7,2.0,21,Pass
+212001635,Aisha Wahba,First Semester / 2022-2023,CC112,Structured Programming,3,B-,8.0,Passed,12,21.0,1.8,24,48.7,2.0,21,Pass
+212001635,Aisha Wahba,First Semester / 2022-2023,BA114,Physics II,3,F,0.0,Retaken,12,21.0,1.8,24,48.7,2.0,21,Pass
+212001635,Aisha Wahba,Second Semester / 2022-2023,BA114,Physics II,3,C,6.0,Passed,18,34.1,1.9,39,82.8,2.1,36,Pass
+212001635,Aisha Wahba,Second Semester / 2022-2023,BA118,Chemistry,2,B+,6.7,Passed,18,34.1,1.9,39,82.8,2.1,36,Pass
+212001635,Aisha Wahba,Second Semester / 2022-2023,BA124,Mathematics II,3,C,6.0,Passed,18,34.1,1.9,39,82.8,2.1,36,Pass
+212001635,Aisha Wahba,Second Semester / 2022-2023,LH132,ESP II,2,C+,4.7,Passed,18,34.1,1.9,39,82.8,2.1,36,Pass
+212001635,Aisha Wahba,Second Semester / 2022-2023,BA142,Engineering Mechanics II,3,F,0.0,Retaken,18,34.1,1.9,39,82.8,2.1,36,Pass
+212001635,Aisha Wahba,Second Semester / 2022-2023,IM112,Manufacturing Technology,2,A,7.7,Passed,18,34.1,1.9,39,82.8,2.1,36,Pass
+212001635,Aisha Wahba,Second Semester / 2022-2023,CC218,Discrete Mathematics,3,D,3.0,Retaken,18,34.1,1.9,39,82.8,2.1,36,Pass
+212001635,Aisha Wahba,First Semester / 2023-2024,BA142,Engineering Mechanics II,3,B-,8.0,Passed,18,54.0,3.0,54,136.8,2.5,54,Pass
+212001635,Aisha Wahba,First Semester / 2023-2024,BA223,Mathematics III,3,B+,10.0,Passed,18,54.0,3.0,54,136.8,2.5,54,Pass
+212001635,Aisha Wahba,First Semester / 2023-2024,EE231,Electrical Circuits I,3,C-,5.0,Passed,18,54.0,3.0,54,136.8,2.5,54,Pass
+212001635,Aisha Wahba,First Semester / 2023-2024,LH231,Technical Report Writing,3,B,9.0,Passed,18,54.0,3.0,54,136.8,2.5,54,Pass
+212001635,Aisha Wahba,First Semester / 2023-2024,NE465,Aesthetic Education & Art Appreciation,3,A+,12.0,Passed,18,54.0,3.0,54,136.8,2.5,54,Pass
+212001635,Aisha Wahba,First Semester / 2023-2024,CC212,Applied Programming,3,B+,10.0,Passed,18,54.0,3.0,54,136.8,2.5,54,Pass
+212001635,Aisha Wahba,Second Semester / 2023-2024,CC218,Discrete Mathematics,3,D+,4.0,Passed,18,34.0,1.9,69,167.8,2.4,69,Pass
+212001635,Aisha Wahba,Second Semester / 2023-2024,CC215,Data Structure,3,C,6.0,Passed,18,34.0,1.9,69,167.8,2.4,69,Pass
+212001635,Aisha Wahba,Second Semester / 2023-2024,CC216,Digital Logic Design,3,C,6.0,Passed,18,34.0,1.9,69,167.8,2.4,69,Pass
+212001635,Aisha Wahba,Second Semester / 2023-2024,BA224,Mathematics IV,3,D,3.0,Passed,18,34.0,1.9,69,167.8,2.4,69,Pass
+212001635,Aisha Wahba,Second Semester / 2023-2024,EE232,Electrical Circuits II,3,B+,10.0,Passed,18,34.0,1.9,69,167.8,2.4,69,Pass
+212001635,Aisha Wahba,Second Semester / 2023-2024,EC238,Electronics I,3,C-,5.0,Passed,18,34.0,1.9,69,167.8,2.4,69,Pass
+212001635,Aisha Wahba,First Semester / 2024-2025,EC218,Measurements & Instrument,3,C-,5.0,Passed,18,20.0,1.1,87,187.8,2.2,81,Pass
+212001635,Aisha Wahba,First Semester / 2024-2025,CC317,Digital Systems Design,3,F,0.0,Retaken,18,20.0,1.1,87,187.8,2.2,81,Pass
+212001635,Aisha Wahba,First Semester / 2024-2025,CC319,Advanced Programming,3,D+,4.0,Passed,18,20.0,1.1,87,187.8,2.2,81,Pass
+212001635,Aisha Wahba,First Semester / 2024-2025,BA323,Mathematics V,3,D+,4.0,Passed,18,20.0,1.1,87,187.8,2.2,81,Pass
+212001635,Aisha Wahba,First Semester / 2024-2025,EE328,Electrical Power & Machines,3,C+,7.0,Passed,18,20.0,1.1,87,187.8,2.2,81,Pass
+212001635,Aisha Wahba,First Semester / 2024-2025,EC339,Electronics II,3,F,0.0,Retaken,18,20.0,1.1,87,187.8,2.2,81,Pass
+212001635,Aisha Wahba,Second Semester / 2024-2025,CC317,Digital Systems Design,3,C-,5.0,Passed,18,8.0,0.4,99,195.8,2.0,87,Pass
+212001635,Aisha Wahba,Second Semester / 2024-2025,EC339,Electronics II,3,F,0.0,Retaken,18,8.0,0.4,99,195.8,2.0,87,Pass
+212001635,Aisha Wahba,Second Semester / 2024-2025,EC320,Communication Theory,3,F,0.0,Retaken,18,8.0,0.4,99,195.8,2.0,87,Pass
+212001635,Aisha Wahba,Second Semester / 2024-2025,CC316,Object-Oriented Programming,3,F,0.0,Retaken,18,8.0,0.4,99,195.8,2.0,87,Pass
+212001635,Aisha Wahba,Second Semester / 2024-2025,BA326,Mathematics VI,3,F,0.0,Retaken,18,8.0,0.4,99,195.8,2.0,87,Pass
+212001635,Aisha Wahba,Second Semester / 2024-2025,CC341,Digital Electronics,3,D,3.0,Passed,18,8.0,0.4,99,195.8,2.0,87,Pass
+212001635,Aisha Wahba,Summer Semester / 2024-2025,EC339,Electronics II,3,F,0.0,Retaken,6,6.0,1.0,99,201.8,2.0,90,Pass
+212001635,Aisha Wahba,Summer Semester / 2024-2025,EC320,Communication Theory,3,C,6.0,Passed,6,6.0,1.0,99,201.8,2.0,90,Pass
+212001635,Aisha Wahba,First Semester / 2025-2026,EC339,Electronics II,3,D,3.0,Passed,18,14.0,0.8,108,215.8,2.0,102,Pass
+212001635,Aisha Wahba,First Semester / 2025-2026,CC316,Object-Oriented Programming,3,D+,4.0,Passed,18,14.0,0.8,108,215.8,2.0,102,Pass
+212001635,Aisha Wahba,First Semester / 2025-2026,BA326,Mathematics VI,3,F,0.0,Retaken,18,14.0,0.8,108,215.8,2.0,102,Pass
+212001635,Aisha Wahba,First Semester / 2025-2026,CC311,Computer Architecture,3,D,3.0,Passed,18,14.0,0.8,108,215.8,2.0,102,Pass
+212001635,Aisha Wahba,First Semester / 2025-2026,NE364,Engineering Economy,3,D+,4.0,Passed,18,14.0,0.8,108,215.8,2.0,102,Pass
+212001635,Aisha Wahba,First Semester / 2025-2026,CC331,Data & Computer Communications,3,F,0.0,Retaken,18,14.0,0.8,108,215.8,2.0,102,Pass
+212001635,Aisha Wahba,Second Semester / 2025-2026,BA326,Mathematics VI,3,F,0.0,Failed,18,12.0,0.7,120,227.8,1.9,111,Academic Probation (1st Warning)
+212001635,Aisha Wahba,Second Semester / 2025-2026,CC331,Data & Computer Communications,3,F,0.0,Failed,18,12.0,0.7,120,227.8,1.9,111,Academic Probation (1st Warning)
+212001635,Aisha Wahba,Second Semester / 2025-2026,CC410,Systems Programming,3,F,0.0,Failed,18,12.0,0.7,120,227.8,1.9,111,Academic Probation (1st Warning)
+212001635,Aisha Wahba,Second Semester / 2025-2026,CC414,Database Systems,3,D,3.0,Passed,18,12.0,0.7,120,227.8,1.9,111,Academic Probation (1st Warning)
+212001635,Aisha Wahba,Second Semester / 2025-2026,EE418,Automatic Control Systems,3,C-,5.0,Passed,18,12.0,0.7,120,227.8,1.9,111,Academic Probation (1st Warning)
+212001635,Aisha Wahba,Second Semester / 2025-2026,CC537,Computer Forensics,3,D+,4.0,Passed,18,12.0,0.7,120,227.8,1.9,111,Academic Probation (1st Warning)
+212001635,Aisha Wahba,First Semester / 2026-2027,BA326,Mathematics VI,3,,,In Progress,,,,,,,,
+212001635,Aisha Wahba,First Semester / 2026-2027,CC331,Data & Computer Communications,3,,,In Progress,,,,,,,,
+212001635,Aisha Wahba,First Semester / 2026-2027,CC410,Systems Programming,3,,,In Progress,,,,,,,,
+212001635,Aisha Wahba,First Semester / 2026-2027,CC421,Microprocessors Systems,3,,,In Progress,,,,,,,,

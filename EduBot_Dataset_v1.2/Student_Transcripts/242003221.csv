@@ -1,0 +1,27 @@
+student_id,student_name,semester_taken,course_code,course_title,credit_hours,grade,points,status,semester_credit_hours,semester_points,semester_gpa,cumulative_credit_hours,cumulative_points,cumulative_gpa,credits_completed,standing_after_semester
+242003221,Dalia Saleh,Second Semester / 2024-2025,CC111,Intro to Computer,3,B+,10.0,Passed,18,44.6,2.5,18,44.6,2.5,15,Pass
+242003221,Dalia Saleh,Second Semester / 2024-2025,BA113,Physics I,3,D,3.0,Passed,18,44.6,2.5,18,44.6,2.5,15,Pass
+242003221,Dalia Saleh,Second Semester / 2024-2025,BA123,Mathematics I,3,A-,11.0,Passed,18,44.6,2.5,18,44.6,2.5,15,Pass
+242003221,Dalia Saleh,Second Semester / 2024-2025,LH131,ESP I,2,A-,7.3,Passed,18,44.6,2.5,18,44.6,2.5,15,Pass
+242003221,Dalia Saleh,Second Semester / 2024-2025,BA141,Engineering Mechanics I,3,F,0.0,Retaken,18,44.6,2.5,18,44.6,2.5,15,Pass
+242003221,Dalia Saleh,Second Semester / 2024-2025,ME151,Engineering Drawing & Projection,2,A-,7.3,Passed,18,44.6,2.5,18,44.6,2.5,15,Pass
+242003221,Dalia Saleh,Second Semester / 2024-2025,IM111,Industrial Relations,2,B,6.0,Passed,18,44.6,2.5,18,44.6,2.5,15,Pass
+242003221,Dalia Saleh,First Semester / 2025-2026,BA141,Engineering Mechanics I,3,C+,7.0,Passed,18,43.0,2.4,33,87.6,2.7,33,Good
+242003221,Dalia Saleh,First Semester / 2025-2026,CC112,Structured Programming,3,B-,8.0,Passed,18,43.0,2.4,33,87.6,2.7,33,Good
+242003221,Dalia Saleh,First Semester / 2025-2026,BA114,Physics II,3,B-,8.0,Passed,18,43.0,2.4,33,87.6,2.7,33,Good
+242003221,Dalia Saleh,First Semester / 2025-2026,BA118,Chemistry,2,B-,5.3,Passed,18,43.0,2.4,33,87.6,2.7,33,Good
+242003221,Dalia Saleh,First Semester / 2025-2026,BA124,Mathematics II,3,D+,4.0,Passed,18,43.0,2.4,33,87.6,2.7,33,Good
+242003221,Dalia Saleh,First Semester / 2025-2026,LH132,ESP II,2,B,6.0,Passed,18,43.0,2.4,33,87.6,2.7,33,Good
+242003221,Dalia Saleh,First Semester / 2025-2026,IM112,Manufacturing Technology,2,C+,4.7,Passed,18,43.0,2.4,33,87.6,2.7,33,Good
+242003221,Dalia Saleh,Second Semester / 2025-2026,BA142,Engineering Mechanics II,3,B+,10.0,Passed,18,44.0,2.4,51,131.6,2.6,51,Pass
+242003221,Dalia Saleh,Second Semester / 2025-2026,CC218,Discrete Mathematics,3,D+,4.0,Passed,18,44.0,2.4,51,131.6,2.6,51,Pass
+242003221,Dalia Saleh,Second Semester / 2025-2026,BA223,Mathematics III,3,B-,8.0,Passed,18,44.0,2.4,51,131.6,2.6,51,Pass
+242003221,Dalia Saleh,Second Semester / 2025-2026,EE231,Electrical Circuits I,3,C+,7.0,Passed,18,44.0,2.4,51,131.6,2.6,51,Pass
+242003221,Dalia Saleh,Second Semester / 2025-2026,LH231,Technical Report Writing,3,B+,10.0,Passed,18,44.0,2.4,51,131.6,2.6,51,Pass
+242003221,Dalia Saleh,Second Semester / 2025-2026,NE465,Aesthetic Education & Art Appreciation,3,C-,5.0,Passed,18,44.0,2.4,51,131.6,2.6,51,Pass
+242003221,Dalia Saleh,First Semester / 2026-2027,CC212,Applied Programming,3,,,In Progress,,,,,,,,
+242003221,Dalia Saleh,First Semester / 2026-2027,CC216,Digital Logic Design,3,,,In Progress,,,,,,,,
+242003221,Dalia Saleh,First Semester / 2026-2027,BA224,Mathematics IV,3,,,In Progress,,,,,,,,
+242003221,Dalia Saleh,First Semester / 2026-2027,EE232,Electrical Circuits II,3,,,In Progress,,,,,,,,
+242003221,Dalia Saleh,First Semester / 2026-2027,EC238,Electronics I,3,,,In Progress,,,,,,,,
+242003221,Dalia Saleh,First Semester / 2026-2027,EC218,Measurements & Instrument,3,,,In Progress,,,,,,,,

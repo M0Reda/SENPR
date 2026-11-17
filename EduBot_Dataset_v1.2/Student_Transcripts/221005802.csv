@@ -1,0 +1,61 @@
+student_id,student_name,semester_taken,course_code,course_title,credit_hours,grade,points,status,semester_credit_hours,semester_points,semester_gpa,cumulative_credit_hours,cumulative_points,cumulative_gpa,credits_completed,standing_after_semester
+221005802,Jana Ayad,First Semester / 2022-2023,CC111,Intro to Computer,3,C,6.0,Passed,18,28.4,1.6,18,28.4,1.6,13,Academic Probation (1st Warning)
+221005802,Jana Ayad,First Semester / 2022-2023,BA113,Physics I,3,D+,4.0,Passed,18,28.4,1.6,18,28.4,1.6,13,Academic Probation (1st Warning)
+221005802,Jana Ayad,First Semester / 2022-2023,BA123,Mathematics I,3,F,0.0,Retaken,18,28.4,1.6,18,28.4,1.6,13,Academic Probation (1st Warning)
+221005802,Jana Ayad,First Semester / 2022-2023,LH131,ESP I,2,B+,6.7,Passed,18,28.4,1.6,18,28.4,1.6,13,Academic Probation (1st Warning)
+221005802,Jana Ayad,First Semester / 2022-2023,BA141,Engineering Mechanics I,3,D+,4.0,Passed,18,28.4,1.6,18,28.4,1.6,13,Academic Probation (1st Warning)
+221005802,Jana Ayad,First Semester / 2022-2023,ME151,Engineering Drawing & Projection,2,F,0.0,Retaken,18,28.4,1.6,18,28.4,1.6,13,Academic Probation (1st Warning)
+221005802,Jana Ayad,First Semester / 2022-2023,IM111,Industrial Relations,2,A,7.7,Passed,18,28.4,1.6,18,28.4,1.6,13,Academic Probation (1st Warning)
+221005802,Jana Ayad,Second Semester / 2022-2023,BA123,Mathematics I,3,C+,7.0,Passed,11,26.7,2.4,24,55.1,2.3,24,Pass
+221005802,Jana Ayad,Second Semester / 2022-2023,ME151,Engineering Drawing & Projection,2,B+,6.7,Passed,11,26.7,2.4,24,55.1,2.3,24,Pass
+221005802,Jana Ayad,Second Semester / 2022-2023,CC112,Structured Programming,3,B-,8.0,Passed,11,26.7,2.4,24,55.1,2.3,24,Pass
+221005802,Jana Ayad,Second Semester / 2022-2023,BA114,Physics II,3,C-,5.0,Passed,11,26.7,2.4,24,55.1,2.3,24,Pass
+221005802,Jana Ayad,Summer Semester / 2022-2023,BA118,Chemistry,2,A-,7.3,Passed,5,7.3,1.5,29,62.4,2.2,26,Pass
+221005802,Jana Ayad,Summer Semester / 2022-2023,BA124,Mathematics II,3,F,0.0,Retaken,5,7.3,1.5,29,62.4,2.2,26,Pass
+221005802,Jana Ayad,First Semester / 2023-2024,BA124,Mathematics II,3,B-,8.0,Passed,16,48.0,3.0,42,110.4,2.6,42,Pass
+221005802,Jana Ayad,First Semester / 2023-2024,LH132,ESP II,2,B+,6.7,Passed,16,48.0,3.0,42,110.4,2.6,42,Pass
+221005802,Jana Ayad,First Semester / 2023-2024,BA142,Engineering Mechanics II,3,B-,8.0,Passed,16,48.0,3.0,42,110.4,2.6,42,Pass
+221005802,Jana Ayad,First Semester / 2023-2024,IM112,Manufacturing Technology,2,A-,7.3,Passed,16,48.0,3.0,42,110.4,2.6,42,Pass
+221005802,Jana Ayad,First Semester / 2023-2024,CC218,Discrete Mathematics,3,B-,8.0,Passed,16,48.0,3.0,42,110.4,2.6,42,Pass
+221005802,Jana Ayad,First Semester / 2023-2024,NE465,Aesthetic Education & Art Appreciation,3,B+,10.0,Passed,16,48.0,3.0,42,110.4,2.6,42,Pass
+221005802,Jana Ayad,Second Semester / 2023-2024,BA223,Mathematics III,3,B-,8.0,Passed,15,36.0,2.4,57,146.4,2.6,57,Pass
+221005802,Jana Ayad,Second Semester / 2023-2024,EE231,Electrical Circuits I,3,B,9.0,Passed,15,36.0,2.4,57,146.4,2.6,57,Pass
+221005802,Jana Ayad,Second Semester / 2023-2024,LH231,Technical Report Writing,3,C,6.0,Passed,15,36.0,2.4,57,146.4,2.6,57,Pass
+221005802,Jana Ayad,Second Semester / 2023-2024,CC212,Applied Programming,3,B-,8.0,Passed,15,36.0,2.4,57,146.4,2.6,57,Pass
+221005802,Jana Ayad,Second Semester / 2023-2024,CC216,Digital Logic Design,3,C-,5.0,Passed,15,36.0,2.4,57,146.4,2.6,57,Pass
+221005802,Jana Ayad,Summer Semester / 2023-2024,CC215,Data Structure,3,B+,10.0,Passed,6,20.0,3.3,63,166.4,2.6,63,Pass
+221005802,Jana Ayad,Summer Semester / 2023-2024,BA224,Mathematics IV,3,B+,10.0,Passed,6,20.0,3.3,63,166.4,2.6,63,Pass
+221005802,Jana Ayad,First Semester / 2024-2025,EE232,Electrical Circuits II,3,B+,10.0,Passed,18,36.0,2.0,81,202.4,2.5,81,Pass
+221005802,Jana Ayad,First Semester / 2024-2025,EC238,Electronics I,3,B-,8.0,Passed,18,36.0,2.0,81,202.4,2.5,81,Pass
+221005802,Jana Ayad,First Semester / 2024-2025,EC218,Measurements & Instrument,3,C+,7.0,Passed,18,36.0,2.0,81,202.4,2.5,81,Pass
+221005802,Jana Ayad,First Semester / 2024-2025,CC317,Digital Systems Design,3,D,3.0,Passed,18,36.0,2.0,81,202.4,2.5,81,Pass
+221005802,Jana Ayad,First Semester / 2024-2025,CC319,Advanced Programming,3,C-,5.0,Passed,18,36.0,2.0,81,202.4,2.5,81,Pass
+221005802,Jana Ayad,First Semester / 2024-2025,BA323,Mathematics V,3,D,3.0,Passed,18,36.0,2.0,81,202.4,2.5,81,Pass
+221005802,Jana Ayad,Second Semester / 2024-2025,EE328,Electrical Power & Machines,3,C+,7.0,Passed,18,43.0,2.4,99,245.4,2.5,99,Pass
+221005802,Jana Ayad,Second Semester / 2024-2025,EC339,Electronics II,3,B,9.0,Passed,18,43.0,2.4,99,245.4,2.5,99,Pass
+221005802,Jana Ayad,Second Semester / 2024-2025,EC320,Communication Theory,3,C+,7.0,Passed,18,43.0,2.4,99,245.4,2.5,99,Pass
+221005802,Jana Ayad,Second Semester / 2024-2025,CC311,Computer Architecture,3,C+,7.0,Passed,18,43.0,2.4,99,245.4,2.5,99,Pass
+221005802,Jana Ayad,Second Semester / 2024-2025,CC316,Object-Oriented Programming,3,B,9.0,Passed,18,43.0,2.4,99,245.4,2.5,99,Pass
+221005802,Jana Ayad,Second Semester / 2024-2025,BA326,Mathematics VI,3,D+,4.0,Retaken,18,43.0,2.4,99,245.4,2.5,99,Pass
+221005802,Jana Ayad,Summer Semester / 2024-2025,CC341,Digital Electronics,3,B,9.0,Passed,6,20.0,3.3,105,265.4,2.5,105,Pass
+221005802,Jana Ayad,Summer Semester / 2024-2025,NE364,Engineering Economy,3,A-,11.0,Passed,6,20.0,3.3,105,265.4,2.5,105,Pass
+221005802,Jana Ayad,First Semester / 2025-2026,BA326,Mathematics VI,3,B,9.0,Passed,18,47.0,2.6,120,308.4,2.6,120,Pass
+221005802,Jana Ayad,First Semester / 2025-2026,CC331,Data & Computer Communications,3,C,6.0,Passed,18,47.0,2.6,120,308.4,2.6,120,Pass
+221005802,Jana Ayad,First Semester / 2025-2026,CC410,Systems Programming,3,D+,4.0,Passed,18,47.0,2.6,120,308.4,2.6,120,Pass
+221005802,Jana Ayad,First Semester / 2025-2026,CC414,Database Systems,3,B-,8.0,Passed,18,47.0,2.6,120,308.4,2.6,120,Pass
+221005802,Jana Ayad,First Semester / 2025-2026,EE418,Automatic Control Systems,3,B,9.0,Passed,18,47.0,2.6,120,308.4,2.6,120,Pass
+221005802,Jana Ayad,First Semester / 2025-2026,CC552,Web Engineering,3,A-,11.0,Passed,18,47.0,2.6,120,308.4,2.6,120,Pass
+221005802,Jana Ayad,Second Semester / 2025-2026,CC421,Microprocessors Systems,3,B-,8.0,Passed,18,34.0,1.9,138,342.4,2.5,138,Pass
+221005802,Jana Ayad,Second Semester / 2025-2026,CC419,Numerical Methods,3,D+,4.0,Passed,18,34.0,1.9,138,342.4,2.5,138,Pass
+221005802,Jana Ayad,Second Semester / 2025-2026,CC416,Computer Graphics,3,B-,8.0,Passed,18,34.0,1.9,138,342.4,2.5,138,Pass
+221005802,Jana Ayad,Second Semester / 2025-2026,CC418,Operating Systems,3,D,3.0,Passed,18,34.0,1.9,138,342.4,2.5,138,Pass
+221005802,Jana Ayad,Second Semester / 2025-2026,CC431,Computer Networks,3,C,6.0,Passed,18,34.0,1.9,138,342.4,2.5,138,Pass
+221005802,Jana Ayad,Second Semester / 2025-2026,CC517,Modelling & Simulation,3,C-,5.0,Passed,18,34.0,1.9,138,342.4,2.5,138,Pass
+221005802,Jana Ayad,Summer Semester / 2025-2026,CC415,Data Acquisition Systems,3,D,3.0,Passed,6,10.0,1.7,144,352.4,2.4,144,Pass
+221005802,Jana Ayad,Summer Semester / 2025-2026,IM423,Operations Research,3,C+,7.0,Passed,6,10.0,1.7,144,352.4,2.4,144,Pass
+221005802,Jana Ayad,First Semester / 2026-2027,CC501,Senior Project I,3,,,In Progress,,,,,,,,
+221005802,Jana Ayad,First Semester / 2026-2027,CC511,Introduction to Artificial Intelligence,3,,,In Progress,,,,,,,,
+221005802,Jana Ayad,First Semester / 2026-2027,NE466,Environmental Science & Tech.,3,,,In Progress,,,,,,,,
+221005802,Jana Ayad,First Semester / 2026-2027,CC531,Advanced Networks,3,,,In Progress,,,,,,,,
+221005802,Jana Ayad,First Semester / 2026-2027,CC537,Computer Forensics,3,,,In Progress,,,,,,,,
+221005802,Jana Ayad,First Semester / 2026-2027,CC523,Computer Design & Performance Evaluation,3,,,In Progress,,,,,,,,

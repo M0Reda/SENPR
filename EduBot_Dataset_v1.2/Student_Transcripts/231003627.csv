@@ -1,0 +1,49 @@
+student_id,student_name,semester_taken,course_code,course_title,credit_hours,grade,points,status,semester_credit_hours,semester_points,semester_gpa,cumulative_credit_hours,cumulative_points,cumulative_gpa,credits_completed,standing_after_semester
+231003627,Habiba Kamel,First Semester / 2023-2024,CC111,Intro to Computer,3,A-,11.0,Passed,18,67.4,3.7,18,67.4,3.7,18,Excellent
+231003627,Habiba Kamel,First Semester / 2023-2024,BA113,Physics I,3,B+,10.0,Passed,18,67.4,3.7,18,67.4,3.7,18,Excellent
+231003627,Habiba Kamel,First Semester / 2023-2024,BA123,Mathematics I,3,A+,12.0,Passed,18,67.4,3.7,18,67.4,3.7,18,Excellent
+231003627,Habiba Kamel,First Semester / 2023-2024,LH131,ESP I,2,A,7.7,Passed,18,67.4,3.7,18,67.4,3.7,18,Excellent
+231003627,Habiba Kamel,First Semester / 2023-2024,BA141,Engineering Mechanics I,3,A-,11.0,Passed,18,67.4,3.7,18,67.4,3.7,18,Excellent
+231003627,Habiba Kamel,First Semester / 2023-2024,ME151,Engineering Drawing & Projection,2,A,7.7,Passed,18,67.4,3.7,18,67.4,3.7,18,Excellent
+231003627,Habiba Kamel,First Semester / 2023-2024,IM111,Industrial Relations,2,A+,8.0,Passed,18,67.4,3.7,18,67.4,3.7,18,Excellent
+231003627,Habiba Kamel,Second Semester / 2023-2024,CC112,Structured Programming,3,A+,12.0,Passed,18,68.7,3.8,36,136.1,3.8,36,Excellent
+231003627,Habiba Kamel,Second Semester / 2023-2024,BA114,Physics II,3,B+,10.0,Passed,18,68.7,3.8,36,136.1,3.8,36,Excellent
+231003627,Habiba Kamel,Second Semester / 2023-2024,BA118,Chemistry,2,A,7.7,Passed,18,68.7,3.8,36,136.1,3.8,36,Excellent
+231003627,Habiba Kamel,Second Semester / 2023-2024,BA124,Mathematics II,3,A-,11.0,Passed,18,68.7,3.8,36,136.1,3.8,36,Excellent
+231003627,Habiba Kamel,Second Semester / 2023-2024,LH132,ESP II,2,A+,8.0,Passed,18,68.7,3.8,36,136.1,3.8,36,Excellent
+231003627,Habiba Kamel,Second Semester / 2023-2024,BA142,Engineering Mechanics II,3,A+,12.0,Passed,18,68.7,3.8,36,136.1,3.8,36,Excellent
+231003627,Habiba Kamel,Second Semester / 2023-2024,IM112,Manufacturing Technology,2,A+,8.0,Passed,18,68.7,3.8,36,136.1,3.8,36,Excellent
+231003627,Habiba Kamel,Summer Semester / 2023-2024,CC218,Discrete Mathematics,3,A-,11.0,Passed,6,23.0,3.8,42,159.1,3.8,42,Excellent
+231003627,Habiba Kamel,Summer Semester / 2023-2024,BA223,Mathematics III,3,A+,12.0,Passed,6,23.0,3.8,42,159.1,3.8,42,Excellent
+231003627,Habiba Kamel,First Semester / 2024-2025,EE231,Electrical Circuits I,3,A+,12.0,Passed,18,70.0,3.9,60,229.1,3.8,60,Excellent
+231003627,Habiba Kamel,First Semester / 2024-2025,LH231,Technical Report Writing,3,A,11.5,Passed,18,70.0,3.9,60,229.1,3.8,60,Excellent
+231003627,Habiba Kamel,First Semester / 2024-2025,NE465,Aesthetic Education & Art Appreciation,3,A,11.5,Passed,18,70.0,3.9,60,229.1,3.8,60,Excellent
+231003627,Habiba Kamel,First Semester / 2024-2025,CC212,Applied Programming,3,A,11.5,Passed,18,70.0,3.9,60,229.1,3.8,60,Excellent
+231003627,Habiba Kamel,First Semester / 2024-2025,CC216,Digital Logic Design,3,A+,12.0,Passed,18,70.0,3.9,60,229.1,3.8,60,Excellent
+231003627,Habiba Kamel,First Semester / 2024-2025,BA224,Mathematics IV,3,A,11.5,Passed,18,70.0,3.9,60,229.1,3.8,60,Excellent
+231003627,Habiba Kamel,Second Semester / 2024-2025,CC215,Data Structure,3,A+,12.0,Passed,18,64.0,3.6,78,293.1,3.8,78,Excellent
+231003627,Habiba Kamel,Second Semester / 2024-2025,EE232,Electrical Circuits II,3,B,9.0,Passed,18,64.0,3.6,78,293.1,3.8,78,Excellent
+231003627,Habiba Kamel,Second Semester / 2024-2025,EC238,Electronics I,3,B,9.0,Passed,18,64.0,3.6,78,293.1,3.8,78,Excellent
+231003627,Habiba Kamel,Second Semester / 2024-2025,EC218,Measurements & Instrument,3,A,11.5,Passed,18,64.0,3.6,78,293.1,3.8,78,Excellent
+231003627,Habiba Kamel,Second Semester / 2024-2025,CC317,Digital Systems Design,3,A-,11.0,Passed,18,64.0,3.6,78,293.1,3.8,78,Excellent
+231003627,Habiba Kamel,Second Semester / 2024-2025,BA323,Mathematics V,3,A,11.5,Passed,18,64.0,3.6,78,293.1,3.8,78,Excellent
+231003627,Habiba Kamel,First Semester / 2025-2026,CC319,Advanced Programming,3,A,11.5,Passed,18,62.0,3.4,96,355.1,3.7,96,Excellent
+231003627,Habiba Kamel,First Semester / 2025-2026,EE328,Electrical Power & Machines,3,A,11.5,Passed,18,62.0,3.4,96,355.1,3.7,96,Excellent
+231003627,Habiba Kamel,First Semester / 2025-2026,EC339,Electronics II,3,A,11.5,Passed,18,62.0,3.4,96,355.1,3.7,96,Excellent
+231003627,Habiba Kamel,First Semester / 2025-2026,EC320,Communication Theory,3,A,11.5,Passed,18,62.0,3.4,96,355.1,3.7,96,Excellent
+231003627,Habiba Kamel,First Semester / 2025-2026,CC311,Computer Architecture,3,B+,10.0,Passed,18,62.0,3.4,96,355.1,3.7,96,Excellent
+231003627,Habiba Kamel,First Semester / 2025-2026,BA326,Mathematics VI,3,C,6.0,Passed,18,62.0,3.4,96,355.1,3.7,96,Excellent
+231003627,Habiba Kamel,Second Semester / 2025-2026,CC316,Object-Oriented Programming,3,A+,12.0,Passed,18,70.5,3.9,114,425.6,3.7,114,Excellent
+231003627,Habiba Kamel,Second Semester / 2025-2026,CC341,Digital Electronics,3,A,11.5,Passed,18,70.5,3.9,114,425.6,3.7,114,Excellent
+231003627,Habiba Kamel,Second Semester / 2025-2026,NE364,Engineering Economy,3,A+,12.0,Passed,18,70.5,3.9,114,425.6,3.7,114,Excellent
+231003627,Habiba Kamel,Second Semester / 2025-2026,CC331,Data & Computer Communications,3,A,11.5,Passed,18,70.5,3.9,114,425.6,3.7,114,Excellent
+231003627,Habiba Kamel,Second Semester / 2025-2026,CC410,Systems Programming,3,A+,12.0,Passed,18,70.5,3.9,114,425.6,3.7,114,Excellent
+231003627,Habiba Kamel,Second Semester / 2025-2026,CC414,Database Systems,3,A,11.5,Passed,18,70.5,3.9,114,425.6,3.7,114,Excellent
+231003627,Habiba Kamel,Summer Semester / 2025-2026,EE418,Automatic Control Systems,3,B,9.0,Passed,6,21.0,3.5,120,446.6,3.7,120,Excellent
+231003627,Habiba Kamel,Summer Semester / 2025-2026,CC528,Computer Systems Performance Analysis,3,A+,12.0,Passed,6,21.0,3.5,120,446.6,3.7,120,Excellent
+231003627,Habiba Kamel,First Semester / 2026-2027,CC421,Microprocessors Systems,3,,,In Progress,,,,,,,,
+231003627,Habiba Kamel,First Semester / 2026-2027,CC419,Numerical Methods,3,,,In Progress,,,,,,,,
+231003627,Habiba Kamel,First Semester / 2026-2027,CC416,Computer Graphics,3,,,In Progress,,,,,,,,
+231003627,Habiba Kamel,First Semester / 2026-2027,CC418,Operating Systems,3,,,In Progress,,,,,,,,
+231003627,Habiba Kamel,First Semester / 2026-2027,CC431,Computer Networks,3,,,In Progress,,,,,,,,
+231003627,Habiba Kamel,First Semester / 2026-2027,CC537,Computer Forensics,3,,,In Progress,,,,,,,,

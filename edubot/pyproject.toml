@@ -1,0 +1,4 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "../EduBot_Dataset_v1.2/scripts"]
+addopts = "-v --tb=short"

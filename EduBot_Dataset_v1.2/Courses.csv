@@ -1,0 +1,84 @@
+course_code,course_title,credit_hours,course_type,recommended_term
+CC111,Intro to Computer,3,Required,1
+BA113,Physics I,3,Required,1
+BA123,Mathematics I,3,Required,1
+LH131,ESP I,2,Required,1
+BA141,Engineering Mechanics I,3,Required,1
+ME151,Engineering Drawing & Projection,2,Required,1
+IM111,Industrial Relations,2,Required,1
+CC112,Structured Programming,3,Required,2
+BA114,Physics II,3,Required,2
+BA118,Chemistry,2,Required,2
+BA124,Mathematics II,3,Required,2
+LH132,ESP II,2,Required,2
+BA142,Engineering Mechanics II,3,Required,2
+IM112,Manufacturing Technology,2,Required,2
+CC218,Discrete Mathematics,3,Required,3
+BA223,Mathematics III,3,Required,3
+EE231,Electrical Circuits I,3,Required,3
+LH231,Technical Report Writing,3,Required,3
+NE465,Aesthetic Education & Art Appreciation,3,Required,3
+CC212,Applied Programming,3,Required,3
+CC215,Data Structure,3,Required,4
+CC216,Digital Logic Design,3,Required,4
+BA224,Mathematics IV,3,Required,4
+EE232,Electrical Circuits II,3,Required,4
+EC238,Electronics I,3,Required,4
+EC218,Measurements & Instrument,3,Required,4
+CC317,Digital Systems Design,3,Required,5
+CC319,Advanced Programming,3,Required,5
+BA323,Mathematics V,3,Required,5
+EE328,Electrical Power & Machines,3,Required,5
+EC339,Electronics II,3,Required,5
+EC320,Communication Theory,3,Required,5
+CC311,Computer Architecture,3,Required,6
+CC316,Object-Oriented Programming,3,Required,6
+BA326,Mathematics VI,3,Required,6
+CC341,Digital Electronics,3,Required,6
+NE364,Engineering Economy,3,Required,6
+CC331,Data & Computer Communications,3,Required,6
+CC410,Systems Programming,3,Required,7
+CC414,Database Systems,3,Required,7
+EE418,Automatic Control Systems,3,Required,7
+CC421,Microprocessors Systems,3,Required,7
+CC419,Numerical Methods,3,Required,7
+CC412,Computing Algorithms,3,Elective,Elective
+CC417,Assembly Language,3,Elective,Elective
+CC447,Multimedia & Virtual Reality Systems,3,Elective,Elective
+CC510,Embedded Systems Design,3,Elective,Elective
+CC514,Introduction to Big Data Management,3,Elective,Elective
+CC515,Intro. to Software Engineering,3,Elective,Elective
+CC516,Image Processing and Pattern Recognition,3,Elective,Elective
+CC517,Modelling & Simulation,3,Elective,Elective
+CC518,Data Security,3,Elective,Elective
+CC519,Introduction to Data Mining,3,Elective,Elective
+CC521,Microcomputer Based Design,3,Elective,Elective
+CC523,Computer Design & Performance Evaluation,3,Elective,Elective
+CC524,Neural Networks,3,Elective,Elective
+CC525,Intelligent Robotics,3,Elective,Elective
+CC527,Computer-Aided Design,3,Elective,Elective
+CC528,Computer Systems Performance Analysis,3,Elective,Elective
+CC529,Distributed & Parallel Systems,3,Elective,Elective
+CC532,Cloud Computing,3,Elective,Elective
+CC533,Internetwork Programming,3,Elective,Elective
+CC535,Internetwork Security,3,Elective,Elective
+CC536,Cyber Security,3,Elective,Elective
+CC537,Computer Forensics,3,Elective,Elective
+CC539,Selected Topics in Networks,3,Elective,Elective
+CC540,Computer Systems Engineering,3,Elective,Elective
+CC550,Selected Topics in Computing,3,Elective,Elective
+CC552,Web Engineering,3,Elective,Elective
+CC553,Mobile Applications,3,Elective,Elective
+CC416,Computer Graphics,3,Required,8
+CC418,Operating Systems,3,Required,8
+CC431,Computer Networks,3,Required,8
+CC415,Data Acquisition Systems,3,Required,8
+IM423,Operations Research,3,Required,8
+CC501,Senior Project I,3,Required,9
+CC511,Introduction to Artificial Intelligence,3,Required,9
+NE466,Environmental Science & Tech.,3,Required,9
+CC531,Advanced Networks,3,Required,9
+CC513,Computing Systems,3,Required,10
+CC503,Senior Project II,6,Required,10
+IM535,International Operations Management,3,Required,10
+IM400CC,Practical Training,0,Required,10

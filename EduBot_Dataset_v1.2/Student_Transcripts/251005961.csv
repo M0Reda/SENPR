@@ -1,0 +1,21 @@
+student_id,student_name,semester_taken,course_code,course_title,credit_hours,grade,points,status,semester_credit_hours,semester_points,semester_gpa,cumulative_credit_hours,cumulative_points,cumulative_gpa,credits_completed,standing_after_semester
+251005961,Omar Metwally,First Semester / 2025-2026,CC111,Intro to Computer,3,A+,12.0,Passed,18,68.5,3.8,18,68.5,3.8,18,Excellent
+251005961,Omar Metwally,First Semester / 2025-2026,BA113,Physics I,3,A-,11.0,Passed,18,68.5,3.8,18,68.5,3.8,18,Excellent
+251005961,Omar Metwally,First Semester / 2025-2026,BA123,Mathematics I,3,A,11.5,Passed,18,68.5,3.8,18,68.5,3.8,18,Excellent
+251005961,Omar Metwally,First Semester / 2025-2026,LH131,ESP I,2,A-,7.3,Passed,18,68.5,3.8,18,68.5,3.8,18,Excellent
+251005961,Omar Metwally,First Semester / 2025-2026,BA141,Engineering Mechanics I,3,A-,11.0,Passed,18,68.5,3.8,18,68.5,3.8,18,Excellent
+251005961,Omar Metwally,First Semester / 2025-2026,ME151,Engineering Drawing & Projection,2,A,7.7,Passed,18,68.5,3.8,18,68.5,3.8,18,Excellent
+251005961,Omar Metwally,First Semester / 2025-2026,IM111,Industrial Relations,2,A+,8.0,Passed,18,68.5,3.8,18,68.5,3.8,18,Excellent
+251005961,Omar Metwally,Second Semester / 2025-2026,CC112,Structured Programming,3,F,0.0,Failed,18,50.3,2.8,36,118.8,3.3,33,Very Good
+251005961,Omar Metwally,Second Semester / 2025-2026,BA114,Physics II,3,C+,7.0,Passed,18,50.3,2.8,36,118.8,3.3,33,Very Good
+251005961,Omar Metwally,Second Semester / 2025-2026,BA118,Chemistry,2,A+,8.0,Passed,18,50.3,2.8,36,118.8,3.3,33,Very Good
+251005961,Omar Metwally,Second Semester / 2025-2026,BA124,Mathematics II,3,A+,12.0,Passed,18,50.3,2.8,36,118.8,3.3,33,Very Good
+251005961,Omar Metwally,Second Semester / 2025-2026,LH132,ESP II,2,A-,7.3,Passed,18,50.3,2.8,36,118.8,3.3,33,Very Good
+251005961,Omar Metwally,Second Semester / 2025-2026,BA142,Engineering Mechanics II,3,B+,10.0,Passed,18,50.3,2.8,36,118.8,3.3,33,Very Good
+251005961,Omar Metwally,Second Semester / 2025-2026,IM112,Manufacturing Technology,2,B,6.0,Passed,18,50.3,2.8,36,118.8,3.3,33,Very Good
+251005961,Omar Metwally,First Semester / 2026-2027,CC112,Structured Programming,3,,,In Progress,,,,,,,,
+251005961,Omar Metwally,First Semester / 2026-2027,CC218,Discrete Mathematics,3,,,In Progress,,,,,,,,
+251005961,Omar Metwally,First Semester / 2026-2027,BA223,Mathematics III,3,,,In Progress,,,,,,,,
+251005961,Omar Metwally,First Semester / 2026-2027,EE231,Electrical Circuits I,3,,,In Progress,,,,,,,,
+251005961,Omar Metwally,First Semester / 2026-2027,LH231,Technical Report Writing,3,,,In Progress,,,,,,,,
+251005961,Omar Metwally,First Semester / 2026-2027,NE465,Aesthetic Education & Art Appreciation,3,,,In Progress,,,,,,,,

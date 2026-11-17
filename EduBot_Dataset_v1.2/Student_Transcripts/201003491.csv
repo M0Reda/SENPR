@@ -1,0 +1,78 @@
+student_id,student_name,semester_taken,course_code,course_title,credit_hours,grade,points,status,semester_credit_hours,semester_points,semester_gpa,cumulative_credit_hours,cumulative_points,cumulative_gpa,credits_completed,standing_after_semester
+201003491,Ahmed Seif,First Semester / 2020-2021,CC111,Intro to Computer,3,B-,8.0,Passed,18,35.0,1.9,18,35.0,1.9,18,Academic Probation (1st Warning)
+201003491,Ahmed Seif,First Semester / 2020-2021,BA113,Physics I,3,C+,7.0,Passed,18,35.0,1.9,18,35.0,1.9,18,Academic Probation (1st Warning)
+201003491,Ahmed Seif,First Semester / 2020-2021,BA123,Mathematics I,3,D+,4.0,Passed,18,35.0,1.9,18,35.0,1.9,18,Academic Probation (1st Warning)
+201003491,Ahmed Seif,First Semester / 2020-2021,LH131,ESP I,2,C+,4.7,Passed,18,35.0,1.9,18,35.0,1.9,18,Academic Probation (1st Warning)
+201003491,Ahmed Seif,First Semester / 2020-2021,BA141,Engineering Mechanics I,3,D+,4.0,Passed,18,35.0,1.9,18,35.0,1.9,18,Academic Probation (1st Warning)
+201003491,Ahmed Seif,First Semester / 2020-2021,ME151,Engineering Drawing & Projection,2,C,4.0,Passed,18,35.0,1.9,18,35.0,1.9,18,Academic Probation (1st Warning)
+201003491,Ahmed Seif,First Semester / 2020-2021,IM111,Industrial Relations,2,C-,3.3,Passed,18,35.0,1.9,18,35.0,1.9,18,Academic Probation (1st Warning)
+201003491,Ahmed Seif,Second Semester / 2020-2021,CC112,Structured Programming,3,B-,8.0,Passed,11,27.7,2.5,29,62.7,2.2,29,Pass
+201003491,Ahmed Seif,Second Semester / 2020-2021,BA114,Physics II,3,C,6.0,Passed,11,27.7,2.5,29,62.7,2.2,29,Pass
+201003491,Ahmed Seif,Second Semester / 2020-2021,BA118,Chemistry,2,B+,6.7,Passed,11,27.7,2.5,29,62.7,2.2,29,Pass
+201003491,Ahmed Seif,Second Semester / 2020-2021,BA124,Mathematics II,3,C+,7.0,Passed,11,27.7,2.5,29,62.7,2.2,29,Pass
+201003491,Ahmed Seif,First Semester / 2021-2022,LH132,ESP II,2,B,6.0,Passed,16,45.0,2.8,45,107.7,2.4,45,Pass
+201003491,Ahmed Seif,First Semester / 2021-2022,BA142,Engineering Mechanics II,3,C,6.0,Passed,16,45.0,2.8,45,107.7,2.4,45,Pass
+201003491,Ahmed Seif,First Semester / 2021-2022,IM112,Manufacturing Technology,2,B,6.0,Passed,16,45.0,2.8,45,107.7,2.4,45,Pass
+201003491,Ahmed Seif,First Semester / 2021-2022,CC218,Discrete Mathematics,3,B,9.0,Passed,16,45.0,2.8,45,107.7,2.4,45,Pass
+201003491,Ahmed Seif,First Semester / 2021-2022,BA223,Mathematics III,3,B,9.0,Passed,16,45.0,2.8,45,107.7,2.4,45,Pass
+201003491,Ahmed Seif,First Semester / 2021-2022,EE231,Electrical Circuits I,3,B,9.0,Passed,16,45.0,2.8,45,107.7,2.4,45,Pass
+201003491,Ahmed Seif,Second Semester / 2021-2022,LH231,Technical Report Writing,3,C+,7.0,Passed,18,34.0,1.9,63,141.7,2.2,60,Pass
+201003491,Ahmed Seif,Second Semester / 2021-2022,NE465,Aesthetic Education & Art Appreciation,3,C,6.0,Passed,18,34.0,1.9,63,141.7,2.2,60,Pass
+201003491,Ahmed Seif,Second Semester / 2021-2022,CC212,Applied Programming,3,F,0.0,Retaken,18,34.0,1.9,63,141.7,2.2,60,Pass
+201003491,Ahmed Seif,Second Semester / 2021-2022,CC216,Digital Logic Design,3,C+,7.0,Passed,18,34.0,1.9,63,141.7,2.2,60,Pass
+201003491,Ahmed Seif,Second Semester / 2021-2022,BA224,Mathematics IV,3,C+,7.0,Passed,18,34.0,1.9,63,141.7,2.2,60,Pass
+201003491,Ahmed Seif,Second Semester / 2021-2022,EE232,Electrical Circuits II,3,C+,7.0,Passed,18,34.0,1.9,63,141.7,2.2,60,Pass
+201003491,Ahmed Seif,Summer Semester / 2021-2022,CC212,Applied Programming,3,B,9.0,Passed,6,9.0,1.5,66,150.7,2.3,63,Pass
+201003491,Ahmed Seif,Summer Semester / 2021-2022,EC238,Electronics I,3,F,0.0,Retaken,6,9.0,1.5,66,150.7,2.3,63,Pass
+201003491,Ahmed Seif,First Semester / 2022-2023,EC238,Electronics I,3,C+,7.0,Passed,18,26.0,1.4,81,176.7,2.2,78,Pass
+201003491,Ahmed Seif,First Semester / 2022-2023,CC215,Data Structure,3,B-,8.0,Passed,18,26.0,1.4,81,176.7,2.2,78,Pass
+201003491,Ahmed Seif,First Semester / 2022-2023,EC218,Measurements & Instrument,3,C-,5.0,Passed,18,26.0,1.4,81,176.7,2.2,78,Pass
+201003491,Ahmed Seif,First Semester / 2022-2023,CC317,Digital Systems Design,3,D,3.0,Passed,18,26.0,1.4,81,176.7,2.2,78,Pass
+201003491,Ahmed Seif,First Semester / 2022-2023,BA323,Mathematics V,3,F,0.0,Retaken,18,26.0,1.4,81,176.7,2.2,78,Pass
+201003491,Ahmed Seif,First Semester / 2022-2023,EE328,Electrical Power & Machines,3,D,3.0,Passed,18,26.0,1.4,81,176.7,2.2,78,Pass
+201003491,Ahmed Seif,Second Semester / 2022-2023,BA323,Mathematics V,3,C,6.0,Passed,18,31.0,1.7,96,207.7,2.2,93,Pass
+201003491,Ahmed Seif,Second Semester / 2022-2023,CC319,Advanced Programming,3,C+,7.0,Passed,18,31.0,1.7,96,207.7,2.2,93,Pass
+201003491,Ahmed Seif,Second Semester / 2022-2023,EC339,Electronics II,3,F,0.0,Retaken,18,31.0,1.7,96,207.7,2.2,93,Pass
+201003491,Ahmed Seif,Second Semester / 2022-2023,EC320,Communication Theory,3,D+,4.0,Passed,18,31.0,1.7,96,207.7,2.2,93,Pass
+201003491,Ahmed Seif,Second Semester / 2022-2023,CC311,Computer Architecture,3,C,6.0,Passed,18,31.0,1.7,96,207.7,2.2,93,Pass
+201003491,Ahmed Seif,Second Semester / 2022-2023,BA326,Mathematics VI,3,B-,8.0,Passed,18,31.0,1.7,96,207.7,2.2,93,Pass
+201003491,Ahmed Seif,Summer Semester / 2022-2023,EC339,Electronics II,3,C+,7.0,Passed,6,7.0,1.2,99,214.7,2.2,96,Pass
+201003491,Ahmed Seif,Summer Semester / 2022-2023,CC316,Object-Oriented Programming,3,F,0.0,Retaken,6,7.0,1.2,99,214.7,2.2,96,Pass
+201003491,Ahmed Seif,First Semester / 2023-2024,CC316,Object-Oriented Programming,3,C+,7.0,Passed,18,49.0,2.7,114,263.7,2.3,114,Pass
+201003491,Ahmed Seif,First Semester / 2023-2024,CC341,Digital Electronics,3,B+,10.0,Passed,18,49.0,2.7,114,263.7,2.3,114,Pass
+201003491,Ahmed Seif,First Semester / 2023-2024,NE364,Engineering Economy,3,B-,8.0,Passed,18,49.0,2.7,114,263.7,2.3,114,Pass
+201003491,Ahmed Seif,First Semester / 2023-2024,CC331,Data & Computer Communications,3,C,6.0,Passed,18,49.0,2.7,114,263.7,2.3,114,Pass
+201003491,Ahmed Seif,First Semester / 2023-2024,CC410,Systems Programming,3,A-,11.0,Passed,18,49.0,2.7,114,263.7,2.3,114,Pass
+201003491,Ahmed Seif,First Semester / 2023-2024,CC414,Database Systems,3,C+,7.0,Passed,18,49.0,2.7,114,263.7,2.3,114,Pass
+201003491,Ahmed Seif,Second Semester / 2023-2024,EE418,Automatic Control Systems,3,F,0.0,Retaken,18,28.0,1.6,132,291.7,2.2,126,Pass
+201003491,Ahmed Seif,Second Semester / 2023-2024,CC515,Intro. to Software Engineering,3,C,6.0,Passed,18,28.0,1.6,132,291.7,2.2,126,Pass
+201003491,Ahmed Seif,Second Semester / 2023-2024,CC421,Microprocessors Systems,3,F,0.0,Retaken,18,28.0,1.6,132,291.7,2.2,126,Pass
+201003491,Ahmed Seif,Second Semester / 2023-2024,CC419,Numerical Methods,3,B-,8.0,Passed,18,28.0,1.6,132,291.7,2.2,126,Pass
+201003491,Ahmed Seif,Second Semester / 2023-2024,CC416,Computer Graphics,3,C,6.0,Passed,18,28.0,1.6,132,291.7,2.2,126,Pass
+201003491,Ahmed Seif,Second Semester / 2023-2024,CC418,Operating Systems,3,B-,8.0,Passed,18,28.0,1.6,132,291.7,2.2,126,Pass
+201003491,Ahmed Seif,Summer Semester / 2023-2024,EE418,Automatic Control Systems,3,B-,8.0,Passed,6,18.0,3.0,132,309.7,2.3,132,Pass
+201003491,Ahmed Seif,Summer Semester / 2023-2024,CC421,Microprocessors Systems,3,B+,10.0,Passed,6,18.0,3.0,132,309.7,2.3,132,Pass
+201003491,Ahmed Seif,First Semester / 2024-2025,CC431,Computer Networks,3,D+,4.0,Retaken,18,13.0,0.7,150,322.7,2.2,141,Pass
+201003491,Ahmed Seif,First Semester / 2024-2025,CC415,Data Acquisition Systems,3,F,0.0,Retaken,18,13.0,0.7,150,322.7,2.2,141,Pass
+201003491,Ahmed Seif,First Semester / 2024-2025,CC514,Introduction to Big Data Management,3,D+,4.0,Passed,18,13.0,0.7,150,322.7,2.2,141,Pass
+201003491,Ahmed Seif,First Semester / 2024-2025,IM423,Operations Research,3,C-,5.0,Passed,18,13.0,0.7,150,322.7,2.2,141,Pass
+201003491,Ahmed Seif,First Semester / 2024-2025,CC501,Senior Project I,3,F,0.0,Retaken,18,13.0,0.7,150,322.7,2.2,141,Pass
+201003491,Ahmed Seif,First Semester / 2024-2025,CC511,Introduction to Artificial Intelligence,3,F,0.0,Retaken,18,13.0,0.7,150,322.7,2.2,141,Pass
+201003491,Ahmed Seif,Second Semester / 2024-2025,CC415,Data Acquisition Systems,3,C,6.0,Passed,18,29.0,1.6,156,347.7,2.2,153,Pass
+201003491,Ahmed Seif,Second Semester / 2024-2025,CC501,Senior Project I,3,D,3.0,Passed,18,29.0,1.6,156,347.7,2.2,153,Pass
+201003491,Ahmed Seif,Second Semester / 2024-2025,CC511,Introduction to Artificial Intelligence,3,B+,10.0,Passed,18,29.0,1.6,156,347.7,2.2,153,Pass
+201003491,Ahmed Seif,Second Semester / 2024-2025,CC431,Computer Networks,3,C,6.0,Passed,18,29.0,1.6,156,347.7,2.2,153,Pass
+201003491,Ahmed Seif,Second Semester / 2024-2025,NE466,Environmental Science & Tech.,3,D+,4.0,Passed,18,29.0,1.6,156,347.7,2.2,153,Pass
+201003491,Ahmed Seif,Second Semester / 2024-2025,CC531,Advanced Networks,3,F,0.0,Retaken,18,29.0,1.6,156,347.7,2.2,153,Pass
+201003491,Ahmed Seif,Summer Semester / 2024-2025,CC531,Advanced Networks,3,B,9.0,Passed,6,14.0,2.3,159,361.7,2.3,159,Pass
+201003491,Ahmed Seif,Summer Semester / 2024-2025,CC519,Introduction to Data Mining,3,C-,5.0,Passed,6,14.0,2.3,159,361.7,2.3,159,Pass
+201003491,Ahmed Seif,First Semester / 2025-2026,CC417,Assembly Language,3,D,3.0,Passed,18,18.0,1.0,177,379.7,2.1,174,Pass
+201003491,Ahmed Seif,First Semester / 2025-2026,CC513,Computing Systems,3,F,0.0,Retaken,18,18.0,1.0,177,379.7,2.1,174,Pass
+201003491,Ahmed Seif,First Semester / 2025-2026,CC503,Senior Project II,6,D,6.0,Passed,18,18.0,1.0,177,379.7,2.1,174,Pass
+201003491,Ahmed Seif,First Semester / 2025-2026,IM535,International Operations Management,3,C,6.0,Passed,18,18.0,1.0,177,379.7,2.1,174,Pass
+201003491,Ahmed Seif,First Semester / 2025-2026,CC510,Embedded Systems Design,3,D,3.0,Passed,18,18.0,1.0,177,379.7,2.1,174,Pass
+201003491,Ahmed Seif,Second Semester / 2025-2026,CC513,Computing Systems,3,F,0.0,Retaken,6,4.0,0.7,180,383.7,2.1,177,Pass
+201003491,Ahmed Seif,Second Semester / 2025-2026,CC550,Selected Topics in Computing,3,D+,4.0,Passed,6,4.0,0.7,180,383.7,2.1,177,Pass
+201003491,Ahmed Seif,Second Semester / 2025-2026,IM400CC,Practical Training,0,P,0.0,Passed,6,4.0,0.7,180,383.7,2.1,177,Pass
+201003491,Ahmed Seif,Summer Semester / 2025-2026,CC513,Computing Systems,3,F,0.0,Failed,3,0.0,0.0,180,383.7,2.1,177,Pass
+201003491,Ahmed Seif,First Semester / 2026-2027,CC513,Computing Systems,3,,,In Progress,,,,,,,,

@@ -1,0 +1,66 @@
+student_id,student_name,semester_taken,course_code,course_title,credit_hours,grade,points,status,semester_credit_hours,semester_points,semester_gpa,cumulative_credit_hours,cumulative_points,cumulative_gpa,credits_completed,standing_after_semester
+211003751,Abdallah Abdelmoneim,First Semester / 2021-2022,CC111,Intro to Computer,3,B-,8.0,Passed,18,33.0,1.8,18,33.0,1.8,18,Academic Probation (1st Warning)
+211003751,Abdallah Abdelmoneim,First Semester / 2021-2022,BA113,Physics I,3,D+,4.0,Passed,18,33.0,1.8,18,33.0,1.8,18,Academic Probation (1st Warning)
+211003751,Abdallah Abdelmoneim,First Semester / 2021-2022,BA123,Mathematics I,3,C,6.0,Passed,18,33.0,1.8,18,33.0,1.8,18,Academic Probation (1st Warning)
+211003751,Abdallah Abdelmoneim,First Semester / 2021-2022,LH131,ESP I,2,B+,6.7,Passed,18,33.0,1.8,18,33.0,1.8,18,Academic Probation (1st Warning)
+211003751,Abdallah Abdelmoneim,First Semester / 2021-2022,BA141,Engineering Mechanics I,3,D,3.0,Retaken,18,33.0,1.8,18,33.0,1.8,18,Academic Probation (1st Warning)
+211003751,Abdallah Abdelmoneim,First Semester / 2021-2022,ME151,Engineering Drawing & Projection,2,C-,3.3,Passed,18,33.0,1.8,18,33.0,1.8,18,Academic Probation (1st Warning)
+211003751,Abdallah Abdelmoneim,First Semester / 2021-2022,IM111,Industrial Relations,2,D,2.0,Passed,18,33.0,1.8,18,33.0,1.8,18,Academic Probation (1st Warning)
+211003751,Abdallah Abdelmoneim,Second Semester / 2021-2022,CC112,Structured Programming,3,D,3.0,Passed,11,16.7,1.5,29,49.7,1.7,29,Academic Probation (2nd Warning)
+211003751,Abdallah Abdelmoneim,Second Semester / 2021-2022,BA114,Physics II,3,D+,4.0,Passed,11,16.7,1.5,29,49.7,1.7,29,Academic Probation (2nd Warning)
+211003751,Abdallah Abdelmoneim,Second Semester / 2021-2022,BA118,Chemistry,2,C+,4.7,Passed,11,16.7,1.5,29,49.7,1.7,29,Academic Probation (2nd Warning)
+211003751,Abdallah Abdelmoneim,Second Semester / 2021-2022,BA124,Mathematics II,3,C-,5.0,Passed,11,16.7,1.5,29,49.7,1.7,29,Academic Probation (2nd Warning)
+211003751,Abdallah Abdelmoneim,Summer Semester / 2021-2022,LH132,ESP II,2,C,4.0,Passed,5,12.0,2.4,34,61.7,1.8,34,Academic Probation (2nd Warning)
+211003751,Abdallah Abdelmoneim,Summer Semester / 2021-2022,BA142,Engineering Mechanics II,3,B-,8.0,Passed,5,12.0,2.4,34,61.7,1.8,34,Academic Probation (2nd Warning)
+211003751,Abdallah Abdelmoneim,First Semester / 2022-2023,BA141,Engineering Mechanics I,3,D+,4.0,Passed,11,26.3,2.4,42,85.0,2.0,42,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2022-2023,IM112,Manufacturing Technology,2,B-,5.3,Passed,11,26.3,2.4,42,85.0,2.0,42,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2022-2023,CC218,Discrete Mathematics,3,C+,7.0,Passed,11,26.3,2.4,42,85.0,2.0,42,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2022-2023,BA223,Mathematics III,3,B+,10.0,Passed,11,26.3,2.4,42,85.0,2.0,42,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2022-2023,EE231,Electrical Circuits I,3,B-,8.0,Passed,18,40.0,2.2,60,125.0,2.1,60,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2022-2023,LH231,Technical Report Writing,3,B-,8.0,Passed,18,40.0,2.2,60,125.0,2.1,60,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2022-2023,NE465,Aesthetic Education & Art Appreciation,3,C+,7.0,Passed,18,40.0,2.2,60,125.0,2.1,60,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2022-2023,CC212,Applied Programming,3,C+,7.0,Passed,18,40.0,2.2,60,125.0,2.1,60,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2022-2023,CC216,Digital Logic Design,3,D,3.0,Passed,18,40.0,2.2,60,125.0,2.1,60,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2022-2023,BA224,Mathematics IV,3,C+,7.0,Passed,18,40.0,2.2,60,125.0,2.1,60,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2023-2024,CC215,Data Structure,3,C,6.0,Passed,18,49.0,2.7,78,174.0,2.2,78,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2023-2024,EE232,Electrical Circuits II,3,B+,10.0,Passed,18,49.0,2.7,78,174.0,2.2,78,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2023-2024,EC238,Electronics I,3,B-,8.0,Passed,18,49.0,2.7,78,174.0,2.2,78,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2023-2024,EC218,Measurements & Instrument,3,B,9.0,Passed,18,49.0,2.7,78,174.0,2.2,78,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2023-2024,CC317,Digital Systems Design,3,B-,8.0,Passed,18,49.0,2.7,78,174.0,2.2,78,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2023-2024,BA323,Mathematics V,3,B-,8.0,Passed,18,49.0,2.7,78,174.0,2.2,78,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2023-2024,CC319,Advanced Programming,3,B,9.0,Passed,18,38.0,2.1,96,212.0,2.2,96,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2023-2024,EE328,Electrical Power & Machines,3,D+,4.0,Passed,18,38.0,2.1,96,212.0,2.2,96,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2023-2024,EC339,Electronics II,3,C-,5.0,Passed,18,38.0,2.1,96,212.0,2.2,96,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2023-2024,EC320,Communication Theory,3,C-,5.0,Passed,18,38.0,2.1,96,212.0,2.2,96,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2023-2024,CC311,Computer Architecture,3,A-,11.0,Passed,18,38.0,2.1,96,212.0,2.2,96,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2023-2024,BA326,Mathematics VI,3,D+,4.0,Passed,18,38.0,2.1,96,212.0,2.2,96,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2024-2025,CC316,Object-Oriented Programming,3,C,6.0,Passed,18,48.0,2.7,114,260.0,2.3,114,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2024-2025,CC341,Digital Electronics,3,B,9.0,Passed,18,48.0,2.7,114,260.0,2.3,114,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2024-2025,NE364,Engineering Economy,3,A-,11.0,Passed,18,48.0,2.7,114,260.0,2.3,114,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2024-2025,CC331,Data & Computer Communications,3,D,3.0,Passed,18,48.0,2.7,114,260.0,2.3,114,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2024-2025,CC410,Systems Programming,3,B,9.0,Passed,18,48.0,2.7,114,260.0,2.3,114,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2024-2025,CC414,Database Systems,3,B+,10.0,Passed,18,48.0,2.7,114,260.0,2.3,114,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2024-2025,EE418,Automatic Control Systems,3,C,6.0,Passed,18,41.0,2.3,132,301.0,2.3,132,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2024-2025,CC412,Computing Algorithms,3,B-,8.0,Passed,18,41.0,2.3,132,301.0,2.3,132,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2024-2025,CC421,Microprocessors Systems,3,D,3.0,Passed,18,41.0,2.3,132,301.0,2.3,132,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2024-2025,CC419,Numerical Methods,3,B-,8.0,Passed,18,41.0,2.3,132,301.0,2.3,132,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2024-2025,CC416,Computer Graphics,3,B+,10.0,Passed,18,41.0,2.3,132,301.0,2.3,132,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2024-2025,CC418,Operating Systems,3,C,6.0,Passed,18,41.0,2.3,132,301.0,2.3,132,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2025-2026,CC431,Computer Networks,3,D,3.0,Passed,18,22.0,1.2,150,323.0,2.2,147,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2025-2026,CC415,Data Acquisition Systems,3,D+,4.0,Passed,18,22.0,1.2,150,323.0,2.2,147,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2025-2026,CC515,Intro. to Software Engineering,3,C,6.0,Passed,18,22.0,1.2,150,323.0,2.2,147,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2025-2026,IM423,Operations Research,3,C-,5.0,Passed,18,22.0,1.2,150,323.0,2.2,147,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2025-2026,CC501,Senior Project I,3,F,0.0,Retaken,18,22.0,1.2,150,323.0,2.2,147,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2025-2026,CC511,Introduction to Artificial Intelligence,3,D+,4.0,Passed,18,22.0,1.2,150,323.0,2.2,147,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2025-2026,CC501,Senior Project I,3,F,0.0,Failed,18,6.0,0.3,165,329.0,2.0,153,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2025-2026,NE466,Environmental Science & Tech.,3,F,0.0,Failed,18,6.0,0.3,165,329.0,2.0,153,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2025-2026,CC531,Advanced Networks,3,D,3.0,Passed,18,6.0,0.3,165,329.0,2.0,153,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2025-2026,CC514,Introduction to Big Data Management,3,F,0.0,Failed,18,6.0,0.3,165,329.0,2.0,153,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2025-2026,CC519,Introduction to Data Mining,3,D,3.0,Passed,18,6.0,0.3,165,329.0,2.0,153,Pass
+211003751,Abdallah Abdelmoneim,Second Semester / 2025-2026,CC513,Computing Systems,3,F,0.0,Failed,18,6.0,0.3,165,329.0,2.0,153,Pass
+211003751,Abdallah Abdelmoneim,First Semester / 2026-2027,CC501,Senior Project I,3,,,In Progress,,,,,,,,
+211003751,Abdallah Abdelmoneim,First Semester / 2026-2027,NE466,Environmental Science & Tech.,3,,,In Progress,,,,,,,,
+211003751,Abdallah Abdelmoneim,First Semester / 2026-2027,CC514,Introduction to Big Data Management,3,,,In Progress,,,,,,,,
+211003751,Abdallah Abdelmoneim,First Semester / 2026-2027,CC513,Computing Systems,3,,,In Progress,,,,,,,,
+211003751,Abdallah Abdelmoneim,First Semester / 2026-2027,IM535,International Operations Management,3,,,In Progress,,,,,,,,
+211003751,Abdallah Abdelmoneim,First Semester / 2026-2027,CC539,Selected Topics in Networks,3,,,In Progress,,,,,,,,

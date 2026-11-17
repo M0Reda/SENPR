@@ -1,0 +1,8 @@
+student_id,student_name,semester_taken,course_code,course_title,credit_hours,grade,points,status,semester_credit_hours,semester_points,semester_gpa,cumulative_credit_hours,cumulative_points,cumulative_gpa,credits_completed,standing_after_semester
+261004664,Mohamed Abdelmoneim,First Semester / 2026-2027,CC111,Intro to Computer,3,,,In Progress,,,,,,,,
+261004664,Mohamed Abdelmoneim,First Semester / 2026-2027,BA113,Physics I,3,,,In Progress,,,,,,,,
+261004664,Mohamed Abdelmoneim,First Semester / 2026-2027,BA123,Mathematics I,3,,,In Progress,,,,,,,,
+261004664,Mohamed Abdelmoneim,First Semester / 2026-2027,LH131,ESP I,2,,,In Progress,,,,,,,,
+261004664,Mohamed Abdelmoneim,First Semester / 2026-2027,BA141,Engineering Mechanics I,3,,,In Progress,,,,,,,,
+261004664,Mohamed Abdelmoneim,First Semester / 2026-2027,ME151,Engineering Drawing & Projection,2,,,In Progress,,,,,,,,
+261004664,Mohamed Abdelmoneim,First Semester / 2026-2027,IM111,Industrial Relations,2,,,In Progress,,,,,,,,

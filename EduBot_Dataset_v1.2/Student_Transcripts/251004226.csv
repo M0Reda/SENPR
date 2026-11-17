@@ -1,0 +1,17 @@
+student_id,student_name,semester_taken,course_code,course_title,credit_hours,grade,points,status,semester_credit_hours,semester_points,semester_gpa,cumulative_credit_hours,cumulative_points,cumulative_gpa,credits_completed,standing_after_semester
+251004226,Eslam Ibrahim,First Semester / 2025-2026,CC111,Intro to Computer,3,C,6.0,Passed,18,20.0,1.1,18,20.0,1.1,13,Academic Probation (1st Warning)
+251004226,Eslam Ibrahim,First Semester / 2025-2026,BA113,Physics I,3,F,0.0,Retaken,18,20.0,1.1,18,20.0,1.1,13,Academic Probation (1st Warning)
+251004226,Eslam Ibrahim,First Semester / 2025-2026,BA123,Mathematics I,3,D,3.0,Passed,18,20.0,1.1,18,20.0,1.1,13,Academic Probation (1st Warning)
+251004226,Eslam Ibrahim,First Semester / 2025-2026,LH131,ESP I,2,C-,3.3,Passed,18,20.0,1.1,18,20.0,1.1,13,Academic Probation (1st Warning)
+251004226,Eslam Ibrahim,First Semester / 2025-2026,BA141,Engineering Mechanics I,3,D,3.0,Passed,18,20.0,1.1,18,20.0,1.1,13,Academic Probation (1st Warning)
+251004226,Eslam Ibrahim,First Semester / 2025-2026,ME151,Engineering Drawing & Projection,2,C+,4.7,Passed,18,20.0,1.1,18,20.0,1.1,13,Academic Probation (1st Warning)
+251004226,Eslam Ibrahim,First Semester / 2025-2026,IM111,Industrial Relations,2,F,0.0,Retaken,18,20.0,1.1,18,20.0,1.1,13,Academic Probation (1st Warning)
+251004226,Eslam Ibrahim,Second Semester / 2025-2026,BA113,Physics I,3,C+,7.0,Passed,12,24.0,2.0,25,44.0,1.8,25,Academic Probation (2nd Warning)
+251004226,Eslam Ibrahim,Second Semester / 2025-2026,IM111,Industrial Relations,2,C,4.0,Passed,12,24.0,2.0,25,44.0,1.8,25,Academic Probation (2nd Warning)
+251004226,Eslam Ibrahim,Second Semester / 2025-2026,CC112,Structured Programming,3,C+,7.0,Passed,12,24.0,2.0,25,44.0,1.8,25,Academic Probation (2nd Warning)
+251004226,Eslam Ibrahim,Second Semester / 2025-2026,BA118,Chemistry,2,C-,3.3,Passed,12,24.0,2.0,25,44.0,1.8,25,Academic Probation (2nd Warning)
+251004226,Eslam Ibrahim,Second Semester / 2025-2026,LH132,ESP II,2,D+,2.7,Passed,12,24.0,2.0,25,44.0,1.8,25,Academic Probation (2nd Warning)
+251004226,Eslam Ibrahim,First Semester / 2026-2027,BA114,Physics II,3,,,In Progress,,,,,,,,
+251004226,Eslam Ibrahim,First Semester / 2026-2027,BA124,Mathematics II,3,,,In Progress,,,,,,,,
+251004226,Eslam Ibrahim,First Semester / 2026-2027,BA142,Engineering Mechanics II,3,,,In Progress,,,,,,,,
+251004226,Eslam Ibrahim,First Semester / 2026-2027,IM112,Manufacturing Technology,2,,,In Progress,,,,,,,,

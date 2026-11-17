@@ -1,0 +1,75 @@
+services:
+  # ── EduBot Web Application ───────────────────────────────────
+  edubot:
+    build:
+      context: .
+      dockerfile: edubot/Dockerfile
+    container_name: edubot-app
+    restart: unless-stopped
+    ports:
+      - "${GRADIO_PORT:-7860}:7860"
+    environment:
+      - OLLAMA_HOST=${OLLAMA_HOST:-http://ollama:11434}
+      - GRADIO_SERVER_NAME=0.0.0.0
+      - GRADIO_SERVER_PORT=7860
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./edubot/chroma_db:/app/edubot/chroma_db
+      - ./edubot/logs:/app/edubot/logs
+      - ./EduBot_Dataset_v1.2:/app/EduBot_Dataset_v1.2:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      ollama:
+        condition: service_healthy
+      ollama-init:
+        condition: service_completed_successfully
+    networks:
+      - edubot-network
+
+  # ── Ollama LLM Service ────────────────────────────────────────
+  ollama:
+    image: ollama/ollama:latest
+    container_name: edubot-ollama
+    restart: unless-stopped
+    ports:
+      - "${OLLAMA_PORT:-11434}:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    healthcheck:
+      test: ["CMD-SHELL", "ollama list > /dev/null 2>&1 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - edubot-network
+
+  # ── Automatic Model Puller ───────────────────────────────────
+  ollama-init:
+    image: ollama/ollama:latest
+    container_name: edubot-ollama-init
+    restart: "no"
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+      - MODEL=${OLLAMA_MODEL:-llama3.2:3b}
+    entrypoint: ["/bin/sh", "-c"]
+    command: >
+      "echo 'Waiting for Ollama service to start...' &&
+       until ollama list > /dev/null 2>&1; do sleep 2; done &&
+       echo 'Checking and pulling model: '$$MODEL &&
+       ollama pull $$MODEL &&
+       echo 'Model ready!'"
+    depends_on:
+      ollama:
+        condition: service_healthy
+    networks:
+      - edubot-network
+
+networks:
+  edubot-network:
+    driver: bridge
+
+volumes:
+  ollama_models:
+    name: edubot_ollama_models

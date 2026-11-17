@@ -1,0 +1,65 @@
+student_id,student_name,semester_taken,course_code,course_title,credit_hours,grade,points,status,semester_credit_hours,semester_points,semester_gpa,cumulative_credit_hours,cumulative_points,cumulative_gpa,credits_completed,standing_after_semester
+211003884,Ayman Moussa,First Semester / 2021-2022,CC111,Intro to Computer,3,C-,5.0,Passed,18,34.4,1.9,18,34.4,1.9,15,Academic Probation (1st Warning)
+211003884,Ayman Moussa,First Semester / 2021-2022,BA113,Physics I,3,C-,5.0,Passed,18,34.4,1.9,18,34.4,1.9,15,Academic Probation (1st Warning)
+211003884,Ayman Moussa,First Semester / 2021-2022,BA123,Mathematics I,3,C-,5.0,Passed,18,34.4,1.9,18,34.4,1.9,15,Academic Probation (1st Warning)
+211003884,Ayman Moussa,First Semester / 2021-2022,LH131,ESP I,2,B,6.0,Passed,18,34.4,1.9,18,34.4,1.9,15,Academic Probation (1st Warning)
+211003884,Ayman Moussa,First Semester / 2021-2022,BA141,Engineering Mechanics I,3,F,0.0,Retaken,18,34.4,1.9,18,34.4,1.9,15,Academic Probation (1st Warning)
+211003884,Ayman Moussa,First Semester / 2021-2022,ME151,Engineering Drawing & Projection,2,B+,6.7,Passed,18,34.4,1.9,18,34.4,1.9,15,Academic Probation (1st Warning)
+211003884,Ayman Moussa,First Semester / 2021-2022,IM111,Industrial Relations,2,B+,6.7,Passed,18,34.4,1.9,18,34.4,1.9,15,Academic Probation (1st Warning)
+211003884,Ayman Moussa,Second Semester / 2021-2022,BA141,Engineering Mechanics I,3,C+,7.0,Passed,11,24.0,2.2,26,58.4,2.2,26,Pass
+211003884,Ayman Moussa,Second Semester / 2021-2022,CC112,Structured Programming,3,C,6.0,Passed,11,24.0,2.2,26,58.4,2.2,26,Pass
+211003884,Ayman Moussa,Second Semester / 2021-2022,BA114,Physics II,3,C-,5.0,Passed,11,24.0,2.2,26,58.4,2.2,26,Pass
+211003884,Ayman Moussa,Second Semester / 2021-2022,BA118,Chemistry,2,B,6.0,Passed,11,24.0,2.2,26,58.4,2.2,26,Pass
+211003884,Ayman Moussa,First Semester / 2022-2023,BA124,Mathematics II,3,C,6.0,Passed,16,32.0,2.0,42,90.4,2.2,40,Pass
+211003884,Ayman Moussa,First Semester / 2022-2023,LH132,ESP II,2,C,4.0,Passed,16,32.0,2.0,42,90.4,2.2,40,Pass
+211003884,Ayman Moussa,First Semester / 2022-2023,BA142,Engineering Mechanics II,3,C+,7.0,Passed,16,32.0,2.0,42,90.4,2.2,40,Pass
+211003884,Ayman Moussa,First Semester / 2022-2023,IM112,Manufacturing Technology,2,F,0.0,Retaken,16,32.0,2.0,42,90.4,2.2,40,Pass
+211003884,Ayman Moussa,First Semester / 2022-2023,CC218,Discrete Mathematics,3,C+,7.0,Passed,16,32.0,2.0,42,90.4,2.2,40,Pass
+211003884,Ayman Moussa,First Semester / 2022-2023,NE465,Aesthetic Education & Art Appreciation,3,B-,8.0,Passed,16,32.0,2.0,42,90.4,2.2,40,Pass
+211003884,Ayman Moussa,Second Semester / 2022-2023,IM112,Manufacturing Technology,2,B+,6.7,Passed,17,37.7,2.2,57,128.1,2.2,57,Pass
+211003884,Ayman Moussa,Second Semester / 2022-2023,BA223,Mathematics III,3,C,6.0,Passed,17,37.7,2.2,57,128.1,2.2,57,Pass
+211003884,Ayman Moussa,Second Semester / 2022-2023,EE231,Electrical Circuits I,3,C,6.0,Passed,17,37.7,2.2,57,128.1,2.2,57,Pass
+211003884,Ayman Moussa,Second Semester / 2022-2023,LH231,Technical Report Writing,3,C,6.0,Passed,17,37.7,2.2,57,128.1,2.2,57,Pass
+211003884,Ayman Moussa,Second Semester / 2022-2023,CC212,Applied Programming,3,C-,5.0,Passed,17,37.7,2.2,57,128.1,2.2,57,Pass
+211003884,Ayman Moussa,Second Semester / 2022-2023,CC216,Digital Logic Design,3,B-,8.0,Passed,17,37.7,2.2,57,128.1,2.2,57,Pass
+211003884,Ayman Moussa,First Semester / 2023-2024,CC215,Data Structure,3,C,6.0,Passed,18,37.0,2.1,75,165.1,2.2,72,Pass
+211003884,Ayman Moussa,First Semester / 2023-2024,BA224,Mathematics IV,3,D+,4.0,Passed,18,37.0,2.1,75,165.1,2.2,72,Pass
+211003884,Ayman Moussa,First Semester / 2023-2024,EE232,Electrical Circuits II,3,A-,11.0,Passed,18,37.0,2.1,75,165.1,2.2,72,Pass
+211003884,Ayman Moussa,First Semester / 2023-2024,EC238,Electronics I,3,C+,7.0,Passed,18,37.0,2.1,75,165.1,2.2,72,Pass
+211003884,Ayman Moussa,First Semester / 2023-2024,EC218,Measurements & Instrument,3,B,9.0,Passed,18,37.0,2.1,75,165.1,2.2,72,Pass
+211003884,Ayman Moussa,First Semester / 2023-2024,CC317,Digital Systems Design,3,F,0.0,Retaken,18,37.0,2.1,75,165.1,2.2,72,Pass
+211003884,Ayman Moussa,Second Semester / 2023-2024,CC317,Digital Systems Design,3,C+,7.0,Passed,18,43.0,2.4,90,208.1,2.3,90,Pass
+211003884,Ayman Moussa,Second Semester / 2023-2024,CC319,Advanced Programming,3,B-,8.0,Passed,18,43.0,2.4,90,208.1,2.3,90,Pass
+211003884,Ayman Moussa,Second Semester / 2023-2024,BA323,Mathematics V,3,D+,4.0,Passed,18,43.0,2.4,90,208.1,2.3,90,Pass
+211003884,Ayman Moussa,Second Semester / 2023-2024,EE328,Electrical Power & Machines,3,B+,10.0,Passed,18,43.0,2.4,90,208.1,2.3,90,Pass
+211003884,Ayman Moussa,Second Semester / 2023-2024,EC339,Electronics II,3,C-,5.0,Passed,18,43.0,2.4,90,208.1,2.3,90,Pass
+211003884,Ayman Moussa,Second Semester / 2023-2024,EC320,Communication Theory,3,B,9.0,Passed,18,43.0,2.4,90,208.1,2.3,90,Pass
+211003884,Ayman Moussa,First Semester / 2024-2025,CC311,Computer Architecture,3,B-,8.0,Passed,18,38.0,2.1,108,246.1,2.3,108,Pass
+211003884,Ayman Moussa,First Semester / 2024-2025,CC316,Object-Oriented Programming,3,C,6.0,Passed,18,38.0,2.1,108,246.1,2.3,108,Pass
+211003884,Ayman Moussa,First Semester / 2024-2025,BA326,Mathematics VI,3,D,3.0,Passed,18,38.0,2.1,108,246.1,2.3,108,Pass
+211003884,Ayman Moussa,First Semester / 2024-2025,CC341,Digital Electronics,3,C,6.0,Passed,18,38.0,2.1,108,246.1,2.3,108,Pass
+211003884,Ayman Moussa,First Semester / 2024-2025,NE364,Engineering Economy,3,B+,10.0,Passed,18,38.0,2.1,108,246.1,2.3,108,Pass
+211003884,Ayman Moussa,First Semester / 2024-2025,CC331,Data & Computer Communications,3,C-,5.0,Passed,18,38.0,2.1,108,246.1,2.3,108,Pass
+211003884,Ayman Moussa,Second Semester / 2024-2025,CC410,Systems Programming,3,B-,8.0,Passed,18,50.5,2.8,126,296.6,2.4,126,Pass
+211003884,Ayman Moussa,Second Semester / 2024-2025,CC414,Database Systems,3,B,9.0,Passed,18,50.5,2.8,126,296.6,2.4,126,Pass
+211003884,Ayman Moussa,Second Semester / 2024-2025,EE418,Automatic Control Systems,3,C,6.0,Passed,18,50.5,2.8,126,296.6,2.4,126,Pass
+211003884,Ayman Moussa,Second Semester / 2024-2025,CC517,Modelling & Simulation,3,C+,7.0,Passed,18,50.5,2.8,126,296.6,2.4,126,Pass
+211003884,Ayman Moussa,Second Semester / 2024-2025,CC421,Microprocessors Systems,3,A,11.5,Passed,18,50.5,2.8,126,296.6,2.4,126,Pass
+211003884,Ayman Moussa,Second Semester / 2024-2025,CC419,Numerical Methods,3,B,9.0,Passed,18,50.5,2.8,126,296.6,2.4,126,Pass
+211003884,Ayman Moussa,First Semester / 2025-2026,CC416,Computer Graphics,3,C+,7.0,Passed,18,32.0,1.8,144,328.6,2.3,138,Pass
+211003884,Ayman Moussa,First Semester / 2025-2026,CC418,Operating Systems,3,F,0.0,Retaken,18,32.0,1.8,144,328.6,2.3,138,Pass
+211003884,Ayman Moussa,First Semester / 2025-2026,CC431,Computer Networks,3,F,0.0,Retaken,18,32.0,1.8,144,328.6,2.3,138,Pass
+211003884,Ayman Moussa,First Semester / 2025-2026,CC415,Data Acquisition Systems,3,B-,8.0,Passed,18,32.0,1.8,144,328.6,2.3,138,Pass
+211003884,Ayman Moussa,First Semester / 2025-2026,CC417,Assembly Language,3,C+,7.0,Passed,18,32.0,1.8,144,328.6,2.3,138,Pass
+211003884,Ayman Moussa,First Semester / 2025-2026,IM423,Operations Research,3,B+,10.0,Passed,18,32.0,1.8,144,328.6,2.3,138,Pass
+211003884,Ayman Moussa,Second Semester / 2025-2026,CC418,Operating Systems,3,B,9.0,Passed,18,54.0,3.0,156,382.6,2.5,156,Pass
+211003884,Ayman Moussa,Second Semester / 2025-2026,CC431,Computer Networks,3,C+,7.0,Passed,18,54.0,3.0,156,382.6,2.5,156,Pass
+211003884,Ayman Moussa,Second Semester / 2025-2026,CC501,Senior Project I,3,B-,8.0,Passed,18,54.0,3.0,156,382.6,2.5,156,Pass
+211003884,Ayman Moussa,Second Semester / 2025-2026,CC511,Introduction to Artificial Intelligence,3,B-,8.0,Passed,18,54.0,3.0,156,382.6,2.5,156,Pass
+211003884,Ayman Moussa,Second Semester / 2025-2026,NE466,Environmental Science & Tech.,3,A+,12.0,Passed,18,54.0,3.0,156,382.6,2.5,156,Pass
+211003884,Ayman Moussa,Second Semester / 2025-2026,CC521,Microcomputer Based Design,3,B+,10.0,Passed,18,54.0,3.0,156,382.6,2.5,156,Pass
+211003884,Ayman Moussa,First Semester / 2026-2027,CC531,Advanced Networks,3,,,In Progress,,,,,,,,
+211003884,Ayman Moussa,First Semester / 2026-2027,CC516,Image Processing and Pattern Recognition,3,,,In Progress,,,,,,,,
+211003884,Ayman Moussa,First Semester / 2026-2027,CC513,Computing Systems,3,,,In Progress,,,,,,,,
+211003884,Ayman Moussa,First Semester / 2026-2027,CC503,Senior Project II,6,,,In Progress,,,,,,,,
+211003884,Ayman Moussa,First Semester / 2026-2027,IM535,International Operations Management,3,,,In Progress,,,,,,,,

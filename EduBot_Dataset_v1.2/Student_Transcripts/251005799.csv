@@ -1,0 +1,23 @@
+student_id,student_name,semester_taken,course_code,course_title,credit_hours,grade,points,status,semester_credit_hours,semester_points,semester_gpa,cumulative_credit_hours,cumulative_points,cumulative_gpa,credits_completed,standing_after_semester
+251005799,Youssef Hegazy,First Semester / 2025-2026,CC111,Intro to Computer,3,A-,11.0,Passed,18,51.3,2.9,18,51.3,2.9,18,Good
+251005799,Youssef Hegazy,First Semester / 2025-2026,BA113,Physics I,3,B-,8.0,Passed,18,51.3,2.9,18,51.3,2.9,18,Good
+251005799,Youssef Hegazy,First Semester / 2025-2026,BA123,Mathematics I,3,B,9.0,Passed,18,51.3,2.9,18,51.3,2.9,18,Good
+251005799,Youssef Hegazy,First Semester / 2025-2026,LH131,ESP I,2,B+,6.7,Passed,18,51.3,2.9,18,51.3,2.9,18,Good
+251005799,Youssef Hegazy,First Semester / 2025-2026,BA141,Engineering Mechanics I,3,C,6.0,Passed,18,51.3,2.9,18,51.3,2.9,18,Good
+251005799,Youssef Hegazy,First Semester / 2025-2026,ME151,Engineering Drawing & Projection,2,B-,5.3,Passed,18,51.3,2.9,18,51.3,2.9,18,Good
+251005799,Youssef Hegazy,First Semester / 2025-2026,IM111,Industrial Relations,2,B-,5.3,Passed,18,51.3,2.9,18,51.3,2.9,18,Good
+251005799,Youssef Hegazy,Second Semester / 2025-2026,CC112,Structured Programming,3,C+,7.0,Passed,18,49.3,2.7,36,100.6,2.8,36,Good
+251005799,Youssef Hegazy,Second Semester / 2025-2026,BA114,Physics II,3,B-,8.0,Passed,18,49.3,2.7,36,100.6,2.8,36,Good
+251005799,Youssef Hegazy,Second Semester / 2025-2026,BA118,Chemistry,2,B-,5.3,Passed,18,49.3,2.7,36,100.6,2.8,36,Good
+251005799,Youssef Hegazy,Second Semester / 2025-2026,BA124,Mathematics II,3,C+,7.0,Passed,18,49.3,2.7,36,100.6,2.8,36,Good
+251005799,Youssef Hegazy,Second Semester / 2025-2026,LH132,ESP II,2,B,6.0,Passed,18,49.3,2.7,36,100.6,2.8,36,Good
+251005799,Youssef Hegazy,Second Semester / 2025-2026,BA142,Engineering Mechanics II,3,B-,8.0,Passed,18,49.3,2.7,36,100.6,2.8,36,Good
+251005799,Youssef Hegazy,Second Semester / 2025-2026,IM112,Manufacturing Technology,2,A+,8.0,Passed,18,49.3,2.7,36,100.6,2.8,36,Good
+251005799,Youssef Hegazy,Summer Semester / 2025-2026,CC218,Discrete Mathematics,3,A+,12.0,Passed,6,22.0,3.7,42,122.6,2.9,42,Good
+251005799,Youssef Hegazy,Summer Semester / 2025-2026,BA223,Mathematics III,3,B+,10.0,Passed,6,22.0,3.7,42,122.6,2.9,42,Good
+251005799,Youssef Hegazy,First Semester / 2026-2027,EE231,Electrical Circuits I,3,,,In Progress,,,,,,,,
+251005799,Youssef Hegazy,First Semester / 2026-2027,LH231,Technical Report Writing,3,,,In Progress,,,,,,,,
+251005799,Youssef Hegazy,First Semester / 2026-2027,NE465,Aesthetic Education & Art Appreciation,3,,,In Progress,,,,,,,,
+251005799,Youssef Hegazy,First Semester / 2026-2027,CC212,Applied Programming,3,,,In Progress,,,,,,,,
+251005799,Youssef Hegazy,First Semester / 2026-2027,CC216,Digital Logic Design,3,,,In Progress,,,,,,,,
+251005799,Youssef Hegazy,First Semester / 2026-2027,BA224,Mathematics IV,3,,,In Progress,,,,,,,,

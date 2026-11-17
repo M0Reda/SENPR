@@ -1,0 +1,33 @@
+student_id,student_name,semester_taken,course_code,course_title,credit_hours,grade,points,status,semester_credit_hours,semester_points,semester_gpa,cumulative_credit_hours,cumulative_points,cumulative_gpa,credits_completed,standing_after_semester
+241005319,Nader Yousry,First Semester / 2024-2025,CC111,Intro to Computer,3,B-,8.0,Passed,18,45.0,2.5,18,45.0,2.5,18,Pass
+241005319,Nader Yousry,First Semester / 2024-2025,BA113,Physics I,3,B-,8.0,Passed,18,45.0,2.5,18,45.0,2.5,18,Pass
+241005319,Nader Yousry,First Semester / 2024-2025,BA123,Mathematics I,3,B-,8.0,Passed,18,45.0,2.5,18,45.0,2.5,18,Pass
+241005319,Nader Yousry,First Semester / 2024-2025,LH131,ESP I,2,A-,7.3,Passed,18,45.0,2.5,18,45.0,2.5,18,Pass
+241005319,Nader Yousry,First Semester / 2024-2025,BA141,Engineering Mechanics I,3,C-,5.0,Passed,18,45.0,2.5,18,45.0,2.5,18,Pass
+241005319,Nader Yousry,First Semester / 2024-2025,ME151,Engineering Drawing & Projection,2,C+,4.7,Passed,18,45.0,2.5,18,45.0,2.5,18,Pass
+241005319,Nader Yousry,First Semester / 2024-2025,IM111,Industrial Relations,2,C,4.0,Passed,18,45.0,2.5,18,45.0,2.5,18,Pass
+241005319,Nader Yousry,Second Semester / 2024-2025,CC112,Structured Programming,3,B+,10.0,Passed,18,50.7,2.8,36,95.7,2.7,36,Good
+241005319,Nader Yousry,Second Semester / 2024-2025,BA114,Physics II,3,B+,10.0,Passed,18,50.7,2.8,36,95.7,2.7,36,Good
+241005319,Nader Yousry,Second Semester / 2024-2025,BA118,Chemistry,2,A+,8.0,Passed,18,50.7,2.8,36,95.7,2.7,36,Good
+241005319,Nader Yousry,Second Semester / 2024-2025,BA124,Mathematics II,3,D+,4.0,Passed,18,50.7,2.8,36,95.7,2.7,36,Good
+241005319,Nader Yousry,Second Semester / 2024-2025,LH132,ESP II,2,B,6.0,Passed,18,50.7,2.8,36,95.7,2.7,36,Good
+241005319,Nader Yousry,Second Semester / 2024-2025,BA142,Engineering Mechanics II,3,B-,8.0,Passed,18,50.7,2.8,36,95.7,2.7,36,Good
+241005319,Nader Yousry,Second Semester / 2024-2025,IM112,Manufacturing Technology,2,C+,4.7,Passed,18,50.7,2.8,36,95.7,2.7,36,Good
+241005319,Nader Yousry,First Semester / 2025-2026,CC218,Discrete Mathematics,3,B-,8.0,Passed,18,43.0,2.4,54,138.7,2.6,51,Pass
+241005319,Nader Yousry,First Semester / 2025-2026,BA223,Mathematics III,3,B+,10.0,Passed,18,43.0,2.4,54,138.7,2.6,51,Pass
+241005319,Nader Yousry,First Semester / 2025-2026,EE231,Electrical Circuits I,3,F,0.0,Retaken,18,43.0,2.4,54,138.7,2.6,51,Pass
+241005319,Nader Yousry,First Semester / 2025-2026,LH231,Technical Report Writing,3,B+,10.0,Passed,18,43.0,2.4,54,138.7,2.6,51,Pass
+241005319,Nader Yousry,First Semester / 2025-2026,NE465,Aesthetic Education & Art Appreciation,3,C-,5.0,Passed,18,43.0,2.4,54,138.7,2.6,51,Pass
+241005319,Nader Yousry,First Semester / 2025-2026,CC212,Applied Programming,3,B+,10.0,Passed,18,43.0,2.4,54,138.7,2.6,51,Pass
+241005319,Nader Yousry,Second Semester / 2025-2026,EE231,Electrical Circuits I,3,B+,10.0,Passed,12,38.5,3.2,63,177.2,2.8,63,Good
+241005319,Nader Yousry,Second Semester / 2025-2026,CC215,Data Structure,3,A,11.5,Passed,12,38.5,3.2,63,177.2,2.8,63,Good
+241005319,Nader Yousry,Second Semester / 2025-2026,CC216,Digital Logic Design,3,C+,7.0,Passed,12,38.5,3.2,63,177.2,2.8,63,Good
+241005319,Nader Yousry,Second Semester / 2025-2026,BA224,Mathematics IV,3,B+,10.0,Passed,12,38.5,3.2,63,177.2,2.8,63,Good
+241005319,Nader Yousry,Summer Semester / 2025-2026,EE232,Electrical Circuits II,3,A-,11.0,Passed,6,23.0,3.8,69,200.2,2.9,69,Good
+241005319,Nader Yousry,Summer Semester / 2025-2026,EC238,Electronics I,3,A+,12.0,Passed,6,23.0,3.8,69,200.2,2.9,69,Good
+241005319,Nader Yousry,First Semester / 2026-2027,EC218,Measurements & Instrument,3,,,In Progress,,,,,,,,
+241005319,Nader Yousry,First Semester / 2026-2027,CC317,Digital Systems Design,3,,,In Progress,,,,,,,,
+241005319,Nader Yousry,First Semester / 2026-2027,CC319,Advanced Programming,3,,,In Progress,,,,,,,,
+241005319,Nader Yousry,First Semester / 2026-2027,BA323,Mathematics V,3,,,In Progress,,,,,,,,
+241005319,Nader Yousry,First Semester / 2026-2027,EE328,Electrical Power & Machines,3,,,In Progress,,,,,,,,
+241005319,Nader Yousry,First Semester / 2026-2027,EC339,Electronics II,3,,,In Progress,,,,,,,,
