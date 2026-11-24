@@ -1,4 +1,4 @@
-﻿"""
+"""
 bot.py -- Stage 5: RAG Answer Pipeline
 ========================================
 Orchestrates the full answer flow per turn:
@@ -204,9 +204,22 @@ def rerank(query: str, results: list[dict]) -> list[dict]:
 
 # ── LLM calls ─────────────────────────────────────────────────────────────────
 
+def _ensure_model(client, model: str) -> None:
+    """Pull the model on demand if the Ollama server does not have it yet."""
+    try:
+        names = {m.get("model") or m.get("name") for m in client.list().get("models", [])}
+        if model in names or f"{model}:latest" in names:
+            return
+    except Exception:
+        return
+    logger.warning(f"Model {model} not found on Ollama server; pulling (first run only)...")
+    client.pull(model)
+
+
 def _ollama_chat(messages: list[dict], model: str, stream: bool = False) -> str:
     """Call Ollama chat API; fall back to smaller model on OOM."""
     ollama = _get_ollama()
+    _ensure_model(ollama, model)
     try:
         resp = ollama.chat(
             model=model,
