@@ -1,5 +1,5 @@
-services:
-  # ── EduBot Web Application ───────────────────────────────────
+﻿services:
+  # â”€â”€ EduBot Web Application â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   edubot:
     build:
       context: ..
@@ -27,7 +27,7 @@ services:
     networks:
       - edubot-network
 
-  # ── Ollama LLM Service ────────────────────────────────────────
+  # â”€â”€ Ollama LLM Service â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   ollama:
     image: ollama/ollama:latest
     container_name: edubot-ollama
@@ -36,6 +36,13 @@ services:
       - "${OLLAMA_PORT:-11434}:11434"
     volumes:
       - ollama_models:/root/.ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
     healthcheck:
       test: ["CMD-SHELL", "ollama list > /dev/null 2>&1 || exit 1"]
       interval: 10s
@@ -45,14 +52,14 @@ services:
     networks:
       - edubot-network
 
-  # ── Automatic Model Puller ───────────────────────────────────
+  # â”€â”€ Automatic Model Puller â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   ollama-init:
     image: ollama/ollama:latest
     container_name: edubot-ollama-init
     restart: "no"
     environment:
       - OLLAMA_HOST=http://ollama:11434
-      - MODEL=${OLLAMA_MODEL:-llama3.2:3b}
+      - MODEL=${OLLAMA_MODEL:-qwen2.5:7b-instruct}
     entrypoint: ["/bin/sh", "-c"]
     command: >
       "echo 'Waiting for Ollama service to start...' &&

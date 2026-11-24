@@ -32,6 +32,8 @@ _active_bots: dict[str, Any] = {}
 
 
 def _get_bot(sid: str):
+    from bot import _get_db
+    _get_db(sid)  # reload data if this is a newly created student
     if sid not in _active_bots:
         from bot import EduBot
         _active_bots[sid] = EduBot(session_sid=sid)
@@ -42,7 +44,7 @@ def _sidebar_info(sid: str) -> str:
     """Return HTML for the student info sidebar."""
     try:
         from bot import _get_db
-        db = _get_db()
+        db = _get_db(sid)
         if sid not in db.students:
             return "<p style='color:red'>Student ID not found.</p>"
         from tools import StudentTools
@@ -85,7 +87,7 @@ def login(student_id: str):
     sid = str(student_id).strip()
     try:
         from bot import _get_db
-        db = _get_db()
+        db = _get_db(sid)
         if sid not in db.students:
             return (
                 gr.update(visible=True),   # login panel

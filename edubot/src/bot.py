@@ -1,4 +1,4 @@
-"""
+﻿"""
 bot.py -- Stage 5: RAG Answer Pipeline
 ========================================
 Orchestrates the full answer flow per turn:
@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import sys
 import time
 from collections import deque
@@ -37,11 +38,13 @@ EMBED_MODEL= cfg["embed_model"]
 TOP_K      = cfg["retrieval"]["top_k"]
 RERANK_N   = cfg["retrieval"]["rerank_top_n"]
 MIN_CONF   = cfg["retrieval"]["min_confidence"]
-MODEL      = cfg["model"]
+MODEL      = os.environ.get("OLLAMA_MODEL", cfg["model"])
 FALLBACK   = cfg["fallback_model"]
 TEMPERATURE= cfg["temperature"]
 MAX_TOKENS = cfg["max_tokens"]
 OLLAMA_URL = cfg["ollama_base_url"]
+NUM_CTX    = cfg.get("num_ctx", 8192)
+USE_EXAMPLES = cfg["retrieval"].get("use_training_examples", False)
 
 # ── Logging ───────────────────────────────────────────────────────────────────
 
@@ -60,11 +63,30 @@ _reranker= None
 _ollama  = None
 
 
-def _get_db():
-    global _db
-    if _db is None:
+_db_stamp = None
+
+
+def _data_stamp() -> tuple:
+    """Fingerprint of the CSV tables (mtime+size) so we notice newly created students."""
+    out = []
+    for f in sorted(DATA_DIR.glob("*.csv")):
+        try:
+            st = f.stat()
+            out.append((f.name, st.st_mtime_ns, st.st_size))
+        except OSError:
+            pass
+    return tuple(out)
+
+
+def _get_db(sid: str | None = None):
+    """Return the DB, reloading it whenever the data files changed or `sid` is unknown."""
+    global _db, _db_stamp
+    stamp = _data_stamp()
+    stale = _db is None or stamp != _db_stamp or (sid is not None and sid not in _db.students)
+    if stale:
         from edubot_context import EduBotDB
         _db = EduBotDB(str(DATA_DIR))
+        _db_stamp = stamp
     return _db
 
 
@@ -189,7 +211,7 @@ def _ollama_chat(messages: list[dict], model: str, stream: bool = False) -> str:
         resp = ollama.chat(
             model=model,
             messages=messages,
-            options={"temperature": TEMPERATURE, "num_predict": MAX_TOKENS},
+            options={"temperature": TEMPERATURE, "num_predict": MAX_TOKENS, "num_ctx": NUM_CTX},
             stream=stream,
         )
         if stream:
@@ -206,7 +228,7 @@ def _ollama_chat(messages: list[dict], model: str, stream: bool = False) -> str:
                 resp = ollama.chat(
                     model=FALLBACK,
                     messages=messages,
-                    options={"temperature": TEMPERATURE, "num_predict": MAX_TOKENS},
+                    options={"temperature": TEMPERATURE, "num_predict": MAX_TOKENS, "num_ctx": NUM_CTX},
                 )
                 return resp["message"]["content"]
             except Exception as e2:
@@ -299,10 +321,15 @@ class EduBot:
         self._debug_log: list[dict] = []
 
         # Lazy-load all heavy components
-        self._db     = _get_db()
         self._router = self._load_router()
+        self._refresh_student()
 
+    def _refresh_student(self) -> None:
+        """Re-read the student's data so answers are never stale / from another student."""
         from tools import StudentTools
+        self._db = _get_db(self._sid)
+        if self._sid not in self._db.students:
+            raise ValueError(f"Unknown student ID: {self._sid}")
         self._tools = StudentTools(self._db, session_sid=self._sid)
 
     @staticmethod
@@ -323,6 +350,7 @@ class EduBot:
         The scratchpad (reasoning) is saved to the debug log but never returned.
         """
         start = time.time()
+        self._refresh_student()
         step: dict[str, Any] = {
             "ts":           datetime.utcnow().isoformat(),
             "sid":          self._sid,
@@ -345,8 +373,12 @@ class EduBot:
             return reply
 
         # ── 3. Retrieve ───────────────────────────────────────────────────────
-        raw_results = retrieve(message, route.intent if not route.blocked else None)
-        ranked      = rerank(message, raw_results)
+        # Training data (other students' Q&A) is NOT an answer source; it is only
+        # optional style guidance and is off by default.
+        if USE_EXAMPLES:
+            ranked = rerank(message, retrieve(message, route.intent))
+        else:
+            ranked = []
         step["retrieved"] = [
             {"source": r["source"], "intent": r["meta"].get("intent_category", ""),
              "score": round(r.get("rerank_score", r["score"]), 4),
@@ -362,6 +394,14 @@ class EduBot:
 
         # ── 5. Build system message (student record) ──────────────────────────
         system_msg = self._tools.build_system_message(strip_email=True)
+        prof = self._tools.get_student_profile()
+        system_msg += (
+            f"\n\nYOU ARE CURRENTLY TALKING TO: {prof['name']} (student ID {self._sid}). "
+            "The STUDENT RECORD above is the ONLY source of facts about this student. "
+            "Never use any other student's data. Use TOOL RESULTS (pre-computed, exact) "
+            "for numbers; copy them, do not recompute. If a fact is not in the record or "
+            "tool results, say you don't have it."
+        )
 
         # ── 6. Build prompt ───────────────────────────────────────────────────
         if route.intent == "__LOW_CONFIDENCE__":
@@ -493,7 +533,9 @@ class EduBot:
         """Remove <think>...</think> blocks from the LLM output."""
         import re
         cleaned = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL)
-        return cleaned.strip()
+        cleaned = re.sub(r"<think>.*", "", cleaned, flags=re.DOTALL)  # unclosed block
+        cleaned = cleaned.replace("</think>", "").strip()
+        return cleaned or text.replace("<think>", "").replace("</think>", "").strip()
 
     def _save_debug(self, step: dict) -> None:
         """Append this turn's debug info to the session log."""
