@@ -122,55 +122,61 @@ def _get_ollama():
 
 def retrieve(query: str, intent: str | None, k: int = TOP_K) -> list[dict[str, Any]]:
     """
-    Fetch top-k documents from qa_turns and policy_cards.
-    If intent is known, filter qa_turns by intent metadata for better precision.
+    Fetch top-k authoritative documents from policy_cards and course_cards.
+    Training qa_turns (other students' Q&A) are only included when USE_EXAMPLES is True.
     """
+    import re
     client, ef = _get_chroma()
     results: list[dict] = []
 
-    # QA turns
-    qa_col = client.get_collection("qa_turns", embedding_function=ef)
-    where  = {"intent_category": intent} if intent and intent not in ("__LOW_CONFIDENCE__",
-              "__PRIVACY_BLOCK__", "__INJECTION_BLOCK__") else None
-    qa_res = qa_col.query(
-        query_texts=[query],
-        n_results=min(k, qa_col.count()),
-        where=where if where else None,
-        include=["documents", "metadatas", "distances"],
-    )
-    for doc, meta, dist in zip(
-        qa_res["documents"][0],
-        qa_res["metadatas"][0],
-        qa_res["distances"][0],
-    ):
-        results.append({
-            "source":   "qa_turns",
-            "document": doc,
-            "meta":     meta,
-            "score":    1 - dist,   # cosine similarity
-        })
+    # 1. QA turns (only when explicitly enabled; never an answer source by default)
+    if USE_EXAMPLES:
+        qa_col = client.get_collection("qa_turns", embedding_function=ef)
+        where  = {"intent_category": intent} if intent and intent not in ("__LOW_CONFIDENCE__",
+                  "__PRIVACY_BLOCK__", "__INJECTION_BLOCK__") else None
+        qa_res = qa_col.query(
+            query_texts=[query],
+            n_results=min(k, qa_col.count()),
+            where=where if where else None,
+            include=["documents", "metadatas", "distances"],
+        )
+        for doc, meta, dist in zip(
+            qa_res["documents"][0],
+            qa_res["metadatas"][0],
+            qa_res["distances"][0],
+        ):
+            results.append({
+                "source":   "qa_turns",
+                "document": doc,
+                "meta":     meta,
+                "score":    1 - dist,
+            })
 
-    # Policy card for this specific intent
+    def _clean_policy(doc: str) -> str:
+        if USE_EXAMPLES:
+            return doc
+        # Strip other students' example responses; keep only authoritative regulations
+        return doc.split("\n\nEXAMPLE ADVISOR RESPONSES")[0].strip()
+
+    # 2. Policy card for this specific intent
+    pol_col = client.get_collection("policy_cards", embedding_function=ef)
     if intent and intent not in ("__LOW_CONFIDENCE__", "__PRIVACY_BLOCK__", "__INJECTION_BLOCK__"):
-        import re
-        pol_col  = client.get_collection("policy_cards", embedding_function=ef)
-        pol_id   = f"policy_{re.sub(r'[^a-z0-9]', '_', intent.lower())}"
+        pol_id = f"policy_{re.sub(r'[^a-z0-9]', '_', intent.lower())}"
         try:
             pol_res = pol_col.get(ids=[pol_id], include=["documents", "metadatas"])
             if pol_res["documents"]:
                 results.append({
                     "source":   "policy_cards",
-                    "document": pol_res["documents"][0],
+                    "document": _clean_policy(pol_res["documents"][0]),
                     "meta":     pol_res["metadatas"][0],
-                    "score":    1.0,   # exact intent match
+                    "score":    1.0,
                 })
         except Exception:
             pass
 
-    # Fallback: also query policy_cards by semantic similarity
-    pol_col = client.get_collection("policy_cards", embedding_function=ef)
+    # 3. Semantic policy_cards lookup
     pol_res2 = pol_col.query(
-        query_texts=[query], n_results=2,
+        query_texts=[query], n_results=min(2, pol_col.count()),
         include=["documents", "metadatas", "distances"],
     )
     for doc, meta, dist in zip(
@@ -178,13 +184,35 @@ def retrieve(query: str, intent: str | None, k: int = TOP_K) -> list[dict[str, A
         pol_res2["metadatas"][0],
         pol_res2["distances"][0],
     ):
-        if {"source": "policy_cards", "document": doc} not in [{"source": r["source"], "document": r["document"]} for r in results]:
+        cleaned = _clean_policy(doc)
+        if not any(r["source"] == "policy_cards" and r["document"] == cleaned for r in results):
             results.append({
                 "source":   "policy_cards",
+                "document": cleaned,
+                "meta":     meta,
+                "score":    1 - dist,
+            })
+
+    # 4. Course catalog cards (codes, titles, credits, prerequisites, offerings)
+    try:
+        crs_col = client.get_collection("course_cards", embedding_function=ef)
+        crs_res = crs_col.query(
+            query_texts=[query], n_results=min(4, crs_col.count()),
+            include=["documents", "metadatas", "distances"],
+        )
+        for doc, meta, dist in zip(
+            crs_res["documents"][0],
+            crs_res["metadatas"][0],
+            crs_res["distances"][0],
+        ):
+            results.append({
+                "source":   "course_cards",
                 "document": doc,
                 "meta":     meta,
                 "score":    1 - dist,
             })
+    except Exception:
+        pass
 
     return results
 
@@ -214,6 +242,38 @@ def _ensure_model(client, model: str) -> None:
         return
     logger.warning(f"Model {model} not found on Ollama server; pulling (first run only)...")
     client.pull(model)
+
+
+def _ollama_chat_stream(messages: list[dict], model: str):
+    """Stream tokens from Ollama chat API; fall back to smaller model on OOM."""
+    ollama = _get_ollama()
+    _ensure_model(ollama, model)
+    try:
+        resp = ollama.chat(
+            model=model,
+            messages=messages,
+            options={"temperature": TEMPERATURE, "num_predict": MAX_TOKENS, "num_ctx": NUM_CTX},
+            stream=True,
+        )
+        for chunk in resp:
+            yield chunk["message"]["content"]
+    except Exception as e:
+        err_str = str(e).lower()
+        if "memory" in err_str or "oom" in err_str or model != FALLBACK:
+            logger.warning(f"Falling back to {FALLBACK} due to: {e}")
+            try:
+                resp = ollama.chat(
+                    model=FALLBACK,
+                    messages=messages,
+                    options={"temperature": TEMPERATURE, "num_predict": MAX_TOKENS, "num_ctx": NUM_CTX},
+                    stream=True,
+                )
+                for chunk in resp:
+                    yield chunk["message"]["content"]
+            except Exception as e2:
+                raise RuntimeError(f"Both {model} and {FALLBACK} failed: {e2}") from e2
+        else:
+            raise
 
 
 def _ollama_chat(messages: list[dict], model: str, stream: bool = False) -> str:
@@ -273,7 +333,7 @@ def _build_prompt(
 
     tool_block = ""
     if tool_results:
-        tool_block = "TOOL RESULTS:\n" + json.dumps(tool_results, ensure_ascii=False, indent=2, default=str) + "\n\n"
+        tool_block = "TOOL RESULTS:\n" + json.dumps(tool_results, ensure_ascii=False, separators=(",", ":"), default=str) + "\n\n"
 
     user_content = (
         f"{context_block}"
@@ -289,17 +349,66 @@ def _build_prompt(
 
 SCRATCHPAD_SUFFIX = (
     "\n\nBefore answering, write a private scratchpad inside <think>...</think> tags:\n"
-    "1. What exactly is the student asking?\n"
-    "2. What facts/rules do I need from the context and tools?\n"
-    "3. Apply the rule or arithmetic step by step.\n"
-    "4. Double-check any numbers.\n"
-    "Then write a short, warm, first-person answer OUTSIDE the <think> tags."
+    "1. What exact fact(s) is the student asking for?\n"
+    "2. Copy the exact values (course codes, titles, grades, numbers) from TOOL RESULTS.\n"
+    "3. Verify every single course code and grade matches TOOL RESULTS verbatim.\n"
+    "Then write a clear, warm, first-person answer OUTSIDE the <think> tags using ONLY those verified facts."
 )
 
+KEYWORD_INTENTS = [
+    (("graduat", "degree", "left to finish", "remaining courses", "what do i need"),
+     "Graduation Requirements Audit"),
+    (("final exam", "need on the final", "needed to pass", "score to pass", "pass the final"),
+     "Required Final Exam Score"),
+    (("7th", "12th", "marks", "coursework", "current course"), "Current Marks Summary"),
+    (("prereq", "pre-req", "eligible to take", "can i take", "register", "enroll"),
+     "Prerequisite Dependency Check"),
+    (("improv",), "Course Improvement Window Policy"),
+    (("fail", "retake", "repeat"), "Failed Courses to Repeat"),
+    (("absen", "attend", "withdraw"), "Absence & Forced Withdrawal Warning"),
+    (("standing",), "Standing Classification"),
+    (("probation", "warning"), "Probation Consequences"),
+    (("honor",), "Honors Eligibility Criteria"),
+    (("gpa",), "GPA Calculation Methodology"),
+    (("advisor", "adviser", "office"), "Advisor & Staff Contact"),
+    (("overload", "max credit", "how many credit", "credit limit"), "Overload Permission"),
+    (("transcript", "grade", "grades", "highest", "lowest", "best", "worst",
+      "courses have i taken", "courses i took", "already finished", "list all", "full list", "all the courses"),
+     "Transcript Summary"),
+]
+
+# Indexed record sections per intent: only send the slice of the student record
+# actually needed for the question (cuts prompt size ~3x and prevents distraction).
+INTENT_SECTIONS: dict[str, set[str]] = {
+    "GPA Projection":                     {"student", "current_courses"},
+    "GPA Calculation Methodology":        {"student", "semester_history"},
+    "Required Final Exam Score":          {"student", "current_courses"},
+    "Current Marks Summary":              {"student", "current_courses"},
+    "Standing Classification":            {"student", "registration_rules_now", "repeats"},
+    "Semester Level & Credits":           {"student", "registration_rules_now"},
+    "Transcript Summary":                 {"student", "repeats"},
+    "Graduation Requirements Audit":      {"student", "registration_rules_now", "current_courses", "remaining", "graduation_plan_projection", "repeats"},
+    "Graduation Plan":                    {"student", "registration_rules_now", "current_courses", "remaining", "graduation_plan_projection"},
+    "Next Term Registration":             {"student", "registration_rules_now", "current_courses", "remaining", "repeats"},
+    "Overload Permission":                {"student", "registration_rules_now"},
+    "Summer Graduating Overload Exception": {"student", "registration_rules_now", "remaining"},
+    "Probation Load Restriction":         {"student", "registration_rules_now", "repeats"},
+    "Probation Consequences":             {"student", "repeats"},
+    "Honors Eligibility Criteria":        {"student", "honors_check"},
+    "Prerequisite Dependency Check":      {"student", "current_courses", "remaining"},
+    "Course Improvement Window Policy":   {"student", "repeats"},
+    "Retake Grade Cap":                   {"student", "repeats", "current_courses"},
+    "Failed Courses to Repeat":           {"student", "repeats", "current_courses"},
+    "Failed Final Exam Threshold":        {"student", "current_courses"},
+    "Absence & Forced Withdrawal Warning": {"student", "current_courses"},
+    "Advisor & Staff Contact":            {"student", "advisor"},
+}
+DEFAULT_SECTIONS: set[str] = {"student", "registration_rules_now", "advisor", "current_courses", "repeats"}
+
 CLARIFY_PROMPT = (
-    "The student's question is ambiguous or I don't have enough confidence to answer. "
-    "Ask ONE short, friendly clarifying question to get the specific information needed. "
-    "Do not answer yet."
+    "The question may be vague. Answer it as best you can from the STUDENT RECORD and "
+    "TOOL RESULTS. Ask a short clarifying question ONLY if you truly cannot tell what "
+    "is being asked; never ask the student for information that is already in their record."
 )
 
 BLOCKED_RESPONSES = {
@@ -316,6 +425,37 @@ BLOCKED_RESPONSES = {
 
 
 # ── Main bot class ─────────────────────────────────────────────────────────────
+
+def warmup() -> None:
+    """
+    Pre-load everything that is normally lazy so the FIRST student message is as
+    fast as later ones: database, router, embedder, reranker, and the Ollama model
+    (kept resident in GPU memory).
+    """
+    t0 = time.time()
+    try:
+        _get_db()
+        from router import IntentRouter
+        if IntentRouter.is_trained():
+            IntentRouter.load()
+        ranked = rerank("warm up", retrieve("warm up", None))   # loads embedder + reranker + chroma
+        logger.info(f"warmup: retrieval ready ({len(ranked)} docs) in {time.time() - t0:.1f}s")
+    except Exception as e:
+        logger.warning(f"warmup (retrieval) failed: {e}")
+    try:
+        client = _get_ollama()
+        _ensure_model(client, MODEL)
+        # Same num_ctx as real requests, otherwise Ollama would reload the model.
+        client.chat(
+            model=MODEL,
+            messages=[{"role": "user", "content": "hi"}],
+            options={"num_predict": 1, "num_ctx": NUM_CTX},
+            keep_alive=-1,
+        )
+        logger.info(f"warmup: LLM '{MODEL}' resident in {time.time() - t0:.1f}s")
+    except Exception as e:
+        logger.warning(f"warmup (LLM) failed: {e}")
+
 
 class EduBot:
     """
@@ -356,13 +496,49 @@ class EduBot:
 
     # ── Main entry point ──────────────────────────────────────────────────────
 
-    def chat(self, message: str) -> str:
-        """
-        Process one student message and return the advisor's reply.
+    def _system_base(self, intent: str | None = None, message: str = "") -> str:
+        """System prompt + indexed slice of this student's record + identity/rules."""
+        sections = set(INTENT_SECTIONS.get(intent or "", DEFAULT_SECTIONS))
+        if any(w in message.lower() for w in ("full transcript", "all courses", "list all", "every course")):
+            sections.add("transcript")
+        system_msg = self._tools.build_system_message(strip_email=True, include_sections=sections)
+        prof = self._tools.get_student_profile()
+        system_msg += (
+            f"\n\nYOU ARE CURRENTLY TALKING TO: {prof['name']} (student ID {self._sid}). "
+            "The STUDENT RECORD above is the ONLY source of facts about this student. "
+            "Never use any other student's data. Use TOOL RESULTS (pre-computed, exact) "
+            "for numbers; copy them, do not recompute. If a fact is not in the record or "
+            "tool results, say you don't have it. "
+            "Answer ONLY the current question; do not repeat answers from earlier turns. "
+            "Never ask the student for course prerequisites or transcript facts — check TOOL RESULTS. "
+            "The maximum credit load is only a LIMIT, never what the student needs. "
+            "Only mention electives if electives_still_needed > 0. "
+            "Credits remaining that are covered by courses currently in progress are NOT extra courses to find."
+        )
+        return system_msg
 
-        The scratchpad (reasoning) is saved to the debug log but never returned.
+    def prefill(self) -> None:
         """
-        start = time.time()
+        Pre-evaluate this student's (large) system prompt in Ollama right after login,
+        so Ollama's KV cache already holds it when the first question arrives.
+        """
+        try:
+            self._refresh_student()
+            client = _get_ollama()
+            client.chat(
+                model=MODEL,
+                messages=[
+                    {"role": "system", "content": self._system_base() + SCRATCHPAD_SUFFIX},
+                    {"role": "user", "content": "hi"},
+                ],
+                options={"temperature": TEMPERATURE, "num_predict": 1, "num_ctx": NUM_CTX},
+                keep_alive=-1,
+            )
+        except Exception as e:
+            logger.warning(f"prefill failed for {self._sid}: {e}")
+
+    def _prepare_turn(self, message: str) -> tuple[dict[str, Any], list[dict] | None, str | None]:
+        """Run Route → Retrieve → Rerank → Tools → Prompt; returns (step, prompt_msgs, blocked_reply)."""
         self._refresh_student()
         step: dict[str, Any] = {
             "ts":           datetime.utcnow().isoformat(),
@@ -371,7 +547,9 @@ class EduBot:
         }
 
         # ── 1. Route ──────────────────────────────────────────────────────────
+        t0 = time.time()
         route = self._route(message)
+        t_route = time.time() - t0
         step["route"] = {
             "intent": route.intent,
             "confidence": route.confidence,
@@ -382,16 +560,13 @@ class EduBot:
         if route.blocked:
             reply = BLOCKED_RESPONSES.get(route.intent,
                     "I'm not able to help with that. Is there something else I can do for you?")
-            self._save_debug(step | {"reply": reply, "elapsed": time.time() - start})
-            return reply
+            return step, None, reply
 
-        # ── 3. Retrieve ───────────────────────────────────────────────────────
-        # Training data (other students' Q&A) is NOT an answer source; it is only
-        # optional style guidance and is off by default.
-        if USE_EXAMPLES:
-            ranked = rerank(message, retrieve(message, route.intent))
-        else:
-            ranked = []
+        # ── 3. Retrieve (policy_cards + course_cards; qa_turns only if enabled) ─
+        t1 = time.time()
+        raw_results = retrieve(message, route.intent)
+        ranked      = rerank(message, raw_results)
+        t_rag = time.time() - t1
         step["retrieved"] = [
             {"source": r["source"], "intent": r["meta"].get("intent_category", ""),
              "score": round(r.get("rerank_score", r["score"]), 4),
@@ -399,22 +574,17 @@ class EduBot:
             for r in ranked
         ]
 
-        # ── 4. Call tools if needed ───────────────────────────────────────────
-        tool_results: dict[str, Any] = {}
+        # ── 4. Call tools (always include verified baseline + intent tools) ───
+        t2 = time.time()
+        tool_results: dict[str, Any] = self._baseline_facts(message)
         if route.needs_tool:
-            tool_results = self._call_tools(route.intent, message)
+            tool_results.update(self._call_tools(route.intent, message))
+        t_tools = time.time() - t2
         step["tool_results"] = tool_results
+        step["timing_s"] = {"route": round(t_route, 2), "rag": round(t_rag, 2), "tools": round(t_tools, 2)}
 
-        # ── 5. Build system message (student record) ──────────────────────────
-        system_msg = self._tools.build_system_message(strip_email=True)
-        prof = self._tools.get_student_profile()
-        system_msg += (
-            f"\n\nYOU ARE CURRENTLY TALKING TO: {prof['name']} (student ID {self._sid}). "
-            "The STUDENT RECORD above is the ONLY source of facts about this student. "
-            "Never use any other student's data. Use TOOL RESULTS (pre-computed, exact) "
-            "for numbers; copy them, do not recompute. If a fact is not in the record or "
-            "tool results, say you don't have it."
-        )
+        # ── 5. Build system message (indexed student record slice) ────────────
+        system_msg = self._system_base(intent=route.intent, message=message)
 
         # ── 6. Build prompt ───────────────────────────────────────────────────
         if route.intent == "__LOW_CONFIDENCE__":
@@ -427,6 +597,19 @@ class EduBot:
             context_passages = ranked,
             tool_results = tool_results,
         )
+        return step, prompt_msgs, None
+
+    def chat(self, message: str) -> str:
+        """
+        Process one student message and return the advisor's reply.
+
+        The scratchpad (reasoning) is saved to the debug log but never returned.
+        """
+        start = time.time()
+        step, prompt_msgs, blocked_reply = self._prepare_turn(message)
+        if blocked_reply is not None or prompt_msgs is None:
+            self._save_debug(step | {"reply": blocked_reply, "elapsed": time.time() - start})
+            return blocked_reply or ""
 
         # ── 7. LLM call ───────────────────────────────────────────────────────
         raw_reply = _ollama_chat(prompt_msgs, model=MODEL, stream=self._stream)
@@ -446,6 +629,43 @@ class EduBot:
 
         return reply
 
+    def chat_stream(self, message: str):
+        """
+        Stream the advisor's visible reply chunk-by-chunk (hiding <think>...</think>).
+        Yields the accumulated visible reply text as it is generated.
+        """
+        start = time.time()
+        step, prompt_msgs, blocked_reply = self._prepare_turn(message)
+        if blocked_reply is not None or prompt_msgs is None:
+            self._save_debug(step | {"reply": blocked_reply, "elapsed": time.time() - start})
+            yield blocked_reply or ""
+            return
+
+        raw_parts: list[str] = []
+        last_visible = ""
+        for chunk in _ollama_chat_stream(prompt_msgs, model=MODEL):
+            raw_parts.append(chunk)
+            raw_so_far = "".join(raw_parts)
+            # Hold back output only while still inside an opening <think> tag
+            if "<think>" in raw_so_far and "</think>" not in raw_so_far:
+                continue
+            visible = self._strip_scratchpad(raw_so_far)
+            if visible and visible != last_visible:
+                last_visible = visible
+                yield visible
+
+        raw_reply = "".join(raw_parts)
+        reply = self._strip_scratchpad(raw_reply)
+        if reply != last_visible:
+            yield reply
+
+        step["raw_llm_reply"] = raw_reply[:2000]
+        step["final_reply"] = reply
+        step["elapsed_s"]   = round(time.time() - start, 2)
+        self._history.append({"role": "user",      "content": message})
+        self._history.append({"role": "assistant", "content": reply})
+        self._save_debug(step)
+
     # ── Helpers ───────────────────────────────────────────────────────────────
 
     def _route(self, message: str):
@@ -456,7 +676,68 @@ class EduBot:
                 intent=LOW_CONFIDENCE, confidence=0.0,
                 needs_tool=True, blocked=False, block_reason=None, top3=[],
             )
-        return self._router.route(message, session_sid=self._sid)
+        res = self._router.route(message, session_sid=self._sid)
+        if not res.blocked and self._requested_grade(message):
+            # "which courses did I get an A in" is a transcript lookup, whatever the classifier says
+            return RouteResult(
+                intent="Transcript Summary", confidence=max(res.confidence, 0.9),
+                needs_tool=True, blocked=False, block_reason=None, top3=res.top3,
+            )
+        if res.intent == LOW_CONFIDENCE and not res.blocked:
+            # Keyword safety net: the classifier is unsure, but the topic is obvious.
+            m = message.lower()
+            for kws, intent in KEYWORD_INTENTS:
+                if any(k in m for k in kws):
+                    return RouteResult(
+                        intent=intent, confidence=res.confidence,
+                        needs_tool=True, blocked=False, block_reason=None, top3=res.top3,
+                    )
+            # Still unsure: give the model the student's facts anyway (never answer blind).
+            return RouteResult(
+                intent=res.intent, confidence=res.confidence,
+                needs_tool=True, blocked=False, block_reason=None, top3=res.top3,
+            )
+        return res
+
+    def _baseline_facts(self, message: str) -> dict[str, Any]:
+        """
+        Compact, pre-computed facts included on every turn so the LLM never
+        has to guess or misread raw transcript JSON, even if routing is imperfect.
+        """
+        import re
+        t = self._tools
+        by_letter = t.grades_by_letter()
+        letter_grades = [g for g in by_letter if g != "P"]
+        sem_hist = t.get_semester_history()
+        reg_terms = sum(1 for h in sem_hist if not h["term"].startswith("Summer"))
+        sum_terms = sum(1 for h in sem_hist if h["term"].startswith("Summer"))
+        facts: dict[str, Any] = {
+            "verified_profile": t.get_student_profile(),
+            "verified_standing_and_bands": t.check_standing(),
+            "verified_semesters_attended": {
+                "completed_regular_semesters": reg_terms,
+                "completed_summer_semesters": sum_terms,
+                "completed_total_terms": len(sem_hist),
+                "current_term_in_progress": "First Semester / 2026-2027",
+                "note": "semester_level is credit-based standing, NOT the count of semesters attended.",
+            },
+            "verified_advisor": t.get_advisor(),
+            "verified_honors":  t.get_honors_status(),
+            "verified_current_marks": t.get_current_marks(),
+            "verified_highest_grade": (
+                {letter_grades[0]: by_letter[letter_grades[0]]} if letter_grades else {}
+            ),
+            "verified_lowest_grade": (
+                {letter_grades[-1]: by_letter[letter_grades[-1]]} if letter_grades else {}
+            ),
+        }
+        # Auto-attach course-specific lookups for any course codes or titles mentioned
+        codes = t.find_courses_in_message(message)
+        if codes:
+            facts["mentioned_courses"] = {
+                code: t.course_status(code) for code in codes[:3]
+            }
+        return facts
 
     def _call_tools(self, intent: str, message: str) -> dict[str, Any]:
         """Dispatch to the appropriate tool(s) based on intent."""
@@ -470,13 +751,11 @@ class EduBot:
             "Current Marks Summary":       lambda: {"marks": t.get_current_marks()},
             "Standing Classification":     lambda: {"standing": t.check_standing()},
             "Semester Level & Credits":    lambda: {"profile": t.get_student_profile()},
-            "Transcript Summary":          lambda: {"transcript": t.get_transcript()},
-            "Graduation Requirements Audit": lambda: {"profile": t.get_student_profile(),
-                                                       "remaining": t.remaining_required_courses()},
-            "Graduation Plan":             lambda: {"plan": t.get_graduation_plan(),
-                                                     "profile": t.get_student_profile()},
+            "Transcript Summary":          lambda: self._transcript_dispatch(message),
+            "Graduation Requirements Audit": lambda: {"graduation_status": t.graduation_status()},
+            "Graduation Plan":             lambda: {"graduation_status": t.graduation_status()},
             "Next Term Registration":      lambda: {"overload": t.check_overload_eligibility(),
-                                                     "remaining": t.remaining_required_courses()},
+                                                     "graduation_status": t.graduation_status()},
             "Overload Permission":         lambda: {"overload": t.check_overload_eligibility()},
             "Summer Graduating Overload Exception": lambda: {"profile": t.get_student_profile(),
                                                               "overload": t.check_overload_eligibility()},
@@ -504,12 +783,48 @@ class EduBot:
                 results = {
                     "profile": t.get_student_profile(),
                     "marks":   t.get_current_marks(),
+                    "graduation_status": t.graduation_status(),
                 }
         except Exception as e:
             logger.error(f"Tool call failed for intent '{intent}': {e}")
             results = {"tool_error": str(e)}
 
         return results
+
+    @staticmethod
+    def _requested_grade(message: str) -> str | None:
+        """Return a letter grade (e.g. 'A', 'B+') if the message asks about one."""
+        import re
+        m = re.search(
+            r"\b(?:grade of|got an?|get an?|achieved? an?|received? an?|earned? an?|with an?)\s+([A-Da-dFf][+-]?)(?![A-Za-z])"
+            r"|(?<![A-Za-z])([A-DF][+-]?)\s+(?:grade|in\b)",
+            message,
+        )
+        if not m:
+            return None
+        g = (m.group(1) or m.group(2)).upper()
+        return g if g in {"A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "F"} else None
+
+    def _transcript_dispatch(self, message: str) -> dict:
+        t = self._tools
+        by_letter = t.grades_by_letter()
+        out: dict = {}
+        letter_grades = [g for g in by_letter if g != "P"]
+        if letter_grades:
+            out["highest_grade"] = letter_grades[0]
+            out["highest_grade_courses"] = by_letter[letter_grades[0]]
+            out["lowest_grade"] = letter_grades[-1]
+            out["lowest_grade_courses"] = by_letter[letter_grades[-1]]
+        g = self._requested_grade(message)
+        if g:
+            out["requested_grade"] = g
+            out["courses_with_exactly_that_grade"] = by_letter.get(g, [])
+            out["note"] = (
+                f"Match the grade EXACTLY ({g}); '{g}-' and '{g}+' are different grades. "
+                "If the list is empty, say there are none."
+            )
+        out["grades_by_letter_latest_attempts"] = by_letter
+        return out
 
     def _required_final(self, message: str) -> dict:
         """Try to extract course code from message, else return all current courses."""
@@ -525,18 +840,16 @@ class EduBot:
         return {"final_calcs": [t.calculate_required_final(c) for c in codes]}
 
     def _prereq_dispatch(self, message: str) -> dict:
-        """Extract course code from message, else return a generic prereq check."""
-        import re
+        """Extract course code or title from message, else return remaining courses."""
         t = self._tools
-        found = re.findall(r'\b([A-Z]{2,3}\d{3,})\b', message)
+        found = t.find_courses_in_message(message)
         if found:
-            return {"prereqs": t.check_prereqs(found[0])}
+            return {"course_statuses": {c: t.course_status(c) for c in found[:3]}}
         return {"remaining": t.remaining_required_courses()}
 
     def _improvement_dispatch(self, message: str) -> dict:
-        import re
         t = self._tools
-        found = re.findall(r'\b([A-Z]{2,3}\d{3,})\b', message)
+        found = t.find_courses_in_message(message)
         if found:
             return {"window": t.check_improvement_window(found[0])}
         return {"transcript": t.get_transcript()}

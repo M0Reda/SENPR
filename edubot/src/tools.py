@@ -467,6 +467,119 @@ class StudentTools:
         self._check()
         return self._rec()["graduation_plan_projection"]
 
+    def find_courses_in_message(self, message: str) -> list[str]:
+        """Extract course codes mentioned by code OR by course title."""
+        import re
+        found: list[str] = re.findall(r"\b([A-Z]{2,3}\d{3,})\b", message.upper())
+        msg_low = f" {re.sub(r'[^a-z0-9]+', ' ', message.lower())} "
+        # Longest titles first so 'Computer Architecture' matches before shorter substrings
+        for code, info in sorted(
+            self._db.courses.items(),
+            key=lambda kv: len(kv[1]["course_title"]),
+            reverse=True,
+        ):
+            title_norm = re.sub(r"[^a-z0-9]+", " ", info["course_title"].lower()).strip()
+            if len(title_norm) >= 5 and f" {title_norm} " in msg_low:
+                if code not in found:
+                    found.append(code)
+        return [c for c in dict.fromkeys(found) if c in self._db.courses]
+
+    def course_status(self, course_code: str) -> dict[str, Any]:
+        """Full deterministic status for a single course (taken, passed, prereqs, repeat)."""
+        self._check()
+        if course_code not in self._db.courses:
+            return {"error": f"Course {course_code} not found."}
+        internal = self._rec()["_internal"]
+        latest = internal["latest"].get(course_code)
+        cur_codes = internal["current_codes"]
+        status: dict[str, Any] = {
+            "course_code": course_code,
+            "course_title": self._db.courses[course_code]["course_title"],
+            "credit_hours": self._db.courses[course_code]["credit_hours"],
+            "already_passed": course_code in internal["passed"],
+            "currently_enrolled": course_code in cur_codes,
+            "latest_transcript_attempt": (
+                {
+                    "semester": latest["semester_taken"],
+                    "grade": latest["grade"],
+                    "status": latest["status"],
+                }
+                if latest
+                else None
+            ),
+            "prereqs": self.check_prereqs(course_code),
+        }
+        if course_code in cur_codes:
+            status["required_final"] = self.calculate_required_final(course_code)
+        win = self.check_improvement_window(course_code)
+        if "error" not in win:
+            status["improvement_window"] = win
+        return status
+
+    def grades_by_letter(self) -> dict[str, list[str]]:
+        """Courses grouped by letter grade (latest attempt of each course only)."""
+        self._check()
+        latest = self._rec()["_internal"]["latest"]
+        out: dict[str, list[str]] = {}
+        for code, row in latest.items():
+            g = row["grade"]
+            out.setdefault(g, []).append(
+                f"{code} {self._db.courses[code]['course_title']} ({row['semester_taken']})"
+            )
+        order = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "F", "P"]
+        return {g: sorted(out[g]) for g in order if g in out}
+
+    # ── Tool: graduation_status (deterministic summary) ──────────────────────
+
+    def graduation_status(self) -> dict[str, Any]:
+        """Exact, pre-computed answer to 'what do I have left to graduate?'."""
+        self._check()
+        r = self._rec()
+        s = r["student"]
+        rem = r["remaining"]
+        passed = r["_internal"]["passed"]
+        in_progress = [
+            c for c in r["current_courses"] if c["code"] not in passed
+        ]
+        ip_credits = sum(c["credit_hours"] for c in in_progress)
+        left = s["credits_remaining"]
+        after = max(0, left - ip_credits)
+        el_needed = rem["electives_still_needed"]
+        required_left = rem["required_courses_not_taken"]
+        out: dict[str, Any] = {
+            "credits_completed": s["credits_completed"],
+            "credits_remaining_now": left,
+            "courses_in_progress_this_term": [
+                f"{c['code']} {c['title']} ({c['credit_hours']} cr, {c['attempt']})"
+                for c in in_progress
+            ],
+            "credits_in_progress": ip_credits,
+            "credits_still_unscheduled_after_this_term": after,
+            "required_courses_not_taken_and_not_in_progress": required_left,
+            "electives_completed": rem["electives_completed"],
+            "electives_in_progress": rem["electives_in_progress"],
+            "electives_still_needed": el_needed,
+            "outstanding_failed_courses": r["repeats"]["outstanding_failed_courses"],
+            "cumulative_gpa": s["cumulative_gpa"],
+            "gpa_requirement_met": bool(s["cumulative_gpa"]) and float(s["cumulative_gpa"]) >= 2.0,
+            "graduation_plan_terms": r["graduation_plan_projection"]["terms"],
+            "notes": [
+                "max_credit_hours is only an upper LIMIT on registration, never the amount the student needs.",
+            ],
+        }
+        if el_needed > 0:
+            out["electives_eligible"] = rem["electives_eligible_after_this_term"]
+        else:
+            out["notes"].append("All 6 electives are done: do NOT suggest or list more electives.")
+        if after == 0 and not required_left and el_needed == 0:
+            out["conclusion"] = (
+                "If the student passes the course(s) in progress "
+                f"({', '.join(c['code'] for c in in_progress) or 'none'}), "
+                "all degree requirements are met and the student graduates at the end of this term "
+                "(also needs cumulative GPA >= 2.0)."
+            )
+        return out
+
     # ── Tool 14: get_honors_status ────────────────────────────────────────────
 
     def get_honors_status(self) -> dict[str, Any]:
@@ -494,7 +607,11 @@ class StudentTools:
 
     # ── Convenience: build system message for this student ───────────────────
 
-    def build_system_message(self, strip_email: bool = True) -> str:
+    def build_system_message(
+        self,
+        strip_email: bool = True,
+        include_sections: set[str] | None = None,
+    ) -> str:
         """
         Build the full system prompt + student record JSON.
 
@@ -503,13 +620,26 @@ class StudentTools:
         strip_email : bool
             If True (default), remove 'university_email' from the student block
             per the Users.csv privacy policy.
+        include_sections : set[str] | None
+            If provided, include only these top-level keys from the student
+            record (indexed lookup) instead of dumping the entire record.
         """
         self._check()
         import json
         rec = self._db.public(self._rec())
+        st = rec.get("student", {})
+        if "cumulative_credit_hours" in st:
+            # Counts every attempt (including failed ones) for GPA only; it is NOT
+            # credits completed and misleads small models, so rename it.
+            st["credit_hours_counted_in_gpa_only"] = st.pop("cumulative_credit_hours")
+        rem = rec.get("remaining", {})
+        if rem.get("electives_still_needed", 0) == 0:
+            rem["electives_eligible_after_this_term"] = []
         if strip_email:
             if "student" in rec and "university_email" in rec["student"]:
                 del rec["student"]["university_email"]
+        if include_sections is not None:
+            rec = {k: v for k, v in rec.items() if k in include_sections}
         return SYSTEM_PROMPT + "\n\nSTUDENT RECORD (JSON):\n" + json.dumps(
             rec, ensure_ascii=False, separators=(",", ":"), default=str
         )

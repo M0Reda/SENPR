@@ -1,2 +1,8 @@
 Falling back to llama3.2:3b due to: model 'qwen2.5:7b-instruct' not found (status code: 404)
 Falling back to llama3.2:3b due to: model 'qwen2.5:7b-instruct' not found (status code: 404)
+warmup: retrieval ready (4 docs) in 17.1s
+warmup: LLM 'qwen2.5:7b-instruct' resident in 93.3s
+warmup: retrieval ready (4 docs) in 13.9s
+warmup: LLM 'qwen2.5:7b-instruct' resident in 95.4s
+warmup: retrieval ready (4 docs) in 9.2s
+warmup: LLM 'qwen2.5:7b-instruct' resident in 86.2s

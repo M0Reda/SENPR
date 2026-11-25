@@ -14,9 +14,9 @@ ollama_base_url: "http://localhost:11434"
 model: "llama3.2:3b"                  # active pulled local model
 fallback_model: "llama3.2:3b"         # fallback model
 # Temperature: 0 for deterministic tool reasoning; slightly higher for friendly prose
-temperature: 0.1
-max_tokens: 1024
-num_ctx: 8192      # student record JSON is large; Ollama default would truncate it
+temperature: 0.0
+max_tokens: 4094
+num_ctx: 4096      # fits 100% in 8GB VRAM (prevents CPU spill); indexed prompt is ~1.5k tokens
 
 # ── Embeddings ───────────────────────────────────────────────
 embed_model: "all-MiniLM-L6-v2"       # sentence-transformers id

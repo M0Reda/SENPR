@@ -36,6 +36,9 @@ RUN python -c "from sentence_transformers import SentenceTransformer, CrossEncod
     SentenceTransformer('all-MiniLM-L6-v2'); \
     CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')"
 
+# Models are baked into the image; skip HuggingFace network checks on startup
+ENV HF_HUB_OFFLINE=1
+
 # Copy datasets and scripts (sibling directory required by edubot)
 COPY EduBot_Dataset_v1.2 /app/EduBot_Dataset_v1.2
 

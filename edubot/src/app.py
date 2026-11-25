@@ -40,6 +40,19 @@ def _get_bot(sid: str):
     return _active_bots[sid]
 
 
+def _prefill_async(sid: str) -> None:
+    """After login, warm Ollama's cache with this student's prompt in the background."""
+    import threading
+
+    def _run():
+        try:
+            _get_bot(sid).prefill()
+        except Exception:
+            pass
+
+    threading.Thread(target=_run, daemon=True, name=f"prefill-{sid}").start()
+
+
 def _sidebar_info(sid: str) -> str:
     """Return HTML for the student info sidebar."""
     try:
@@ -127,16 +140,18 @@ def chat_fn(message: str, history: list[dict[str, str]], session_sid: str):
         return
 
     bot = _get_bot(session_sid)
-    new_hist = history + [{"role": "user", "content": message}, {"role": "assistant", "content": ""}]
+    new_hist = history + [{"role": "user", "content": message}, {"role": "assistant", "content": "Thinking..."}]
+    yield new_hist, new_hist
     try:
-        reply = bot.chat(message)
+        for partial in bot.chat_stream(message):
+            new_hist[-1]["content"] = partial
+            yield new_hist, new_hist
     except Exception as e:
-        reply = (
+        new_hist[-1]["content"] = (
             f"I'm having some technical trouble right now — please try again in a moment. "
             f"If this keeps happening, contact your advisor. (Error: {e})"
         )
-    new_hist[-1]["content"] = reply
-    yield new_hist, new_hist
+        yield new_hist, new_hist
 
 
 def clear_fn(session_sid: str):
@@ -238,6 +253,42 @@ footer { display: none !important; }
 """
 
 
+# ── Smart auto-scroll ────────────────────────────────────────────────────────
+# Follow the streaming answer only while the user is at (or near) the bottom.
+# If they scroll up to read earlier messages, leave the scroll position alone;
+# scrolling back down re-enables following.
+
+SMART_SCROLL_JS = """
+() => {
+  const NEAR = 80;                       // px from bottom that still counts as "at bottom"
+  const follow = new WeakMap();          // scroll container -> should we follow?
+  const inChat = (el) => el && el.closest && el.closest('.chat-box');
+
+  document.addEventListener('scroll', (e) => {
+    const el = e.target;
+    if (el && el.nodeType === 1 && inChat(el)) {
+      follow.set(el, el.scrollHeight - el.scrollTop - el.clientHeight < NEAR);
+    }
+  }, true);
+
+  let queued = false;
+  const tick = () => {
+    queued = false;
+    document.querySelectorAll('.chat-box *').forEach((el) => {
+      if (el.scrollHeight > el.clientHeight + 5 &&
+          /(auto|scroll)/.test(getComputedStyle(el).overflowY) &&
+          follow.get(el) !== false) {
+        el.scrollTop = el.scrollHeight;
+      }
+    });
+  };
+  new MutationObserver(() => {
+    if (!queued) { queued = true; requestAnimationFrame(tick); }
+  }).observe(document.body, { childList: true, subtree: true, characterData: true });
+}
+"""
+
+
 # ── Build Gradio app ──────────────────────────────────────────────────────────
 
 def build_app() -> gr.Blocks:
@@ -279,6 +330,7 @@ def build_app() -> gr.Blocks:
                         label="",
                         height=520,
                         elem_classes=["chat-box"],
+                        autoscroll=False,   # we follow the stream ourselves (see SMART_SCROLL_JS)
                     )
                     with gr.Row():
                         msg_input = gr.Textbox(
@@ -339,6 +391,9 @@ if __name__ == "__main__":
     server_port = int(os.environ.get("GRADIO_SERVER_PORT", "7860"))
     print("\nStarting EduBot UI ...")
     print(f"Open http://localhost:{server_port} in your browser.\n")
+    import threading
+    from bot import warmup
+    threading.Thread(target=warmup, daemon=True, name="edubot-warmup").start()
     app = build_app()
     app.launch(
         server_name=server_name,
@@ -346,4 +401,5 @@ if __name__ == "__main__":
         share=False,
         show_error=True,
         css=CSS,
+        js=SMART_SCROLL_JS,
     )
